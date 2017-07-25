@@ -1,0 +1,31 @@
+{
+  "name": "spacecoding",
+  "version": "0.1.2",
+  "main": "index.js",
+  "author": "CyberHazard",
+  "license": "MIT",
+  "scripts": {
+    "gulp": "./node_modules/.bin/gulp",
+    "demo": "./node_modules/.bin/browser-sync start -s ./dest --tunnel",
+    "webpack": "./node_modules/.bin/webpack -w",
+    "dev": "yarn gulp & yarn webpack"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp-watch": "^4.3.11",
+    "webpack": "^3.4.0"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}
