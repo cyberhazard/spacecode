@@ -1,0 +1,52 @@
+.team
+  padding 184px 0
+  background-color: #17171d;
+  &__block
+    display flex
+    flex-wrap: wrap;
+    justify-content: flex-start
+  &__person
+    display flex
+    flex-direction: column
+    justify-content: center
+    align-items:center
+    flex-basis: 20%;
+    margin-right 15px
+    &:last-child
+      margin-right 0
+  &__img
+    display block
+    margin-bottom 50px
+  &__name
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 26px;
+    margin-bottom 16px
+    text-align: center
+  &__post
+    position relative
+    opacity: 0.67;
+    color: #b0b0c1;
+    font-family: Lato;
+    font-size: 16px;
+    margin-bottom 60px
+    text-align: center
+    &:after
+      content ""
+      position absolute
+      bottom: -36px;
+      left: 40%;
+      width 48px
+      height 14px
+      background: url(../img/team-light.png)
+  &__descript
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center
+
+
+
+
