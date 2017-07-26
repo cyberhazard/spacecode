@@ -35,8 +35,25 @@
     height 588px
     position relative
     overflow hidden
+    &_last
+      display flex
+      justify-content:  center
+      align-items: center
     &:hover ^[0]__image
       transform scale(1.1)
+  &__more
+    color: #17171d;
+    font-family: "Gotham Pro";
+    font-size: 40px;
+    font-weight: 700;
+    border-bottom 4px solid secondColor
+    &:after
+      content: '\f105'
+      font-family: FontAwesome
+      color secondColor
+      margin-left 18px
+      position relative
+      top 2px
   &__image
     position absolute
     top 0
