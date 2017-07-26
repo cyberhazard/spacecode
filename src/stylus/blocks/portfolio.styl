@@ -30,15 +30,16 @@
     display flex
     flex-wrap: wrap
   &__block
+    display flex
+    align-items: center
     flex-basis: 50%
     flex-grow: 1
     height 588px
     position relative
     overflow hidden
+    padding-left 2%
     &_last
-      display flex
       justify-content:  center
-      align-items: center
     &:hover ^[0]__image
       transform scale(1.1)
   &__more
@@ -63,6 +64,22 @@
     background-repeat: no-repeat
     background-size: cover
     width 100%
-    height 100%
+    height 104%
     transform-origin: center center
     transition: 2s
+  &__header
+    color: #ffffff;
+    font-family: "Gotham Pro";
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    &_dark
+      color: #17171d;
+  &__text
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 400;
+    padding 30px 0 40px
+    &_dark
+      color: #17171d;

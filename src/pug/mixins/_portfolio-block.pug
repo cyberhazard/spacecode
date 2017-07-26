@@ -1,0 +1,7 @@
+mixin portf-block(bg,header,text,link,dark)
+  .portfolio__block
+      .portfolio__image(style=`background-image: url('${bg}')`)
+      .portfolio__content
+        .portfolio__header(class=dark && 'portfolio__header_dark')= header
+        .portfolio__text(class=dark && 'portfolio__text_dark')!= text
+        a.link__more(href=`${link}` class=dark && 'link__more_dark') Подробднее
