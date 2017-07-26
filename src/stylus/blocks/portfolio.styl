@@ -1,0 +1,28 @@
+.portfolio
+  padding-top 70px
+  &__buttons
+    display flex
+    flex-wrap: wrap
+  &__button
+    border none
+    background-color transparent
+    margin 0 60px 38px 0
+    color: #b2b2bd;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 400;
+    cursor: pointer
+    user-select none
+    transition .3s
+    &_selected
+      position relative
+      &:after
+        content: ''
+        position absolute
+        top calc(100% + 4px)
+        left 0
+        height 4px
+        width 100%
+        background-color secondColor
+    &:hover
+      color: #17171d;
