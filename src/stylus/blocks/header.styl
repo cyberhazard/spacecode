@@ -17,7 +17,27 @@
     background-color transparent
     border 2px solid secondColor;
     color: #ffffff;
+    position relative
+    overflow hidden
+    cursor: pointer
+    & span
+      position relative
+      z-index 1
+    &:hover:before
+      width 300px
+    &:before
+      content: ''
+      z-index: 0
+      position absolute
+      top -30px
+      left -40px
+      width 30px
+      height 100px
+      background-color secondColor
+      border-radius 50%
+      transition .5s
   &__phone
+    display block
     color: #ffffff;
     font-family: Lato;
     font-size: 20px;
