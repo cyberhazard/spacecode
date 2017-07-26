@@ -4,16 +4,16 @@ include ../data/portfolio.pug
   .g-wrapper
     .portfolio__title.shadow-text(data-text="Портфолио") Портфолио
     .portfolio__buttons
-      button.portfolio__button.portfolio__button_selected Все
-      button.portfolio__button Фитнес
-      button.portfolio__button Юридические услуги
-      button.portfolio__button Нефть
-      button.portfolio__button Медицина
-      button.portfolio__button Автошколы
-      button.portfolio__button Одежда
-      button.portfolio__button Строительство
-      button.portfolio__button Продажа люксовых брендов
-      button.portfolio__button Розничная торговля
+      button.portfolio__button.portfolio__button_selected(data-tag="all") Все
+      button.portfolio__button(data-tag="fitness") Фитнес
+      button.portfolio__button(data-tag="") Юридические услуги
+      button.portfolio__button(data-tag="") Нефть
+      button.portfolio__button(data-tag="") Медицина
+      button.portfolio__button(data-tag="") Автошколы
+      button.portfolio__button(data-tag="") Одежда
+      button.portfolio__button(data-tag="") Строительство
+      button.portfolio__button(data-tag="") Продажа люксовых брендов
+      button.portfolio__button(data-tag="") Розничная торговля
   .portfolio__blocks
     each p in portfolio
       +portf-block(p.bg,p.header,p.text,p.link,p.dark)
