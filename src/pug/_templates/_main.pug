@@ -6,7 +6,32 @@ html(lang="ru")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     link(rel="stylesheet", href="/css/style.css")
+    link(href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
     title= pageTitle
   body
     .wrapper
+      header.header
+        .header__top
+          img.header__logo(src="/img/logo.png")
+          nav.header__menu.menu
+            nav.menu__item
+              a.menu__link(href="#") Главная
+            nav.menu__item
+              a.menu__link(href="#") О студии
+            nav.menu__item
+              a.menu__link(href="#") Команда
+            nav.menu__item
+              a.menu__link(href="#") Услуги
+            nav.menu__item
+              a.menu__link(href="#") Цены
+            nav.menu__item
+              a.menu__link(href="#") Портфолио
+            nav.menu__item
+              a.menu__link(href="#") Блог
+            nav.menu__item
+              a.menu__link(href="#") Контакты
+          .header__contacts
+            .header__phone.header__phone_margin +7 (495) #[span.header__phone_big 999-99-99]
+            button.header__button Заказать звонок
       block content
