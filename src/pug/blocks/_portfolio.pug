@@ -9,6 +9,6 @@ include ../data/portfolio.pug
       - })
   .portfolio__blocks
     each p in portfolio
-      +portf-block(p.bg,p.header,p.text,p.link,p.dark,p.tag)
+      +portf-block(p,groups)
     .portfolio__block.portfolio__block_last
       .portfolio__more Показать больше работ

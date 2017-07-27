@@ -1,7 +1,8 @@
-mixin portf-block(bg,header,text,link,dark,tag)
-  .portfolio__block(data-tag=tag)
-      .portfolio__image(style=`background-image: url('${bg}')`)
-      .portfolio__content
-        .portfolio__header(class=dark && 'portfolio__header_dark')= header
-        .portfolio__text(class=dark && 'portfolio__text_dark')!= text
-        a.link__more(href=`${link}` class=dark && 'link__more_dark') Подробднее
+mixin portf-block(p,groups)
+  .portfolio__block(data-tag=p.tag)
+    .portfolio__float= groups[p.tag]
+    .portfolio__image(style=`background-image: url('${p.bg}')`)
+    .portfolio__content
+      .portfolio__header(class=p.dark && 'portfolio__header_dark')= p.header
+      .portfolio__text(class=p.dark && 'portfolio__text_dark')!= p.text
+      a.link__more(href=`${p.link}` class=p.dark && 'link__more_dark') Подробднее
