@@ -1,5 +1,5 @@
-mixin portf-block(bg,header,text,link,dark)
-  .portfolio__block
+mixin portf-block(bg,header,text,link,dark,tag)
+  .portfolio__block(data-tag=tag)
       .portfolio__image(style=`background-image: url('${bg}')`)
       .portfolio__content
         .portfolio__header(class=dark && 'portfolio__header_dark')= header
