@@ -1,0 +1,60 @@
+.footer
+  background-color: #17171d;
+  padding-bottom 450px
+  background #17171d url('/img/footer-bg.png') center bottom no-repeat
+  &__icon
+    display inline-block
+    margin-right 22px
+    margin-bottom 70px
+    &:hover path
+      fill: secondColor
+    & svg
+      height: 20px;
+    & path
+      fill #4B4B5B
+      transition: .3s
+  &__contacts
+    display block
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    position relative
+    margin-left 32px
+    margin-bottom 26px
+    &:before
+      font-family: FontAwesome
+      position absolute
+      top 4px
+      left -32px
+      color: secondColor
+    &_phone:before
+      left -30px
+      content "\f095"
+    &_mail:before
+      content "\f0e0"
+    &_address:before
+      left -28px
+      content "\f041"
+.navigation
+  display flex
+  &__col
+    //border 1px solid yellow
+    flex-basis: 25%
+    &_center
+      flex-grow: 1
+  &__title
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom 32px
+  &__link
+    display block
+    color: #aaaab2;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom 28px
+    &:last-child
+      margin-bottom 0

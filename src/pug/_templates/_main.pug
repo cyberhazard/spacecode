@@ -39,4 +39,38 @@ html(lang="ru")
             .header__title Помогаем различному бизнесу пройти через тернии к звёздам
             .header__text Мы разрабатываем по-настоящему конверсионные сайты и занимаемся результативным продвижением.
       block content
+      footer.footer
+        .g-wrapper
+          .navigation
+            .navigation__col
+              .navigation__title Навигация
+              a.navigation__link(href="#") Главная
+              a.navigation__link(href="#") О компании
+              a.navigation__link(href="#") Команда
+              a.navigation__link(href="#") Цены
+              a.navigation__link(href="#") Портфолио
+              a.navigation__link(href="#") Блог
+              a.navigation__link(href="#") Контакты
+            .navigation__col.navigation__col_center
+              .navigation__title Наши услуги
+              a.navigation__link(href="#") Разработка сайтов
+              a.navigation__link(href="#") Интернет-маркетинг
+              a.navigation__link(href="#") Разработка дизайна
+              a.navigation__link(href="#") Разработка сложных IT-проектов
+            .navigation__col
+              .navigation__title Соц. сети
+              a.footer__icon(href="#")
+                include ../../images/fa-vk.svg
+              a.footer__icon(href="#")
+                include ../../images/fa-behance.svg
+              a.footer__icon(href="#")
+                include ../../images/fa-twitter.svg
+              a.footer__icon(href="#")
+                include ../../images/fa-facebook.svg
+              a.footer__icon(href="#")
+                include ../../images/fa-instagram.svg
+              .navigation__title Контакты
+              a.footer__contacts.footer__contacts_phone(href="tel:+74959999999") +7 (495) 999-99-99
+              a.footer__contacts.footer__contacts_mail(href="mailto:info@spacecode.ru") info@spacecode.ru
+              .footer__contacts.footer__contacts_address г. Москва, ул. Большая тульская, дом 17, офис 36
     script(src="/js/bundle.js")
