@@ -1,0 +1,39 @@
+.feedback
+  &__item
+    display flex
+    justify-content: flex-start
+    flex-direction: column
+    align-items: flex-start
+    margin-bottom 60px
+  &__name
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 26px;
+    margin-bottom 40px
+    position: relative
+    &:after
+      content ''
+      position: absolute
+      left 0
+      bottom -20px
+      width: 30%
+      height 3px
+      background secondColor
+  &__text
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 18px;
+    line-height: 26px;
+  &__email
+    text-decoration: underline;
+
+.contacts
+  &__grid
+    display flex
+    justify-content: flex-start
+    align-items: flex-start
+  &__map
+    height: 794px
+    background: url('../img/map.png') center no-repeat
+    background-size: cover
+
