@@ -1,0 +1,71 @@
+extends _templates/_main
+
+block vars
+  - var pageTitle = 'Welcome'
+
+block content
+  .feedback
+    .g-wrapper
+      .shadow-text.shadow-text_light(data-text="Заказать аудит сайта") Заказать аудит сайта
+      .feedback__block
+        .feedback__grid.contacts__grid
+          .feedback__item
+            .feedback__name Наш адрес:
+            .feedback__text г. Москва, ул. Большая тульская, дом 17, офис 36
+          .feedback__item
+            .feedback__name Наш телефон:
+            .feedback__text +7 (495) 999-99-99
+          .feedback__item
+            .feedback__name Наш e-mail:
+            a(href="mailto:info@spacecode.ru").feedback__text.feedback__email info@spacecode.ru
+        .feedback__grid
+          form.feedback__form
+            .feedback__title Заказать бесплатный аудит сайта
+            input.feedback__input(placeholder="Ваше имя...")
+            input.feedback__input(placeholder="Ваше телефон или e-mail...")
+            input.feedback__input(placeholder="Ваше сообщение...")
+            .feedback__submit <span>Отправить</span>
+  .contacts__map
+  .clients
+    .g-wrapper
+      .shadow-text(data-text="Наши клиенты") Наши клиенты
+      .clients__block
+        .clients__item
+          .clients__wrap
+            img.clients__img(src="../img/clients-1.png")
+        .clients__item
+          .clients__wrap
+            img.clients__img(src="../img/clients-2.png")
+        .clients__item
+          .clients__wrap
+            img.clients__img(src="../img/clients-3.png")
+        .clients__item
+          .clients__wrap
+            img.clients__img(src="../img/clients-4.png")
+        .clients__item
+          img.clients__img(src="../img/clients-5.png")
+        .clients__item
+          .clients__wrap
+            img.clients__img(src="../img/clients-6.png")
+        .clients__item
+          .clients__wrap
+            img.clients__img(src="../img/clients-7.png")
+        .clients__item
+          .clients__wrap
+            img.clients__img(src="../img/clients-8.png")
+        .clients__item
+          .clients__wrap
+            img.clients__img(src="../img/clients-9.png")
+        .clients__item
+          .clients__wrap
+            img.clients__img(src="../img/clients-10.png")
+        .clients__item
+          .clients__wrap
+            img.clients__img(src="../img/clients-11.png")
+        .clients__item
+          .clients__wrap
+            img.clients__img(src="../img/clients-12.png")
+
+
+
+
