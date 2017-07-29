@@ -13,14 +13,15 @@ html(lang="ru")
     .wrapper
       header.header
         .header__top
-          img.header__logo(src="/img/logo.png")
+          a(href='/')
+            img.header__logo(src="/img/logo.png")
           nav.header__menu.menu
             nav.menu__item
-              a.menu__link(href="#") Главная
+              a.menu__link(href="/") Главная
             nav.menu__item
               a.menu__link(href="#") О студии
             nav.menu__item
-              a.menu__link(href="#") Команда
+              a.menu__link(href="/team.html") Команда
             nav.menu__item
               a.menu__link(href="#") Услуги
             nav.menu__item
@@ -30,7 +31,7 @@ html(lang="ru")
             nav.menu__item
               a.menu__link(href="#") Блог
             nav.menu__item
-              a.menu__link(href="#") Контакты
+              a.menu__link(href="/contacts.html") Контакты
           .header__contacts
             a.header__phone.header__phone_margin(href="tel:+74959999999") +7 (495) #[span.header__phone_big 999-99-99]
             button.header__button #[span Заказать звонок]
