@@ -5,6 +5,8 @@
     display flex
     flex-wrap: nowrap
     justify-content: flex-start
+    &_wrap
+      flex-wrap wrap
   &__person
     display flex
     flex-direction: column
@@ -14,8 +16,9 @@
     margin-right 40px
     &:last-child
       margin-right 0
-    &_wrap
-      flex-wrap wrap
+    &_basis
+      flex-basis 30%
+      margin-bottom 48px
   &__img
     display block
     margin-bottom 50px
