@@ -11,4 +11,4 @@ include ../data/portfolio.pug
     each p in portfolio
       +portf-block(p,groups)
     .portfolio__block.portfolio__block_last
-      .portfolio__more Показать больше работ
+      a.portfolio__more(href="/portfolio.html") Показать больше работ
