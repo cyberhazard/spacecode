@@ -1,0 +1,92 @@
+extends _templates/_main
+
+block vars
+  - var pageTitle = 'Разработка мобильных приложений SPACECODE'
+  - var customHeader = true
+
+block header
+  .g-wrapper
+    .promotion
+      .promotion__title Разработка мобильных приложений
+      .promotion__block
+        .promotion__item Прототипирование
+        .promotion__item Обслуживание
+        .promotion__item Разработка
+        .promotion__item Тестирование
+        .promotion__item Продвижение в App Store и Google Play
+        .promotion__item Интеграция приложений с сервисами
+      a.feedback__submit: span Выбрать решение
+
+block content
+  .prices
+    .g-wrapper
+      .shadow-text.shadow(data-text="Цены на услуги") Цены на услуги
+      .analytics__block
+        .analytics__item
+          .analytics__title
+            img(src="../img/mobile-1.png").analytics__img
+            .analytics__name Разработка на iOS
+          .analytics__content
+            p Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum стандартное
+          .analytics__footer
+            .analytics__cost от 140 000 руб / от 30 дней
+            a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+        .analytics__item
+          .analytics__title
+            img(src="../img/mobile-2.png").analytics__img
+            .analytics__name Разработка на Android
+          .analytics__content
+            p Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum стандартное
+          .analytics__footer
+            .analytics__cost от 100 000 руб / от 30 дней
+            a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+        .analytics__item
+          .analytics__title
+            img(src="../img/mobile-3.png").analytics__img
+            .analytics__name Интеграция приложений
+          .analytics__content
+            p Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum стандартное
+          .analytics__footer
+            .analytics__cost от 150 000 руб / от 30 дней
+            a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+      .analytics__more
+        .analytics__more_title Не нашли нужную услугу?
+        .analytics__more_information Звоните по телефону: <a href="tel:+74959999999">+7(495) 999-99-99</a>
+  .features
+    .features__block
+      .features__grid
+        .features__prev
+          img.features__img(src="../img/service-device.png")
+      .features__grid
+        .features__title Особенности разработки мобильных приложений у нас
+        .features__criteria
+          .features__item
+            .features__det
+              img.features__icon(src="../img/features-1.png")
+            .features__subtitle Просто
+            .features__text Посетитель вашего сайта за 3 секунды поймет, что он нашел то, что искал, и приступит к выбору товаров или услуг
+          .features__item
+            .features__det
+              img.features__icon(src="../img/features-2.png")
+            .features__subtitle Удобно
+            .features__text Благодаря налаженным процессам работы в компании запуск сайта осуществляется в максимально короткие сроки
+          .features__item
+            .features__det
+              img.features__icon(src="../img/features-3.png")
+            .features__subtitle Стильно
+            .features__text Посетитель вашего сайта за 3 секунды поймет, что он нашел то, что искал, и приступит к выбору товаров или услуг
+          .features__item
+            .features__det
+              img.features__icon(src="../img/features-4.png")
+            .features__subtitle Эффективно
+            .features__text Благодаря налаженным процессам работы в компании запуск сайта осуществляется в максимально короткие сроки
+  .features__footer
+    .g-wrapper
+      .features__content
+        .features__callback Закажите обратный звонок и задайте уточняющие вопросы!
+        a.feedback__submit(href="#") <span>Подробнее</span>
+  include blocks/_circle-portfolio.pug
+  include blocks/_steps.pug
+  include blocks/_thanks.pug
+  include blocks/_feedback.pug
+

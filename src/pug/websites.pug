@@ -1,0 +1,124 @@
+extends _templates/_main
+
+block vars
+  - var pageTitle = 'Разработка веб-сайтов SPACECODE'
+  - var customHeader = true
+
+block header
+  .g-wrapper
+    .promotion
+      .promotion__title Разработка веб-сайтов
+      .promotion__block
+        .promotion__item Корпоративные и промо-сайты
+        .promotion__item Интернет-магазины
+        .promotion__item Корпоративные порталы
+        .promotion__item Посадочные страницы
+        .promotion__item Сложные веб-сервисы
+        .promotion__item Чат-боты
+      a.feedback__submit: span Выбрать решение
+
+block content
+  .prices
+    .g-wrapper
+      .shadow-text.shadow(data-text="Цены на услуги") Цены на услуги
+      .analytics__block.website__block
+        .analytics__item
+          .analytics__title
+            img(src="../img/web-1.png").analytics__img
+            .analytics__name Информационный сайт
+          .analytics__content
+            p Корпоративный сайт, который удовлетворит потребности 90% заказчиков
+          .analytics__footer
+            .analytics__cost от 50 000 руб / 10 дней
+            a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+        .analytics__item
+          .analytics__title
+            img(src="../img/web-2.png").analytics__img
+            .analytics__name Интернет-магазин
+          .analytics__content
+            p Современный интернет-магазин с возможностью оплаты товаров онлайн
+          .analytics__footer
+            .analytics__cost от 95 000 руб / 25 дней
+            a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+        .analytics__item
+          .analytics__title
+            img(src="../img/web-3.png").analytics__img
+            .analytics__name Landing Page
+          .analytics__content
+            p Посадочная страница для превращения посетителей в клиентов
+          .analytics__footer
+            .analytics__cost от 40 000 руб / 7 дней
+            a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+      .analytics__block
+        .analytics__item
+          .analytics__title
+            img(src="../img/web-4.png").analytics__img
+            .analytics__name Сайт-визитка
+          .analytics__content
+            p Корпоративный сайт, который удовлетворит потребности 90% заказчиков
+          .analytics__footer
+            .analytics__cost от 40 000 руб / 10 дней
+            a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+        .analytics__item
+          .analytics__title
+            img(src="../img/web-5.png").analytics__img
+            .analytics__name Веб-портал
+          .analytics__content
+            p Современный интернет-магазин с возможностью оплаты товаров онлайн
+          .analytics__footer
+            .analytics__cost от 100 000 руб / 20 дней
+            a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+        .analytics__item
+          .analytics__title
+            img(src="../img/web-6.png").analytics__img
+            .analytics__name Эксклюзивный сайт
+          .analytics__content
+            p Посадочная страница для превращения посетителей в клиентов
+          .analytics__footer
+            .analytics__cost от 200 000 руб / 25 дней
+            a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+
+
+
+
+      .analytics__more
+        .analytics__more_title Не нашли нужную услугу?
+        .analytics__more_information Звоните по телефону: <a href="tel:+74959999999">+7(495) 999-99-99</a>
+  .features
+    .features__block
+      .features__grid
+        .features__prev
+          img.features__img(src="../img/web-bg.png")
+      .features__grid
+        .features__title Особенности разработки мобильных приложений у нас
+        .features__criteria
+          .features__item
+            .features__det
+              img.features__icon(src="../img/features-1.png")
+            .features__subtitle Просто
+            .features__text Посетитель вашего сайта за 3 секунды поймет, что он нашел то, что искал, и приступит к выбору товаров или услуг
+          .features__item
+            .features__det
+              img.features__icon(src="../img/features-2.png")
+            .features__subtitle Удобно
+            .features__text Благодаря налаженным процессам работы в компании запуск сайта осуществляется в максимально короткие сроки
+          .features__item
+            .features__det
+              img.features__icon(src="../img/features-3.png")
+            .features__subtitle Стильно
+            .features__text Посетитель вашего сайта за 3 секунды поймет, что он нашел то, что искал, и приступит к выбору товаров или услуг
+          .features__item
+            .features__det
+              img.features__icon(src="../img/features-4.png")
+            .features__subtitle Эффективно
+            .features__text Благодаря налаженным процессам работы в компании запуск сайта осуществляется в максимально короткие сроки
+  .features__footer
+    .g-wrapper
+      .features__content
+        .features__callback Закажите обратный звонок и задайте уточняющие вопросы!
+        a.feedback__submit(href="#") <span>Подробнее</span>
+  include blocks/_circle-portfolio.pug
+  include blocks/_steps.pug
+  include blocks/_thanks.pug
+  include blocks/_feedback.pug
+
