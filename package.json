@@ -21,6 +21,7 @@
     "gulp-pug": "^3.3.0",
     "gulp-stylus": "^2.6.0",
     "gulp-watch": "^4.3.11",
+    "swiper": "^3.4.2",
     "webpack": "^3.4.0"
   },
   "babel": {
