@@ -1,8 +1,13 @@
 extends _templates/_main
 
 block vars
-  - var pageTitle = 'Welcome'
+  - var pageTitle = 'Контакты'
+  - var customHeader = true
 
+block header
+  .g-wrapper
+    .promotion
+      .promotion__title Контакты
 block content
   .feedback
     .g-wrapper
