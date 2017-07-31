@@ -8,7 +8,8 @@
     "gulp": "./node_modules/.bin/gulp",
     "demo": "./node_modules/.bin/browser-sync start -s ./dest --tunnel",
     "webpack": "./node_modules/.bin/webpack -w",
-    "dev": "yarn gulp & yarn webpack"
+    "dev": "yarn gulp & yarn webpack",
+    "deploy": "now ./dest -p && now ln"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -28,5 +29,9 @@
     "presets": [
       "env"
     ]
+  },
+  "now": {
+    "alias": "spacecode",
+    "name": "dest"
   }
 }
