@@ -1,0 +1,16 @@
+extends _templates/_main
+
+block vars
+  - var pageTitle = 'Портфолио'
+  - var customHeader = true
+  - var headerHeight = 400
+
+block header
+  .portfolio__top
+    .portfolio__header Портфолио
+
+block content
+  include blocks/_portfolio-big.pug
+  include blocks/_feedback.pug
+
+

@@ -1,5 +1,18 @@
 .portfolio
   padding-top 70px
+  &__header
+    color: #ffffff;
+    font-family: "Gotham Pro";
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+  &__top
+    text-align center
+    width 100%
+  &_min &__block:nth-child(n+6)
+    display none
+  &_min &__block:last-child
+    display flex
   &__buttons
     display flex
     flex-wrap: wrap
@@ -39,10 +52,8 @@
     position relative
     overflow hidden
     padding-left 2%
-    &:nth-child(n+6)
-      display none
     &:last-child
-      display flex
+      display none
     &_last
       justify-content:  center
     &:hover ^[0]__image
