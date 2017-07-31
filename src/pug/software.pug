@@ -1,0 +1,92 @@
+extends _templates/_main
+
+block vars
+  - var pageTitle = 'Разработка и интеграция ПО SPACECODE'
+  - var customHeader = true
+
+block header
+  .g-wrapper
+    .promotion
+      .promotion__title Разработка и интеграция ПО
+      .promotion__block
+        .promotion__item .NET разработка
+        .promotion__item Java разработка
+        .promotion__item Разработка BI-систем
+        .promotion__item Разработка IOT решений
+        .promotion__item Data-mining
+        .promotion__item Сложные веб-интерфейсы
+      a.feedback__submit: span Выбрать решение
+
+block content
+  .prices
+    .g-wrapper
+      .shadow-text.shadow(data-text="Цены на услуги") Цены на услуги
+      .software__block
+        .software__item
+          .software__content
+            .software__title
+              img.software__img(src="../img/software-1.png")
+              .software__name Java разработка
+            .software__skills
+              .software__skill
+                .software__skill_name Frameworks
+                .software__skill_about Spring MVC, Play Framework, Apache Struts 2, Apache Wicket,  Apache  Tapestry, Google Web Toolkit
+              .software__skill
+                .software__skill_name Application/Web Servers
+                .software__skill_about Jetty, Tomcat, Oracle WebLogic Server, IBM, GlassFish, WebSpere Application Server, Ref Hat WildFly
+              .software__skill
+                .software__skill_name Javascript frameworks
+                .software__skill_about AngularJS, Angular 2, React & Redux
+              .software__skill
+                .software__skill_name Data Storage
+                .software__skill_about Oracle, Microsoft SQL Server, MySQL, PostgreSQL, MongoDB
+              .software__skill
+                .software__skill_name Messaging & Service buses
+                .software__skill_about AngularJS, Angular 2, React & Redux
+              .software__skill
+                .software__skill_name Operating Systems
+                .software__skill_about Microsoft Windows, Linux, Mac OS
+          .software__footer
+            .software__cost от 500 000 руб.
+            a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+
+
+
+  .features
+    .features__block
+      .features__grid
+        .features__prev
+          img.features__img(src="../img/service-device.png")
+      .features__grid
+        .features__title Особенности разработки мобильных приложений у нас
+        .features__criteria
+          .features__item
+            .features__det
+              img.features__icon(src="../img/features-1.png")
+            .features__subtitle Просто
+            .features__text Посетитель вашего сайта за 3 секунды поймет, что он нашел то, что искал, и приступит к выбору товаров или услуг
+          .features__item
+            .features__det
+              img.features__icon(src="../img/features-2.png")
+            .features__subtitle Удобно
+            .features__text Благодаря налаженным процессам работы в компании запуск сайта осуществляется в максимально короткие сроки
+          .features__item
+            .features__det
+              img.features__icon(src="../img/features-3.png")
+            .features__subtitle Стильно
+            .features__text Посетитель вашего сайта за 3 секунды поймет, что он нашел то, что искал, и приступит к выбору товаров или услуг
+          .features__item
+            .features__det
+              img.features__icon(src="../img/features-4.png")
+            .features__subtitle Эффективно
+            .features__text Благодаря налаженным процессам работы в компании запуск сайта осуществляется в максимально короткие сроки
+  .features__footer
+    .g-wrapper
+      .features__content
+        .features__callback Закажите обратный звонок и задайте уточняющие вопросы!
+        a.feedback__submit(href="#") <span>Подробнее</span>
+  include blocks/_circle-portfolio.pug
+  include blocks/_steps.pug
+  include blocks/_thanks.pug
+  include blocks/_feedback.pug
+
