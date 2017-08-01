@@ -1,5 +1,5 @@
 const rand = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
-const starImage = 'https://constellation.standuptocancer.org/assets/star-facbd92545e601590a94bd3fd813f643.png';
+const starImage = '/img/script-star.png';
 const header = document.querySelector('.header')
 header.style.position = 'relative';
 
