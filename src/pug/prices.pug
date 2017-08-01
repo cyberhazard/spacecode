@@ -1,0 +1,283 @@
+extends _templates/_main
+
+block vars
+  - var pageTitle = 'Цены SPACECODE'
+  - var customHeader = true
+
+block header
+  .g-wrapper
+    .promotion
+      .promotion__title Цены
+block content
+  .prices.nopad
+    .g-wrapper
+      .shadow-text.shadow(data-text="Разработка сайтов") Разработка сайтов
+      .analytics__block.website__block
+        .analytics__item
+          .analytics__title
+            img(src="../img/web-1.png").analytics__img
+            .analytics__name Информационный сайт
+          .analytics__content
+            p Корпоративный сайт, который удовлетворит потребности 90% заказчиков
+          .analytics__footer
+            .analytics__cost от 50 000 руб / 10 дней
+            a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+        .analytics__item
+          .analytics__title
+            img(src="../img/web-2.png").analytics__img
+            .analytics__name Интернет-магазин
+          .analytics__content
+            p Современный интернет-магазин с возможностью оплаты товаров онлайн
+          .analytics__footer
+            .analytics__cost от 95 000 руб / 25 дней
+            a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+        .analytics__item
+          .analytics__title
+            img(src="../img/web-3.png").analytics__img
+            .analytics__name Landing Page
+          .analytics__content
+            p Посадочная страница для превращения посетителей в клиентов
+          .analytics__footer
+            .analytics__cost от 40 000 руб / 7 дней
+            a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+      .analytics__block
+        .analytics__item
+          .analytics__title
+            img(src="../img/web-4.png").analytics__img
+            .analytics__name Сайт-визитка
+          .analytics__content
+            p Корпоративный сайт, который удовлетворит потребности 90% заказчиков
+          .analytics__footer
+            .analytics__cost от 40 000 руб / 10 дней
+            a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+        .analytics__item
+          .analytics__title
+            img(src="../img/web-5.png").analytics__img
+            .analytics__name Веб-портал
+          .analytics__content
+            p Современный интернет-магазин с возможностью оплаты товаров онлайн
+          .analytics__footer
+            .analytics__cost от 100 000 руб / 20 дней
+            a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+        .analytics__item
+          .analytics__title
+            img(src="../img/web-6.png").analytics__img
+            .analytics__name Эксклюзивный сайт
+          .analytics__content
+            p Посадочная страница для превращения посетителей в клиентов
+          .analytics__footer
+            .analytics__cost от 200 000 руб / 25 дней
+            a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+    .g-wrapper
+      .shadow-text.shadow(data-text="Разработка ПО") Разработка ПО
+      .software__block
+        .software__item
+          .software__content
+            .software__title
+              img.software__img(src="../img/software-1.png")
+              .software__name Java разработка
+            .software__skills
+              .software__skill
+                .software__skill_name Frameworks
+                .software__skill_about Spring MVC, Play Framework, Apache Struts 2, Apache Wicket,  Apache  Tapestry, Google Web Toolkit
+              .software__skill
+                .software__skill_name Application/Web Servers
+                .software__skill_about Jetty, Tomcat, Oracle WebLogic Server, IBM, GlassFish, WebSpere Application Server, Ref Hat WildFly
+              .software__skill
+                .software__skill_name Javascript frameworks
+                .software__skill_about AngularJS, Angular 2, React & Redux
+              .software__skill
+                .software__skill_name Data Storage
+                .software__skill_about Oracle, Microsoft SQL Server, MySQL, PostgreSQL, MongoDB
+              .software__skill
+                .software__skill_name Messaging & Service buses
+                .software__skill_about AngularJS, Angular 2, React & Redux
+              .software__skill
+                .software__skill_name Operating Systems
+                .software__skill_about Microsoft Windows, Linux, Mac OS
+          .software__footer
+            .software__cost от 300 000 руб.
+            a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+        .software__separator
+          img(src="../img/mini-planet.png").software__separator_img
+        .software__item
+          .software__content
+            .software__title
+              img.software__img(src="../img/software-2.png")
+              .software__name .NET разработка
+            .software__skills
+              .software__skill
+                .software__skill_name Frameworks
+                .software__skill_about Microsoft ASP.NET MVC & Web Forms, ServiceStack Framework
+              .software__skill
+                .software__skill_name Windows Forms
+                .software__skill_about Microsoft Windows Forms, DevExpress WinForms, Telerik UI for WinForms
+              .software__skill
+                .software__skill_name CMS
+                .software__skill_about Orchard CMS, Umbaco CMS DotNetNuke
+              .software__skill
+                .software__skill_name Office
+                .software__skill_about Microsoft Apps For Office, Visual Studio Tools for Office (VSTO)
+              .software__skill
+                .software__skill_name Infrastructure
+                .software__skill_about Managed Extensibility Framework (MEF)
+              .software__skill
+                .software__skill_name Window Presentation Foundation
+                .software__skill_about Microsoft WPF, DevExpress WPF, Telerik UI for WPF
+              .software__skill
+                .software__skill_name UI components
+                .software__skill_about DevExpress ASP.NET MVC & AJAX, Teletik UI for ASP.NET MVC & AJAX
+              .software__skill
+                .software__skill_name Messaging & Service buses
+                .software__skill_about Microsoft Message Queuing (MSMQ), NserviceBus, MassTransit, RabbitMQ
+          .software__footer
+            .software__cost от 500 000 руб.
+            a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+        .software__separator
+          img(src="../img/mini-planet.png").software__separator_img
+        .software__item
+          .software__content
+            .software__title
+              img.software__img(src="../img/software-3.png")
+              .software__name Разработка BI-систем
+            .software__skills
+              .software__skill
+                .software__skill_name Дата-майнинг
+                .software__skill_about Извлечение данных для эффективного решения бизнес-задач
+              .software__skill
+                .software__skill_name Обработка потоковых данных
+                .software__skill_about Обработка больших потоков событий в реальном времени
+              .software__skill
+                .software__skill_name Агрегирование данных
+                .software__skill_about Сбор и хранение данных из различных источников в реальном времени
+              .software__skill
+                .software__skill_name Машинное обучение
+                .software__skill_about Автоматическое выявление закономерностей в данных
+              .software__skill
+                .software__skill_name Обработка больших данных
+                .software__skill_about Обработка больших объемов неструктурированных данных
+              .software__skill
+                .software__skill_name Предиктивная аналитика
+                .software__skill_about Создание прогнозов с целью принятия оптимальных бизнес-решений
+          .software__footer
+            .software__cost от 1 500 000 руб.
+            a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+
+  .g-wrapper
+    .shadow-text.shadow(data-text="Цены на продвижение") Цены на продвижение
+    .prices__block
+      .prices__item
+        .prices__title
+          img(src="../img/prices-1.png").prices__img
+          .prices__name Контекстная реклама в Яндекс и Google
+        .prices__content
+          p Являемся сертифицированным партнером Яндекса
+          p Привлекаем заинтересованных пользователей
+          p Снижаем срендюю стоимость привлеченного клиента
+          p Предоставляем прозрачную и понятную статистику без лишних данных
+          p Повышаем рентабильность инвестиций благодаря снижению стоимости конверсии
+        .prices__footer
+          .prices__cost от 30 000 руб.
+          a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+      .prices__item
+        .prices__title
+          img(src="../img/prices-2.png").prices__img
+          .prices__name SEO-продвижение
+        .prices__content
+          p Наши KPI - это трафик на Ваш сайт из поисковых систем Яндекс и Google
+          p Если просто, мы беремся за самое важное для Вас - Ваш поисковой трафик. Наша цель - рост трафика
+          p Больше трафика -> Больше конверсий -> Больше продаж
+          p Совсем простая формула, не так ли?
+          p Основываемся на Google Analytics
+        .prices__footer
+          .prices__cost 30 000 руб. + KPI
+          a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+      .prices__item
+        .prices__title
+          img(src="../img/prices-3.png").prices__img
+          .prices__name Сквозная аналитика
+        .prices__content
+          p Настраиваем аналитику, которая показывает эффективность рекламы в 1 клик
+          p Предоставляем интерактивную статистику на основе новейших технологий Microsoft
+          p Показываем реальное количество продаж по каждому рекламному источнику и стоимость одного привлеченного клиента
+        .prices__footer
+          .prices__cost от 20 000 руб.
+          a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+      .prices__item
+        .prices__title
+          img(src="../img/prices-4.png").prices__img
+          .prices__name Партнерские отношения
+        .prices__content
+          p Наши KPI - это трафик на Ваш сайт из поисковых систем Яндекс и Google
+          p Если просто, мы беремся за самое важное для Вас - Ваш поисковой трафик. Наша цель - рост трафика
+          p Больше трафика -> Больше конверсий -> Больше продаж
+          p Совсем простая формула, не так ли?
+          p Основываемся на Google Analytics
+        .prices__footer
+          .prices__cost от 30 000 руб.
+          a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+
+  .g-wrapper
+      .shadow-text.shadow(data-text="Мобильная разработка") Мобильная разработка
+      .analytics__block
+        .analytics__item
+          .analytics__title
+            img(src="../img/mobile-1.png").analytics__img
+            .analytics__name Разработка на iOS
+          .analytics__content
+            p Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum стандартное
+          .analytics__footer
+            .analytics__cost от 140 000 руб / от 30 дней
+            a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+        .analytics__item
+          .analytics__title
+            img(src="../img/mobile-2.png").analytics__img
+            .analytics__name Разработка на Android
+          .analytics__content
+            p Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum стандартное
+          .analytics__footer
+            .analytics__cost от 100 000 руб / от 30 дней
+            a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+        .analytics__item
+          .analytics__title
+            img(src="../img/mobile-3.png").analytics__img
+            .analytics__name Интеграция приложений
+          .analytics__content
+            p Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum стандартное
+          .analytics__footer
+            .analytics__cost от 150 000 руб / от 30 дней
+            a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+
+  .g-wrapper
+      .shadow-text.shadow(data-text="Цены на услуги") Цены на услуги
+      .analytics__block
+        .analytics__item
+          .analytics__title
+            img(src="../img/analytics-1.png").analytics__img
+            .analytics__name Разработка стратегии присутствия в интернете
+          .analytics__content
+            p Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum стандартное
+          .analytics__footer
+            .analytics__cost от 30 000 руб.
+            a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+        .analytics__item
+          .analytics__title
+            img(src="../img/analytics-2.png").analytics__img
+            .analytics__name  Комплексный <br> аудит сайта
+          .analytics__content
+            p Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum стандартное
+          .analytics__footer
+            .analytics__cost 30 000 руб. + KPI
+            a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+        .analytics__item
+          .analytics__title
+            img(src="../img/analytics-3.png").analytics__img
+            .analytics__name Подбор и проектирование <br> ИТ систем
+          .analytics__content
+            p Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum стандартное
+          .analytics__footer
+            .analytics__cost от 20 000 руб.
+            a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+      .analytics__more.pluspad
+        .analytics__more_title Не нашли нужную услугу?
+        .analytics__more_information Звоните по телефону: <a href="tel:+74959999999">+7(495) 999-99-99</a>
