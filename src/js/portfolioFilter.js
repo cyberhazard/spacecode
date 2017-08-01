@@ -5,13 +5,22 @@ export default () => {
   const content = document.querySelector('.portfolio__blocks');
   const lastBlock = blocks.slice(-1)[0];
   const selected = 'portfolio__button_selected';
+  content.style.overflow = 'hidden';
   if(buttons && blocks){
     const render = (tag) => {
       if(tag == 'all') out = blocks
       else out = blocks.filter(block=>block.dataset.tag == tag);
       out.push(lastBlock);
       content.innerHTML = "";
-      out.forEach(el=>content.appendChild(el))
+      out.forEach((el, i) => {
+        el.style.position = 'relative';
+        el.style.opacity = 0;
+        el.style.transition = '.5s';
+        if(i%2==0) el.style.transform = 'translateX(-140px)';
+        else el.style.transform = 'translateX(140px)';
+      });
+      out.forEach(el=>content.appendChild(el));
+      out.forEach(el=>setTimeout(()=>(el.style.transform = 'translateX(0)',el.style.opacity = 1),0))
     };
     buttons.forEach(button=>button.addEventListener('click', (e)=>{
       let target = e.target;
