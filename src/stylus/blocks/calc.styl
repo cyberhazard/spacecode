@@ -1,0 +1,103 @@
+.calc
+  padding-top 140px
+  &__header
+    color: #17171d;
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 46px;
+    position relative
+    margin-bottom 60px
+    &:before
+      content: ""
+      display block
+      position absolute
+      top 51%
+      right calc(100% + 12px)
+      width 37px
+      border 1px solid #000
+  &__content
+    display flex
+    flex-wrap: wrap
+  &__title
+    color: #17171d;
+    font-family: Lato;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom 36px
+  &__col
+    flex-basis: calc(100% / 12 * 4)
+    margin-bottom 16px
+    padding-left 44px
+    &:last-child
+      display flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      padding-left 0
+  &__item
+    margin-bottom 24px
+  &__info
+    position relative
+    top 2px
+    left 4px
+  &__price
+    color: #17171d;
+    font-family: Lato;
+    font-size: 34px;
+    font-weight: 400;
+  &__out
+    font-family: "Gotham Pro";
+    font-size: 64px;
+    font-weight: 700;
+  &__checkbox
+    display none
+    &:checked + label:before
+      background: url('/img/chbox-1.png') center center no-repeat
+  &__label
+    color: #17171d;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left 28px
+    position relative
+    user-select none
+    cursor: pointer
+    &:before
+      content: ''
+      position absolute
+      top -2px
+      right calc(100% + 6px)
+      width 23px
+      height 23px
+      transition: .3s
+      background url('/img/chbox-0.png') center center no-repeat
+  &__footer
+    text-align center
+    padding-top 60px
+    position relative
+  &__footer-img
+    position absolute
+    z-index -1
+    &_1
+      top -88px
+      left -150px
+    &_2
+      top -16px
+      right -150px
+  &__footer-header
+    display inline-block
+    color: #17171d;
+    font-family: "Gotham Pro";
+    font-size: 40px;
+    font-weight: 700;
+    position relative
+  &__phone
+    color: #17171d;
+    font-family: "Gotham Pro";
+    font-size: 30px;
+    line-height: 60px;
+    font-weight: 400;
+    padding 30px 0 120px
+    &_bold
+      font-weight: 700;

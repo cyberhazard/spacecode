@@ -1,0 +1,65 @@
+.calc
+  .g-wrapper
+    .shadow-text(data-text="Калькулятор стоимости") Калькулятор стоимости
+    .calc__header Выберите, дизайн чего Вам нужно разработать #[br] и узнайте предварительную стоимость
+    .calc__content
+      - var counter = 0
+      mixin calcItem(name, price, info)
+        .calc__item
+          input.calc__checkbox(type="checkbox" id=`calc-${counter}` data-price=price)
+          label.calc__label(for=`calc-${counter++}`)= name
+          - if(info)
+            img.calc__info(src="/img/info.png" title=info)
+      .calc__col
+        .calc__title Элементы фирменного стиля:
+        +calcItem('Логотип',100, 'Информация о логотипе')
+        +calcItem('Визитные карточки',100)
+        +calcItem('Оформление групп в соц. сетях',100)
+        +calcItem('Презентация',100)
+        +calcItem('Шаблон email письма',100)
+      .calc__col
+        .calc__title Рекламная продукция:
+        +calcItem('Автотранспорт',100)
+        +calcItem('Выставочный стенд',100)
+        +calcItem('Типовая листовка/флаер',100)
+        +calcItem('Дизайн палатки',100)
+        +calcItem('Евробуклет',100)
+        +calcItem('Бигборд',100, 'Круто! Жму руку!')
+      .calc__col
+        .calc__title Веб-дизайн:
+        +calcItem('Дизайн сайта',100)
+        +calcItem('Дизайн групп в соц. сетях',100)
+        +calcItem('Дизайн мобильных приложений',100)
+        +calcItem('Дизайн интерфейса',100)
+        +calcItem('Дизайн рекламных баннеров',100)
+        +calcItem('Дизайн промо-постов',100)
+      .calc__col
+        .calc__title Деловая документация:
+        +calcItem('Фирменный бланк',100)
+        +calcItem('Папка для документов',100)
+        +calcItem('Конверт',100)
+        +calcItem('Бейдж',100)
+        +calcItem('Поздравительная открытка',100)
+        +calcItem('Шаблон приглашения',100)
+        +calcItem('Титульный лист',100)
+        +calcItem('Факс-бланк',100)
+      .calc__col
+        .calc__title Сувенирная продукция:
+        +calcItem('Фирменная ручка/карандаш',100)
+        +calcItem('Блокнот',100)
+        +calcItem('Кружка/стакан',100)
+        +calcItem('Спецодежда',100)
+        +calcItem('Флешка',100)
+        +calcItem('Флаг',100)
+        +calcItem('Пепельница',100)
+        +calcItem('Зажигалка',100)
+        +calcItem('Квартальный календарь',100)
+        +calcItem('Магнит',100)
+      .calc__col
+        .calc__title Ориентировочная стоимость работ:
+        .calc__price =&nbsp;#[span.calc__out 0]&nbsp;руб.
+    .calc__footer
+      .calc__footer-header Не нашли нужную услугу?
+        img.calc__footer-img.calc__footer-img_1(src='/img/calc-f-l.png')
+        img.calc__footer-img.calc__footer-img_2(src='/img/calc-f-r.png')
+      .calc__phone Звоните по телефону: #[span.calc__phone_bold +7(495) 999-99-99]
