@@ -4,6 +4,7 @@ const header = document.querySelector('.header')
 header.style.position = 'relative';
 
 export const startGlow = () => {
+  if(!header) return null;
   for(let i = 0; i<50; i++){
     let star = new Image();
     star.src = starImage;
