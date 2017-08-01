@@ -3,6 +3,7 @@ export default () => {
   const blocks = [...document.querySelectorAll('.portfolio__block')];
   let out = [];
   const content = document.querySelector('.portfolio__blocks');
+  if(!content) return null;
   const lastBlock = blocks.slice(-1)[0];
   const selected = 'portfolio__button_selected';
   content.style.overflow = 'hidden';
