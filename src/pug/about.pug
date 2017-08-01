@@ -1,0 +1,43 @@
+extends _templates/_main
+
+block vars
+  - var pageTitle = 'О студии SPACECODE'
+  - var customHeader = true
+
+block header
+  .g-wrapper
+    .promotion
+      .promotion__title О студии
+block content
+  .thanks
+    .g-wrapper
+      .shadow-text.shadow-text_light(data-text="Кто такие SPACECODE?") Кто такие SPACECODE?
+      .about__block
+        .about__grid
+          img(src="../img/gambit.jpeg")
+        .about__grid
+          .about__text Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст... Здесьваш текст. Здесь"
+  .about
+    .about__wrap
+      img(src="../img/about-1.png").about__img
+    .g-wrapper
+      .shadow-text(data-text="") SPACECODE - интернет агентство полного цикла
+      .about__title.about__center Что это значит и чем МЫ отличаемся от веб-студии?
+    .about__wrap
+      img(src="../img/about-2.png").about__img
+    .about__wrap
+      img(src="../img/about-3.png").about__img
+  .g-wrapper
+      .shadow-text(data-text="Структура агентства") Структура агентства
+  .about__wrap
+      img(src="../img/about-4.png").about__img
+  .g-wrapper
+      .shadow-text(data-text="Качественный продукт") Качественный продукт
+      .about__block
+        .about__grid
+          img(src="../img/about-5.png").about__img_cubick
+        .about__grid
+          .about__anonce Повышение конверсии в покупателей
+          .about__anonce Снижение стоимомти привлеченного клиента
+          .about__anonce Стабильность процессов за счет внедрения автоматизированных процессов
+          .about__anonce Точки присутствия аудитории в интернете и регулярную работу с ними
