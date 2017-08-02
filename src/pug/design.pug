@@ -1,0 +1,60 @@
+extends _templates/_main
+
+block vars
+  - var pageTitle = 'Дизайн и айдентика SPACECODE'
+  - var customHeader = true
+
+block header
+  .g-wrapper
+    .promotion
+      .promotion__title Дизайн и айдентика
+      .promotion__block
+        .promotion__item Промышленный дизайн
+        .promotion__item Веб-дизайн
+        .promotion__item Дизайн приложений
+        .promotion__item Айдентика
+        .promotion__item 3D визуализация
+        .promotion__item Дизайн интерфейсов
+        .promotion__item Оформление презентаций
+        .promotion__item Создание видео
+      a.feedback__submit: span Выбрать решение
+
+block content
+  include blocks/_calc.pug
+  .features
+    .features__block
+      .features__grid
+        .features__prev
+          img.features__img(src="../img/web-bg.png")
+      .features__grid
+        .features__title Особенности создания дизайна у нас
+        .features__criteria
+          .features__item
+            .features__det
+              img.features__icon(src="../img/features-1.png")
+            .features__subtitle Просто
+            .features__text Посетитель вашего сайта за 3 секунды поймет, что он нашел то, что искал, и приступит к выбору товаров или услуг
+          .features__item
+            .features__det
+              img.features__icon(src="../img/features-2.png")
+            .features__subtitle Удобно
+            .features__text Благодаря налаженным процессам работы в компании запуск сайта осуществляется в максимально короткие сроки
+          .features__item
+            .features__det
+              img.features__icon(src="../img/features-3.png")
+            .features__subtitle Стильно
+            .features__text Посетитель вашего сайта за 3 секунды поймет, что он нашел то, что искал, и приступит к выбору товаров или услуг
+          .features__item
+            .features__det
+              img.features__icon(src="../img/features-4.png")
+            .features__subtitle Эффективно
+            .features__text Благодаря налаженным процессам работы в компании запуск сайта осуществляется в максимально короткие сроки
+  .features__footer
+    .g-wrapper
+      .features__content
+        .features__callback Закажите обратный звонок и задайте уточняющие вопросы!
+        a.feedback__submit(href="#") <span>Подробнее</span>
+  include blocks/_circle-portfolio.pug
+  include blocks/_steps.pug
+  include blocks/_thanks.pug
+  include blocks/_feedback.pug
