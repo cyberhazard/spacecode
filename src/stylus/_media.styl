@@ -152,8 +152,13 @@
     font-size 34px
     &:before
       font-size 34px
-  .header__top
-    display none
+  .header
+    &__top
+      display none
+    &__title
+      font-size 32px
+    &__text
+      font-size 16px
   .services__item
     flex-basis: 100%
   .portfolio
@@ -208,6 +213,11 @@
   .calc
     &__col
       flex-basis: calc(100% / 12 * 12)
+  .feedback
+    &__block
+      display block
+  .clients, .blog
+    background-size inherit
 
 
 
