@@ -39,8 +39,14 @@
   .team
     &__block
       flex-wrap: wrap
+    &__post
+      margin-bottom 20px
+    &__img
+      margin-bottom 20px
     &__person
       flex-basis: 100%
+      margin-right 0
+      margin-bottom 60px
   .clients
     &__item
       flex-basis: 50%
@@ -50,6 +56,8 @@
     &__item
       flex-basis: 100%
       padding 12px
+      margin-bottom 40px
+      margin-right 0
   .feedback
     &__block
       flex-direction: column
@@ -75,6 +83,7 @@
       flex-direction: column
     &__grid
       padding 0 12px
+      margin-bottom 20px
   .calc__footer img
     display none
   .analytics__block
@@ -91,3 +100,41 @@
   .feedback__name:after
     width 100%
     bottom -4px
+  .analytics
+    &__item
+      flex-basis: 50%
+  .prices
+    padding-left 12px
+    padding-right 12px
+  .features
+    &__grid
+      flex-basis: 100%
+      padding 0 12px
+      &:first-child
+        display none
+  .made
+    &__block
+      padding 0 12px
+  .steps
+    &__image
+      display none
+    &__content
+      display flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      padding 0 12px
+    &__planet
+      display none
+    &__number_1
+      padding-left 30px
+    &__step
+      width 100%
+      position static
+      & .steps__description
+        width 100%
+  .calc
+    padding-left 12px
+    padding-right 12px
+    &__col
+      flex-basis: calc(100% / 12 * 6)
