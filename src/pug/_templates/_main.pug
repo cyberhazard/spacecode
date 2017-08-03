@@ -12,6 +12,7 @@ html(lang="ru")
     title= pageTitle
   body
     .wrapper
+      include ../blocks/_callback.pug
       header.header(style=headerHeight && 'height:'+headerHeight+'px')
         .header__top
           a(href='/')
@@ -42,7 +43,7 @@ html(lang="ru")
               a.menu__link(href="/contacts.html") Контакты
           .header__contacts
             a.header__phone.header__phone_margin(href="tel:+74959999999") +7 (495) #[span.header__phone_big 999-99-99]
-            button.header__button #[span Заказать звонок]
+            button.header__button#header-button #[span Заказать звонок]
         .header__main
           if (!customHeader)
             .header__about
