@@ -1,5 +1,6 @@
 export default () => {
   const button  = document.querySelector('#header-button');
+  const mobileButton  = document.querySelector('#mobile-menu-button');
   const form = document.querySelector('#callback-form');
   const layout = document.querySelector('.callback');
   const closeButton = document.querySelector('.callback__close');
@@ -16,7 +17,8 @@ export default () => {
     layout.addEventListener('transitionend', layoutClose);
   };
 
-  button.onclick = () => {
+  button.onclick = mobileButton.onclick = () => {
+    console.log('click')
     layout.style.display = 'flex';
     form.reset();
     document.body.style.paddingRight = window.innerWidth - document.body.clientWidth + 'px';

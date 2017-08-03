@@ -13,6 +13,7 @@ html(lang="ru")
   body
     .wrapper
       include ../blocks/_callback.pug
+      include ../blocks/_mobile-menu.pug
       header.header(style=headerHeight && 'height:'+headerHeight+'px')
         .header__top
           a(href='/')
@@ -88,4 +89,5 @@ html(lang="ru")
               a.footer__contacts.footer__contacts_phone(href="tel:+74959999999") +7 (495) 999-99-99
               a.footer__contacts.footer__contacts_mail(href="mailto:info@spacecode.ru") info@spacecode.ru
               .footer__contacts.footer__contacts_address г. Москва, ул. Большая тульская, дом 17, офис 36
+    button.hamburger
     script(src="/js/bundle.js")
