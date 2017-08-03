@@ -9,7 +9,7 @@
   .menu
     width 100%
     justify-content: center
-    margin 12px 0
+    margin 12px 0 20px
     &__submenu
       background-color rgba(41,39,50,1)
   .header
@@ -37,6 +37,7 @@
     &__text
       font-size 15px
   .team
+    padding 100px 0 0 0
     &__block
       flex-wrap: wrap
     &__post
@@ -104,8 +105,9 @@
     &__item
       flex-basis: 50%
   .prices
-    padding-left 12px
-    padding-right 12px
+    padding 100px 12px 100px 12px
+    &:nth-child(n+2)
+      padding 0 12px 100px 12px
   .features
     &__grid
       flex-basis: 100%
@@ -138,3 +140,7 @@
     padding-right 12px
     &__col
       flex-basis: calc(100% / 12 * 6)
+  .services
+    padding-top 100px
+  .thanks
+    padding 100px 0 100px 0
