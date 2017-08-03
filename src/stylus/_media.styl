@@ -145,6 +145,13 @@
   .thanks
     padding 100px 0 100px 0
 @media (max-width: 700px)
+  .wrapper
+    width 100%
+    overflow-x: hidden
+  .shadow-text
+    font-size 34px
+    &:before
+      font-size 34px
   .header__top
     display none
   .services__item
@@ -157,13 +164,50 @@
       top 0
     &__button
       margin 0 20px 15px 0
+    &__header
+      font-size: 26px
+    &__text
+      font-size: 12px
   .clients__item
     flex-basis: 100%
+  .promotion
+    &__block
+      flex-wrap: wrap
+    &__item
+      flex-basis: 100%
   .navigation
     flex-wrap wrap
     &__col
       flex-basis: 50%;
       margin-right 0
+      &:last-child
+        flex-basis: 100%;
+  .about__grid img
+    width 100%
+  .analytics__item
+    flex-basis: 100%
+  .features
+    &__item
+      flex-basis: 100%
+    &__footer
+      height: auto
+    &__callback
+      margin 0 0 20px 0
+    &__content
+      flex-wrap: wrap
+  .made__block
+    justify-content: center
+  .prices
+    &__block
+      justify-content: center
+  .software
+    &__skill
+      flex-basis: 100%
+    &__footer
+      flex-wrap: wrap
+  .calc
+    &__col
+      flex-basis: calc(100% / 12 * 12)
 
 
 
