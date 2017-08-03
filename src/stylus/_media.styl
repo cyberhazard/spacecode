@@ -106,8 +106,6 @@
       flex-basis: 50%
   .prices
     padding 100px 12px 100px 12px
-    &:nth-child(n+2)
-      padding 0 12px 100px 12px
   .features
     &__grid
       flex-basis: 100%
@@ -118,8 +116,13 @@
     &__block
       padding 0 12px
   .steps
+    padding: 140px 0 100px 0;
     &__image
       display none
+    &__header
+      font-size: 28px
+    &__text
+      font-size 16px
     &__content
       display flex
       flex-direction: column
@@ -133,6 +136,7 @@
     &__step
       width 100%
       position static
+      margin-bottom 24px
       & .steps__description
         width 100%
   .calc
@@ -143,7 +147,7 @@
   .services
     padding-top 100px
   .thanks
-    padding 100px 0 100px 0
+    padding 100px 0 0 0
 @media (max-width: 700px)
   .wrapper
     width 100%
@@ -157,8 +161,11 @@
       display none
     &__title
       font-size 32px
+      line-height: 36px
     &__text
       font-size 16px
+    &__main
+      height: auto
   .services__item
     flex-basis: 100%
   .portfolio
@@ -189,35 +196,73 @@
         flex-basis: 100%;
   .about__grid img
     width 100%
-  .analytics__item
-    flex-basis: 100%
+  .analytics
+    &__block
+      margin-bottom 60px
+    &__item
+      flex-basis: 100%
+      padding: 40px 0 0px 0;
+      margin-bottom 50px
+    &__content
+      margin-bottom: 4px
+    &__title
+      margin-bottom 4px
+    &__img
+      margin-bottom 4px
   .features
+    padding 60px 0 0 0
     &__item
       flex-basis: 100%
     &__footer
       height: auto
+    &__content
+      padding: 30px 0 30px 0;
     &__callback
       margin 0 0 20px 0
+      width 100%
+      text-align: center
+      font-size: 30px
     &__content
       flex-wrap: wrap
-  .made__block
-    justify-content: center
+  .made
+    padding 80px 0 0 0
+    background-size inherit
+    &__block
+      justify-content: center
+    &__item
+      flex-basis 100%
   .prices
     &__block
       justify-content: center
+      margin-bottom 0
+    &__item
+      flex-basis 100%
+    &__content
+      margin-bottom 20px
+    &__footer
+      justify-content: space-around
+    &__title
+      margin-bottom 20px
   .software
     &__skill
       flex-basis: 100%
     &__footer
       flex-wrap: wrap
+    &__cost
+      margin-bottom 10px
   .calc
+    padding-top 60px
     &__col
       flex-basis: calc(100% / 12 * 12)
+    &__price
+      margin-bottom 60px
   .feedback
     &__block
       display block
   .clients, .blog
     background-size inherit
+  .shadow-text
+    margin-bottom 40px
 
 
 
