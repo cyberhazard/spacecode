@@ -7,6 +7,12 @@ include ../data/portfolio.pug
       - Object.keys(groups).forEach((el,i)=>{
         button.portfolio__button(class=i==0? 'portfolio__button_selected': null data-tag=el)= groups[el]
       - })
+  .portfolio__mobile
+    select.portfolio__select
+      option(selected disabled) Категории
+      - Object.keys(groups).forEach((el,i)=>{
+        option(value=el)= groups[el]
+      - })
   .portfolio__blocks
     each p in portfolio
       +portf-block(p,groups)

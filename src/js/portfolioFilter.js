@@ -1,6 +1,7 @@
 export default () => {
   const buttons = [...document.querySelectorAll('.portfolio__button')];
   const blocks = [...document.querySelectorAll('.portfolio__block')];
+  const mobileSelect = document.querySelector('.portfolio__select');
   let out = [];
   const content = document.querySelector('.portfolio__blocks');
   if(!content) return null;
@@ -30,5 +31,6 @@ export default () => {
       target.classList.add(selected)
       render(target.dataset.tag)
     }))
+    mobileSelect.onchange = (e) => render([...mobileSelect.children].filter(el=>el.selected)[0].value)
   }
 }
