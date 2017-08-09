@@ -27,4 +27,4 @@ filter();
 startGlow();
 calc();
 callback()
-lightBox();
+lightBox(.3);
