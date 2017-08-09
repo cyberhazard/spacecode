@@ -15,6 +15,7 @@ html(lang="ru")
       include ../blocks/_callback.pug
       include ../blocks/_mobile-menu.pug
       header.header(style=headerHeight && 'height:'+headerHeight+'px')
+        img.header__mouse(src="/img/mouse.png" style=`display: ${home? 'block': 'none'};`)
         .header__top
           a(href='/')
             img.header__logo(src="/img/logo.png")

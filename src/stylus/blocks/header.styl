@@ -2,6 +2,13 @@
   height 100vh
   background url('/img/header-main-bg.png') center center no-repeat
   background-size cover
+  position relative
+  &__mouse
+    position: absolute
+    left: 20%;
+    bottom: 50px;
+    animation: mouse 3s infinite ease-out
+    cursor pointer
   &__logo
     transform: translateY(4px)
   &__top
@@ -74,3 +81,16 @@
     font-weight: 400
     width 644px
 
+@keyframes mouse
+  0%
+    transform: translateY(0px)
+  20%
+    transform: translateY(8px)
+  40%
+    transform: translateY(2px)
+  60%
+    transform: translateY(7px)
+  80%
+    transform: translateY(5px)
+  100%
+    transform: translateY(0px)
