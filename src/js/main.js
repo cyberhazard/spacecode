@@ -19,7 +19,6 @@ if(mouse && scrollToBlock){
   mouse.onclick = () => {
     const bodyScroll = document.body.scrollTop;
     const scroll = scrollToBlock.getBoundingClientRect().top + bodyScroll;
-    console.log(scroll)
     anim(scroll)
   }
 }
