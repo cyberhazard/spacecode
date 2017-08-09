@@ -22,3 +22,34 @@
       background: url(/img/pag.png) center center no-repeat;
     & .swiper-pagination-bullet-active
       background: url(/img/pag-act.png) center center no-repeat;
+.slider
+  &__loop
+    position absolute
+    width 100%
+    height 100%
+    left 0
+    top 0
+    z-index 2
+    display inline-block
+    transition: 0.45s
+    background: rgba(0,0,0,0.7)
+    opacity 0
+    display flex
+    justify-content: center
+    cursor pointer
+    align-items: center
+    &:hover
+      opacity: 1
+    &:after
+      content '\f00e'
+      font-family: FontAwesome
+      color: white
+      font-size: 34px
+      display block
+  &__wrap
+    position: relative
+    z-index 1
+    display inline-block
+
+.swiper-wrapper .swiper-slide
+  text-align center
