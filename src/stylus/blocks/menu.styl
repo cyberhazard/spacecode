@@ -30,6 +30,17 @@
         color #aaaab2
       &:before
         display none
+    &_active
+      &:before
+        content ''
+        display: block
+        position absolute
+        top calc(100% + 4px)
+        left 0
+        height 2px
+        width 100%
+        background-color secondColor
+        transition .3s
   &__submenu
     border-top: 8px solid transparent
     position absolute
