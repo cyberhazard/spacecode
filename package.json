@@ -9,7 +9,8 @@
     "demo": "./node_modules/.bin/browser-sync start -s ./dest --tunnel",
     "webpack": "./node_modules/.bin/webpack -w",
     "dev": "yarn gulp & yarn webpack",
-    "deploy": "now ./dest -p && now ln"
+    "deploy": "now ./dest -p && now ln",
+    "log": "git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
   },
   "devDependencies": {
     "animated-scroll-to": "^1.1.4",
