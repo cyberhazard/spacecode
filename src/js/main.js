@@ -15,13 +15,7 @@ mobileMenuClose.onclick = () => mobileMenu.style.transform = '';
 // Header Mouse animated scroll
 const mouse = document.querySelector('.header__mouse');
 const scrollToBlock = document.querySelector('.services');
-if(mouse && scrollToBlock){
-  mouse.onclick = () => {
-    const bodyScroll = document.body.scrollTop;
-    const scroll = scrollToBlock.getBoundingClientRect().top + bodyScroll;
-    anim(scroll)
-  }
-}
+if(mouse && scrollToBlock) mouse.onclick = () => anim(scrollToBlock, {speed: 1500})
 
 filter();
 startGlow();

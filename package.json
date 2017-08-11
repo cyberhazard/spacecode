@@ -13,7 +13,7 @@
     "log": "git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
   },
   "devDependencies": {
-    "animated-scroll-to": "^1.1.4",
+    "animated-scroll-to": "^1.1.5",
     "babel-cli": "^6.24.1",
     "babel-loader": "^7.1.1",
     "babel-preset-env": "^1.6.0",
