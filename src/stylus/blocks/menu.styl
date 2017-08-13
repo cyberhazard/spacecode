@@ -55,6 +55,10 @@
     background-clip: padding-box
     padding: 12px 44px 28px 28px;
     z-index: 10
+    display: flex
+    justify-content: flex-start
+    flex-direction: column
+    align-items: flex-start
     & ^[0]__link:hover
       color secondColor
     & ^[0]__link
@@ -66,6 +70,14 @@
     white-space: nowrap
     transition: .3s
     &_margin
+      position: relative
       margin-top 12px
     &:hover
       color: white
+.menu__link_margin span:after
+  content "\f105"
+  font-family: FontAwesome
+  font-size: 16px
+  position: absolute
+  top 3px
+  right -14px
