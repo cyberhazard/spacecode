@@ -1,10 +1,13 @@
 @media (max-width:1450px)
+  .bg__planet
+    top -188px
+    width 188px
   .header
     &__title
       font-size 32px
       line-height: 46px
     &__main
-      height: calc(88% - 142px);
+      height: 100%
     &__text
       font-size 18px
       line-height 30px
@@ -151,9 +154,14 @@
   .header__top
     padding: 28px 8px 0
 @media (max-width:1200px)
+  .hamburger
+    display block
+  .bg__planet
+    top: -116px;
+    width: 147px;
   .g-wrapper
     width 100%
-    padding 0 20px
+    padding 0 12px
   .shadow-text
     margin-left 50px
   .menu
@@ -168,6 +176,7 @@
     &__top
       flex-wrap: wrap
       justify-content: center
+      display none
     &__about
       margin 0 10%
     &__title, &__text
@@ -284,7 +293,7 @@
   .features
     &__grid
       flex-basis: 100%
-      padding 0 12px
+      padding: 0 50px 0 80px;
       &:first-child
         display none
   .made
@@ -336,8 +345,9 @@
 
 
 @media (max-width: 700px)
-  .hamburger
-    display block
+  .bg__planet
+    top: -65px;
+    width: 64px;
   .wrapper
     width 100%
     overflow-x: hidden
@@ -354,8 +364,6 @@
     min-height 100vh
     &__mouse
       height: 26px
-    &__top
-      display none
     &__title
       font-size 32px
       line-height: 36px
@@ -367,6 +375,9 @@
   .services__item
     flex-basis: 100%
     margin 0px 0 150px 0
+    padding-left 0
+  .services__img
+    left 50px
   .services__title
     font-size 20px
   .portfolio
@@ -474,6 +485,8 @@
       line-height: 36px;
       padding 0 30px
       margin-bottom 50px
+    &__grid
+      padding 0 12px
   .made
     padding 80px 0 0 0
     background-size inherit
@@ -690,10 +703,10 @@
         top -4px
     &__grid
       & img
-        width 84%
+        width 100%
     &__text
       font-size 14px
-      padding 24px 40px
+      padding 24px 0
     &__img_cubick
       width: 70% !important
       margin-bottom: 20px;

@@ -19,7 +19,69 @@ block header
       a.feedback__submit: span Выбрать решение
 
 block content
-  include blocks/_prices.pug
+  .prices.uppad
+    img(src="../img/a-planet.png").bg__planet
+    .g-wrapper
+      .shadow-text.shadow(data-text="Цены на услуги") Цены на услуги
+      .prices__block
+        .prices__item
+          .prices__title
+            img(src="../img/prices-1.png").prices__img
+            .prices__name Контекстная реклама в Яндекс и Google
+          .prices__content
+            p Являемся сертифицированным партнером Яндекса
+            p Привлекаем заинтересованных пользователей
+            p Снижаем срендюю стоимость привлеченного клиента
+            p Предоставляем прозрачную и понятную статистику без лишних данных
+            p Повышаем рентабильность инвестиций благодаря снижению стоимости конверсии
+          .prices__footer
+            .prices__cost от 30 000 руб.
+            a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+        .prices__item
+          .prices__title
+            img(src="../img/prices-2.png").prices__img
+            .prices__name SEO-продвижение
+          .prices__content
+            p Наши KPI - это трафик на Ваш сайт из поисковых систем Яндекс и Google
+            p Если просто, мы беремся за самое важное для Вас - Ваш поисковой трафик. Наша цель - рост трафика
+            p Больше трафика -> Больше конверсий -> Больше продаж
+            p Совсем простая формула, не так ли?
+            p Основываемся на Google Analytics
+          .prices__footer
+            .prices__cost 30 000 руб. + KPI
+            a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+        .software__separator
+            img(src="../img/mini-planet.png").software__separator_img
+        .prices__item
+          .prices__title
+            img(src="../img/prices-3.png").prices__img
+            .prices__name Сквозная аналитика
+          .prices__content
+            p Настраиваем аналитику, которая показывает эффективность рекламы в 1 клик
+            p Предоставляем интерактивную статистику на основе новейших технологий Microsoft
+            p Показываем реальное количество продаж по каждому рекламному источнику и стоимость одного привлеченного клиента
+          .prices__footer
+            .prices__cost от 20 000 руб.
+            a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+        .prices__item
+          .prices__title
+            img(src="../img/prices-4.png").prices__img
+            .prices__name Партнерские отношения
+          .prices__content
+            p Наши KPI - это трафик на Ваш сайт из поисковых систем Яндекс и Google
+            p Если просто, мы беремся за самое важное для Вас - Ваш поисковой трафик. Наша цель - рост трафика
+            p Больше трафика -> Больше конверсий -> Больше продаж
+            p Совсем простая формула, не так ли?
+            p Основываемся на Google Analytics
+          .prices__footer
+            .prices__cost от 30 000 руб.
+            a.feedback__submit.feedback__submit_black(href="#") <span>Подробнее</span>
+
+      .calc__footer
+          .calc__footer-header Не нашли нужную услугу?
+            img.calc__footer-img.calc__footer-img_1(src='/img/calc-f-l.png')
+            img.calc__footer-img.calc__footer-img_2(src='/img/calc-f-r.png')
+          .calc__phone Звоните по телефону: #[a.calc__phone_bold(href="tel:+74959999999") +7(495) 999-99-99]
   include blocks/_features.pug
   include blocks/_circle-portfolio.pug
   include blocks/_steps.pug
