@@ -3,6 +3,8 @@
     &__title
       font-size 32px
       line-height: 46px
+    &__main
+      height: calc(88% - 142px);
     &__text
       font-size 18px
       line-height 30px
@@ -25,7 +27,7 @@
         top: 2px;
         right: -18px;
   .portfolio
-    padding-top 40px
+    padding-top 80px
     &__block
       height 500px
     &__content
@@ -72,6 +74,8 @@
       margin-bottom 30px
   .feedback
     padding 100px 0 100px 0
+    &__name
+      font-size 22px
     &__title
       font-size 22px
     &__input
@@ -86,6 +90,62 @@
       & span
         font-size 22px
         margin-bottom 0
+  .about
+    &__text
+      font-size 18px
+    &__block
+      padding-bottom 60px
+    &__title
+      font-size 32px
+    &__anonce
+      font-size 22px
+  .navigation
+    &__title
+      font-size 22px
+    &__link
+      font-size 16px
+  .footer
+    &__contacts
+      font-size 16px
+  .analytics
+    &__img
+      margin-bottom 24px
+    &__name
+      font-size 22px
+    &__title
+      margin-bottom 40px
+    &__cost
+      font-size 22px
+  .software
+    &__name
+      font-size 28px
+    &__cost
+      font-size 28px
+  .promotion
+    &__item
+      font-size 16px
+  .calc
+    &__footer-header
+      font-size 30px
+    &__phone
+      font-size 24px
+  .features
+    padding 80px 0 0 0
+    &__title
+      font-size 30px
+    &__subtitle
+      font-size 26px
+    &__text
+      font-size 15px
+    &__callback
+      font-size 28px
+      text-align: center
+  .steps
+    &__header
+      font-size 32px
+  .prices
+    padding 100px 0 164px 0
+
 
 @media (max-width:1300px)
   .header__top
@@ -93,6 +153,7 @@
 @media (max-width:1200px)
   .g-wrapper
     width 100%
+    padding 0 20px
   .shadow-text
     margin-left 50px
   .menu
@@ -123,23 +184,31 @@
     &__more
       white-space: nowrap;
       font-size: 20px;
+      &:after
+        top 0
     &__header
       font-size 30px
     &__text
       font-size 15px
     &__block
       flex-basis 100%
+      height: 600px
+    &__content
+      padding: 54px 0px 0px 130px;
+
   .team
     padding 100px 0 0 0
     &__block
       flex-wrap: wrap
     &__post
       margin-bottom 20px
+      &:after
+        bottom -22px
     &__img
       margin-bottom 20px
       width inherit
     &__person
-      flex-basis: 100%
+      flex-basis: 50%
       margin-right 0
       margin-bottom 60px
       &_basis
@@ -165,13 +234,14 @@
       text-align center
     &__anonce
       width 100%
+      padding-right 0
     &__form
       width 80%
   .link__more_pdf
     display: block;
     margin: 0 auto 90px;
   .link__more_big_marg
-    margin-top 30px
+    margin-top 144px
   .navigation
     padding 0 12px
     &__col
@@ -549,6 +619,7 @@
         font-size 14px
       &_big_marg
         font-size 23px
+        margin-top 0
         &:after
           font-size 23px
           top 4px
@@ -557,6 +628,7 @@
     &__img
       width 70%
     &__person
+      flex-basis 100%
       &_basis
         flex-basis: 100%
     &__name
