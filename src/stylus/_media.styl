@@ -152,11 +152,15 @@
   .header__top
     padding: 28px 8px 0
 @media (max-width:1200px)
+
   .hamburger
     display block
-  .bg__planet
-    top: -116px;
-    width: 147px;
+  .bg
+    &__planet
+      top: -116px;
+      width: 147px;
+    &__features
+      bottom -70px
   .g-wrapper
     width 100%
     padding 0 12px
@@ -345,9 +349,13 @@
 
 
 @media (max-width: 700px)
-  .bg__planet
-    top: -65px;
-    width: 64px;
+
+  .bg
+    &__planet
+      top: -65px;
+      width: 64px;
+    &__features
+      bottom -20px
   .wrapper
     width 100%
     overflow-x: hidden
