@@ -4,6 +4,7 @@ import { startGlow } from './headerStars';
 import { calc } from './calc';
 import callback from './callback';
 import anim from 'animated-scroll-to';
+import tingle from 'tingle.js'
 
 const hamburger = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector('.mobile-menu');
