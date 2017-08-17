@@ -249,7 +249,7 @@
   }
 
   .tingle-modal__closeLabel {
-    display: inline-block;
+    display: none;
     vertical-align: middle;
     font-size: 1.5rem;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
