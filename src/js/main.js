@@ -200,6 +200,19 @@ var popup = function(){
 }
 popup();
 
+var cyrclePopup = function(){
+  const cyrclePortfolio = Array.prototype.slice.call(document.querySelectorAll('.made__item'))
+  if(!cyrclePortfolio) return null;
+  cyrclePortfolio.forEach((el) => el.onclick = function(e){
+      e.preventDefault();
+      let id = e.currentTarget.dataset.id;
+      modal.setContent(modalWrap(modalStore[id]));
+      modal.open()
+    }
+  )
+}
+cyrclePopup();
+
 
 
 
