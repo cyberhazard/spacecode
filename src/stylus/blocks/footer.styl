@@ -23,17 +23,22 @@
     position relative
     margin-left 32px
     margin-bottom 26px
+    transition 0.3s
     &:before
       font-family: FontAwesome
       position absolute
       top 4px
       left -32px
       color: secondColor
+    &_phone:hover
+      color secondColor
     &_phone:before
       left -30px
       content "\f095"
     &_mail:before
       content "\f0e0"
+    &_mail:hover
+      color:secondColor
     &_address:before
       left -28px
       content "\f041"
@@ -57,5 +62,8 @@
     font-size: 18px;
     font-weight: 400;
     margin-bottom 24px
+    transition 0.3s
     &:last-child
       margin-bottom 0
+    &:hover
+      color secondColor
