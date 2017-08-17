@@ -13,6 +13,19 @@ const mobileMenuClose = document.querySelector('.mobile-menu__close');
 hamburger.onclick = () => mobileMenu.style.transform = 'translateX(0)'
 mobileMenuClose.onclick = () => mobileMenu.style.transform = '';
 
+//polyfil closest
+(function(e){
+  e.closest = e.closest || function(css){
+    var node = this;
+
+    while (node) {
+       if (node.matches(css)) return node;
+       else node = node.parentElement;
+    }
+    return null;
+  }
+ })(Element.prototype);
+
 // Header Mouse animated scroll
 const mouse = document.querySelector('.header__mouse');
 const scrollToBlock = document.querySelector('.services');
@@ -174,13 +187,19 @@ const modalWrap = ({title,typeWork,typeSite,target,img,link}) => {
     </div>
   `
 }
+var popup = function(){
+  const portfolio = Array.prototype.slice.call(document.querySelectorAll('.portfolio__block .link__more'))
+  if(!portfolio) return null;
+  portfolio.forEach((el) => el.onclick = function(e){
+      e.preventDefault();
+      let id = e.currentTarget.closest('.portfolio__block').dataset.id;
+      modal.setContent(modalWrap(modalStore[id]));
+      modal.open()
+    }
+  )
+}
+popup();
 
-const portfolio = Array.prototype.slice.call(document.querySelectorAll('.portfolio__block'))
-portfolio.forEach((el) => el.onclick = function(e){
-    let id = e.currentTarget.dataset.id;
-    modal.setContent(modalWrap(modalStore[id]));
-    modal.open()
-  }
-)
+
 
 

@@ -5,4 +5,5 @@ mixin portf-block(p,groups)
     .portfolio__content
       .portfolio__header_min(class=p.dark && 'portfolio__header_dark')= p.header
       .portfolio__text(class=p.dark && 'portfolio__text_dark')!= p.text
-      a.link__more(href=`${p.link}` class=p.dark && 'link__more_dark') Подробнее
+      .portfolio__link
+        a.link__more(href=`${p.link}` class=p.dark && 'link__more_dark') Подробнее
