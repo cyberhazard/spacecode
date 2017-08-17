@@ -158,7 +158,7 @@
 
 .tingle-modal--overflow {
   overflow-y: scroll;
-  padding-top: 8vh;
+  padding-top: 0;
 }
 
 /* btn
@@ -242,7 +242,7 @@
     width: 100%;
     height: 60px;
     border: none;
-    background-color: #1c1c24;
+    background-color: transparent;
     box-shadow: none;
     color: #fff;
     line-height: 55px;
