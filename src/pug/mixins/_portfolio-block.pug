@@ -1,5 +1,5 @@
 mixin portf-block(p,groups)
-  .portfolio__block(data-tag=p.tag)
+  .portfolio__block(data-tag=p.tag data-id=p.id)
     .portfolio__float= groups[p.tag]
     .portfolio__image(style=`background-image: url('${p.bg}')`)
     .portfolio__content
