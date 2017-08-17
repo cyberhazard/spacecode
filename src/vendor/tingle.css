@@ -207,7 +207,7 @@
 
 @media (max-width : 540px) {
   .tingle-modal-box {
-    height: 120%;
+    height: 110%;
     width: 100%;
   }
   .tingle-modal-box__content {
