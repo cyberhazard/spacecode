@@ -30,7 +30,7 @@
   .portfolio
     padding-top 80px
     &__block
-      height 500px
+      height 400px
     &__content
       padding: 54px 0px 0px 40px;
     &__header_min
@@ -203,11 +203,12 @@
       font-size 30px
     &__text
       font-size 15px
-    &__block
-      flex-basis 100%
-      height: 600px
     &__content
-      padding: 54px 0px 0px 130px;
+      padding: 54px 0px 0px 40px;
+    &__float
+      padding 10px 29px 10px 40px
+
+
 
   .team
     padding 100px 0 0 0
@@ -339,8 +340,11 @@
     padding-top 100px
   .thanks
     padding 100px 0 0 0
-
-
+@media (max-width:991px)
+  .portfolio
+    &__block
+      flex-basis 100%
+      height: 428px
 @media (max-width:1010px)
   .modal
     &__grid

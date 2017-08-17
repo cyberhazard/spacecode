@@ -207,14 +207,12 @@
 
 @media (max-width : 540px) {
   .tingle-modal-box {
-    width: 100%;
-    border-radius: 0;
+    height: 100%;
+    width:100%;
   }
 
   .tingle-modal {
-    top: 60px;
-    display: block;
-    width: 100%;
+    overflow: visible;
   }
 
   .tingle-modal--noClose {
@@ -222,9 +220,13 @@
   }
 
   .tingle-modal--overflow {
-    padding: 0;
+    height: calc(100% - 60px);
   }
-
+  .tingle-modal-box__content {
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
   .tingle-modal-box__footer .tingle-btn {
     display: block;
     float: none;
