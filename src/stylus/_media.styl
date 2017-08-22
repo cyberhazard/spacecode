@@ -3,6 +3,8 @@
     top -188px
     width 188px
   .header
+    &__phone_big
+      font-size 20px
     &__title
       font-size 32px
       line-height: 46px
@@ -168,8 +170,6 @@
       font-size 16px
     &__site
       font-size 20px
-  .hamburger
-    display block
   .bg
     &__planet
       top: -116px;
@@ -195,7 +195,6 @@
     &__top
       flex-wrap: wrap
       justify-content: center
-      display none
     &__about
       margin 0 10%
     &__title, &__text
@@ -220,9 +219,6 @@
       padding: 54px 0px 0px 40px;
     &__float
       padding 10px 29px 10px 40px
-
-
-
   .team
     padding 100px 0 0 0
     &__block
@@ -353,6 +349,7 @@
     padding-top 100px
   .thanks
     padding 100px 0 0 0
+
 @media (max-width:991px)
   .portfolio
     &__block
@@ -368,7 +365,11 @@
     &__img
       width 100%
       height auto
-
+  .hamburger
+    display block
+  .header
+    &__top
+      display none
 
 @media (max-width: 700px)
   .modal
