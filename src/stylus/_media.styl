@@ -190,7 +190,7 @@
       background-color rgba(41,39,50,1)
   .header
     &__main
-      height: calc(100% - 2px);
+      height: calc(100% - 350px)
     &__mouse
       left 10%
     &__top
@@ -300,7 +300,7 @@
   .feedback__name:after
     width 100%
     bottom -4px
-  .feedback__submit
+  .feedback__submit_float
     float: inherit
   .analytics
     &__item
@@ -373,6 +373,8 @@
   .header
     &__top
       display none
+    &__main
+      height: calc(100% - 2px)
 
 @media (max-width: 700px)
   .modal

@@ -64,7 +64,6 @@
     font-size: 26px;
     margin-bottom 84px
   &__submit
-    float: right;
     position relative
     color: #ffffff;
     font-family: Lato;
@@ -75,8 +74,12 @@
     background-color transparent
     overflow hidden
     cursor: pointer
+    &_float
+      float:right;
     &_black
       color #17171d
+      &:hover
+        color black
     &:after
       position absolute
       content "\f105"
