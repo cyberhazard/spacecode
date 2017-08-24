@@ -28,10 +28,10 @@
   background: rgba(0, 0, 0, .8);
   opacity: 0;
   cursor: pointer;
-  -webkit-transition: -webkit-transform .2s ease;
-  transition: -webkit-transform .2s ease;
-  transition: transform .2s ease;
-  transition: transform .2s ease, -webkit-transform .2s ease;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
 }
 
 /* confirm and alerts
@@ -90,13 +90,13 @@
   background: #fff;
   opacity: 1;
   cursor: auto;
-  -webkit-transition: -webkit-transform .3s cubic-bezier(.175, .885, .32, 1.275);
-  transition: -webkit-transform .3s cubic-bezier(.175, .885, .32, 1.275);
-  transition: transform .3s cubic-bezier(.175, .885, .32, 1.275);
-  transition: transform .3s cubic-bezier(.175, .885, .32, 1.275), -webkit-transform .3s cubic-bezier(.175, .885, .32, 1.275);
-  -webkit-transform: scale(.8);
-  -ms-transform: scale(.8);
-  transform: scale(.8);
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .tingle-modal-box__content {
@@ -148,6 +148,7 @@
 .tingle-modal--visible {
   visibility: visible;
   opacity: 1;
+  transition:0.5s;
 }
 
 .tingle-modal--visible .tingle-modal-box {
