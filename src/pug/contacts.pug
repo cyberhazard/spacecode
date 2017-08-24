@@ -4,14 +4,15 @@ block vars
   - var pageTitle = 'Контакты'
   - var customHeader = true
   - var constacts = true
-  - var headerHeight = 400
-
+  - var headerHeight = 500
+  - var customBg = '/img/services-bg.png'
 block header
   .g-wrapper
     .promotion
       .promotion__title Контакты
 block content
   .feedback
+    img(src='../img/contacts-planet.png').bg__planet_contacts
     .g-wrapper
       .feedback__block
         .feedback__grid.contacts__grid
