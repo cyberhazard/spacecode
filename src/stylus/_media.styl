@@ -25,7 +25,7 @@
       font-size 24px
       margin-bottom 70px
     &__item
-      margin: 90px 0;
+      margin: 0 0 40px 0;
   .link
     &__more
       font-size 18px
@@ -196,7 +196,7 @@
       background-color rgba(41,39,50,1)
   .header
     &__main
-      height: calc(100% - 350px)
+      height: calc(100% - 290px)
     &__mouse
       left 10%
     &__top
@@ -213,6 +213,8 @@
     &__title
       width 95%
   .portfolio
+    &__pad
+      padding-top: 130px;
     &__more
       white-space: nowrap;
       font-size: 20px;
@@ -367,6 +369,7 @@
   .modal
     &__grid
       flex-basis 100%
+      margin-right 0
     &__elem
       width 100%
     &__imgwrap
@@ -407,8 +410,14 @@
       &_about
         top: -134px;
         width: 164px;
+      &_feedback
+        top: -86px;
+        width: 140px;
     &__features
       bottom -20px
+    &__portfolios
+      top: -18px;
+
   .wrapper
     width 100%
     overflow-x: hidden
@@ -435,13 +444,15 @@
       height: auto
   .services__item
     flex-basis: 100%
-    margin 0px 0 150px 0
+    margin: 0px 0 30px 0;
     padding-left 36px
   .services__img
     left 74px
   .services__title
     font-size 20px
   .portfolio
+    &__pad
+      padding-top 100px
     &__mob
       padding-top 10px
     &__content
@@ -700,7 +711,6 @@
         &:after
           font-size 23px
           top 4px
-
   .team
     &__img
       width 70%
@@ -777,3 +787,11 @@
   .software
     &__separator
       margin-bottom: 20px
+
+@media (max-width: 321px)
+  .services
+    &__img
+      left 37px
+    &__item
+      padding-left 12px
+
