@@ -28,6 +28,11 @@ export const lightBox = (s=0.5) => {
   const images = [...document.querySelectorAll('.slider__loop')];
   if(images.length === 0) return null
   const lb = document.createElement('div');
+  const close = document.createElement('i');
+  close.classList.add('fa', 'fa-times');
+  close.setAttribute('aria-hidden', true)
+  close.style.cssText = 'position: absolute; top: 50px; right: 50px; color: white; font-size: 32px; cursor: pointer;';
+  lb.appendChild(close)
   const img = new Image();
   lb.style.cssText = `
     position: fixed;
