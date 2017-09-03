@@ -40,12 +40,12 @@ lightBox(.3);
 // modal windows for portfolio
 const modalStore = {
   modal1:{
-    title: 'Aurora Carne',
+    title: 'ТЕЛОХРАНИТЕЛИ',
     typeWork: 'Разработка крупного корпоративного сайта с возможностью бронирования и множеством точек лидогенерации',
-    typeSite: 'Корпоративный сайт',
+    typeSite: 'Посадочная страница',
     target: 'Наличие полной информации о компании в сети Интернет',
-    img: 'img/pop-1.png',
-    link: 'aurora-carne.ru'
+    img: 'img/pop-7.png',
+    link: 'telohraniteli.pro'
   },
   modal2:{
     title: 'PROGRESS',
@@ -56,22 +56,6 @@ const modalStore = {
     link: 'progress161.ru'
   },
   modal3:{
-    title: 'РЕСУРСНЕРУДСБЫТ',
-    typeWork: 'Разработка крупного корпоративного сайта с возможностью бронирования и множеством точек лидогенерации',
-    typeSite: 'Корпоративный сайт',
-    target: 'Наличие полной информации о компании в сети Интернет',
-    img: 'img/pop-3.png',
-    link: 'nerud-sbyt.ru'
-  },
-  modal4:{
-    title: 'Авангард',
-    typeWork: 'Разработка крупного корпоративного сайта с возможностью бронирования и множеством точек лидогенерации',
-    typeSite: 'Корпоративный сайт',
-    target: 'Наличие полной информации о компании в сети Интернет',
-    img: 'img/pop-4.png',
-    link: 'avangard-denta.ru'
-  },
-  modal5:{
     title: 'STROGO MTM',
     typeWork: 'Разработка крупного корпоративного сайта с возможностью бронирования и множеством точек лидогенерации',
     typeSite: 'Корпоративный сайт',
@@ -79,47 +63,7 @@ const modalStore = {
     img: 'img/pop-5.png',
     link: 'strogo-mtm.ru'
   },
-  modal6:{
-    title: 'MILITARY UNIFORM',
-    typeWork: 'Разработка крупного корпоративного сайта с возможностью бронирования и множеством точек лидогенерации',
-    typeSite: 'Интернет-магазин',
-    target: 'Наличие полной информации о компании в сети Интернет',
-    img: 'img/pop-6.png',
-    link: 'military-uniform.ru'
-  },
-  modal7:{
-    title: 'ТЕЛОХРАНИТЕЛИ',
-    typeWork: 'Разработка крупного корпоративного сайта с возможностью бронирования и множеством точек лидогенерации',
-    typeSite: 'Посадочная страница',
-    target: 'Наличие полной информации о компании в сети Интернет',
-    img: 'img/pop-7.png',
-    link: 'telohraniteli.pro'
-  },
-  modal8:{
-    title: 'ИСТОК',
-    typeWork: 'Разработка крупного корпоративного сайта с возможностью бронирования и множеством точек лидогенерации',
-    typeSite: 'Корпоративный сайт',
-    target: 'Наличие полной информации о компании в сети Интернет',
-    img: 'img/pop-8.png',
-    link: 'istok-world.ru'
-  },
-  modal9:{
-    title: 'GARMIN',
-    typeWork: 'Разработка крупного корпоративного сайта с возможностью бронирования и множеством точек лидогенерации',
-    typeSite: 'Интернет-магазин',
-    target: 'Посадочная страница',
-    img: 'img/pop-9.png',
-    link: ''
-  },
-  modal10:{
-    title: 'SPINNERX',
-    typeWork: 'Разработка крупного корпоративного сайта с возможностью бронирования и множеством точек лидогенерации',
-    typeSite: 'Интернет-магазин',
-    target: 'Наличие полной информации о компании в сети Интернет',
-    img: 'img/pop-10.png',
-    link: 'spinnerx.ru'
-  },
-  modal11:{
+  modal4:{
     title: 'STREDIAR',
     typeWork: 'Разработка крупного корпоративного сайта с возможностью бронирования и множеством точек лидогенерации',
     typeSite: 'Интернет-магазин',
@@ -127,13 +71,69 @@ const modalStore = {
     img: 'img/pop-11.png',
     link: 'strediar.ru'
   },
-  modal12:{
+  modal5:{
     title: 'DOMANI',
     typeWork: 'Разработка крупного корпоративного сайта с возможностью бронирования и множеством точек лидогенерации',
     typeSite: 'Интернет-магазин',
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-12.png',
     link: 'domani-group.ru'
+  },
+  modal6:{
+    title: 'РЕСУРСНЕРУДСБЫТ',
+    typeWork: 'Разработка крупного корпоративного сайта с возможностью бронирования и множеством точек лидогенерации',
+    typeSite: 'Корпоративный сайт',
+    target: 'Наличие полной информации о компании в сети Интернет',
+    img: 'img/pop-3.png',
+    link: 'nerud-sbyt.ru'
+  },
+  moda7:{
+    title: 'Авангард',
+    typeWork: 'Разработка крупного корпоративного сайта с возможностью бронирования и множеством точек лидогенерации',
+    typeSite: 'Корпоративный сайт',
+    target: 'Наличие полной информации о компании в сети Интернет',
+    img: 'img/pop-4.png',
+    link: 'avangard-denta.ru'
+  },
+  modal8:{
+    title: 'MILITARY UNIFORM',
+    typeWork: 'Разработка крупного корпоративного сайта с возможностью бронирования и множеством точек лидогенерации',
+    typeSite: 'Интернет-магазин',
+    target: 'Наличие полной информации о компании в сети Интернет',
+    img: 'img/pop-6.png',
+    link: 'military-uniform.ru'
+  },
+  modal9:{
+    title: 'ИСТОК',
+    typeWork: 'Разработка крупного корпоративного сайта с возможностью бронирования и множеством точек лидогенерации',
+    typeSite: 'Корпоративный сайт',
+    target: 'Наличие полной информации о компании в сети Интернет',
+    img: 'img/pop-8.png',
+    link: 'istok-world.ru'
+  },
+  modal10:{
+    title: 'GARMIN',
+    typeWork: 'Разработка крупного корпоративного сайта с возможностью бронирования и множеством точек лидогенерации',
+    typeSite: 'Интернет-магазин',
+    target: 'Посадочная страница',
+    img: 'img/pop-9.png',
+    link: ''
+  },
+  modal11:{
+    title: 'Aurora Carne',
+    typeWork: 'Разработка крупного корпоративного сайта с возможностью бронирования и множеством точек лидогенерации',
+    typeSite: 'Корпоративный сайт',
+    target: 'Наличие полной информации о компании в сети Интернет',
+    img: 'img/pop-1.png',
+    link: 'aurora-carne.ru'
+  },
+  modal12:{
+    title: 'SPINNERX',
+    typeWork: 'Разработка крупного корпоративного сайта с возможностью бронирования и множеством точек лидогенерации',
+    typeSite: 'Интернет-магазин',
+    target: 'Наличие полной информации о компании в сети Интернет',
+    img: 'img/pop-10.png',
+    link: 'spinnerx.ru'
   },
   modal13:{
     title: 'АВТОШКОЛА №1',
@@ -212,6 +212,32 @@ var cyrclePopup = function(){
   )
 }
 cyrclePopup();
+
+var servicePopup = function(){
+  const services = Array.prototype.slice.call(document.querySelectorAll('.feedback__submit'))
+  //
+  const form = document.querySelector('#callback-form');
+  const layout = document.querySelector('.callback');
+  const closeButton = document.querySelector('.callback__close');
+  if(!services) return null;
+  services.forEach((el) => el.onclick = function(e){
+      e.preventDefault();
+
+      var service = el.getAttribute('data-service')
+      console.log(service);
+      if (service)
+        document.querySelector('.callback__title').innerHTML = service;
+      else
+        document.querySelector('.callback__title').innerHTML = 'Отправить заявку';
+      layout.style.display = 'flex';
+      form.reset();
+      document.body.style.paddingRight = window.innerWidth - document.body.clientWidth + 'px';
+      document.body.style.overflow = 'hidden';
+      setTimeout(()=>layout.style.opacity = 1,0);
+    }
+  )
+}
+servicePopup();
 
 
 
