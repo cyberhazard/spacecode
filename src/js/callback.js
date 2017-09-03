@@ -19,6 +19,7 @@ export default () => {
 
   button.onclick = mobileButton.onclick = () => {
     console.log('click')
+    document.querySelector('.callback__title').textContent = 'Заказать обратный звонок';
     layout.style.display = 'flex';
     form.reset();
     document.body.style.paddingRight = window.innerWidth - document.body.clientWidth + 'px';
