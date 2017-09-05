@@ -3,9 +3,9 @@
     display flex
     justify-content: space-between
     align-items: center
-    flex-wrap: wrap
+    flex-wrap: nowrap
   &__grid
-    flex-basis 46%
+    flex-basis 66%
     display: flex
     flex-direction: column
     justify-content: flex-start
@@ -13,6 +13,8 @@
     margin-right 60px
     &:last-child
       margin-right: 0
+    &_basis
+      flex-basis 60%
   &__elem
     display flex
     flex-direction: column
@@ -32,10 +34,24 @@
     font-size: 24px;
     font-family: 'Lato'
     font-weight: 700
+    color white
   &__text
     font-size: 18px;
     font-family: 'Lato'
     font-weight: 400
+    color white
+    position relative
+    &_plus
+      padding-left 30px
+      margin-bottom 14px
+      &:before
+        content '\f067'
+        font-family FontAwesome
+        font-size 18px
+        position absolute
+        left 0
+        bottom 0
+        color secondColor
   &__site
     color: white;
     font-size: 22px;
@@ -63,6 +79,11 @@
     margin 0 auto
   &__imgwrap
     margin-bottom 20px
+  &__wraps
+    border-bottom 1px solid #393946
+    margin-bottom 44px
+
+
 
 .tingle-modal-box__content
   background: #1c1c24

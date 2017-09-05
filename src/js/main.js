@@ -47,7 +47,8 @@ const modalStore = {
     typeSite: 'Посадочная страница',
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-7.png',
-    link: 'telohraniteli.pro'
+    link: 'telohraniteli.pro',
+    results: ['res1','res2']
   },
   modal2:{
     title: 'PROGRESS',
@@ -55,7 +56,8 @@ const modalStore = {
     typeSite: 'Интернет-магазин',
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-2.png',
-    link: 'progress161.ru'
+    link: 'progress161.ru',
+    results: ['res1','res2']
   },
   modal3:{
     title: 'STROGO MTM',
@@ -63,7 +65,8 @@ const modalStore = {
     typeSite: 'Корпоративный сайт',
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-5.png',
-    link: 'strogo-mtm.ru'
+    link: 'strogo-mtm.ru',
+    results: ['res1','res2']
   },
   modal4:{
     title: 'STREDIAR',
@@ -71,7 +74,8 @@ const modalStore = {
     typeSite: 'Интернет-магазин',
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-11.png',
-    link: 'strediar.ru'
+    link: 'strediar.ru',
+    results: ['res1','res2']
   },
   modal5:{
     title: 'DOMANI',
@@ -79,7 +83,8 @@ const modalStore = {
     typeSite: 'Интернет-магазин',
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-12.png',
-    link: 'domani-group.ru'
+    link: 'domani-group.ru',
+    results: ['res1','res2']
   },
   modal6:{
     title: 'РЕСУРСНЕРУДСБЫТ',
@@ -87,7 +92,8 @@ const modalStore = {
     typeSite: 'Корпоративный сайт',
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-3.png',
-    link: 'nerud-sbyt.ru'
+    link: 'nerud-sbyt.ru',
+    results: ['res1','res2']
   },
   moda7:{
     title: 'Авангард',
@@ -95,7 +101,8 @@ const modalStore = {
     typeSite: 'Корпоративный сайт',
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-4.png',
-    link: 'avangard-denta.ru'
+    link: 'avangard-denta.ru',
+    results: ['res1','res2']
   },
   modal8:{
     title: 'MILITARY UNIFORM',
@@ -103,7 +110,8 @@ const modalStore = {
     typeSite: 'Интернет-магазин',
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-6.png',
-    link: 'military-uniform.ru'
+    link: 'military-uniform.ru',
+    results: ['res1','res2']
   },
   modal9:{
     title: 'ИСТОК',
@@ -111,7 +119,8 @@ const modalStore = {
     typeSite: 'Корпоративный сайт',
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-8.png',
-    link: 'istok-world.ru'
+    link: 'istok-world.ru',
+    results: ['res1','res2']
   },
   modal10:{
     title: 'GARMIN',
@@ -119,7 +128,8 @@ const modalStore = {
     typeSite: 'Интернет-магазин',
     target: 'Посадочная страница',
     img: 'img/pop-9.png',
-    link: ''
+    link: '',
+    results: ['res1','res2']
   },
   modal11:{
     title: 'Aurora Carne',
@@ -127,7 +137,8 @@ const modalStore = {
     typeSite: 'Корпоративный сайт',
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-1.png',
-    link: 'aurora-carne.ru'
+    link: 'aurora-carne.ru',
+    results: ['res1','res2']
   },
   modal12:{
     title: 'SPINNERX',
@@ -135,7 +146,8 @@ const modalStore = {
     typeSite: 'Интернет-магазин',
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-10.png',
-    link: 'spinnerx.ru'
+    link: 'spinnerx.ru',
+    results: ['res1','res2']
   },
   modal13:{
     title: 'АВТОШКОЛА №1',
@@ -143,7 +155,8 @@ const modalStore = {
     typeSite: 'Интернет-магазин',
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-13.png',
-    link: 'avto-school1.ru'
+    link: 'avto-school1.ru',
+    results: ['res1','res2']
   },
   modal14:{
     title: 'ANARCHI',
@@ -151,7 +164,8 @@ const modalStore = {
     typeSite: 'Интернет-магазин',
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-14.png',
-    link: 'anarchi.pro'
+    link: 'anarchi.pro',
+    results: ['res1','res2']
   },
   modal15:{
     title: 'ANARCHI',
@@ -159,7 +173,8 @@ const modalStore = {
     typeSite: 'Интернет-магазин',
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-14.png',
-    link: 'anarchi.pro'
+    link: 'anarchi.pro',
+    results: ['res1','res2']
   },
   modal16:{
     title: 'BREVDE',
@@ -167,7 +182,8 @@ const modalStore = {
     typeSite: 'Интернет-магазин',
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-14.png',
-    link: 'anarchi.pro'
+    link: 'anarchi.pro',
+    results: ['res1','res2']
   },
   modal17:{
     title: 'IFC',
@@ -175,7 +191,8 @@ const modalStore = {
     typeSite: 'Интернет-магазин',
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-14.png',
-    link: 'anarchi.pro'
+    link: 'anarchi.pro',
+    results: ['res1','res2']
   },
   modal18:{
     title: 'Кварц.БЕЛ',
@@ -183,7 +200,8 @@ const modalStore = {
     typeSite: 'Landing Page',
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-14.png',
-    link: 'anarchi.pro'
+    link: 'anarchi.pro',
+    results: ['res1','res2']
   },
   modal19:{
     title: 'ANARCHI',
@@ -191,7 +209,8 @@ const modalStore = {
     typeSite: 'Интернет-магазин',
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-14.png',
-    link: 'anarchi.pro'
+    link: 'anarchi.pro',
+    results: ['res1','res2']
   },
   modal20:{
     title: 'ANARCHI',
@@ -199,7 +218,8 @@ const modalStore = {
     typeSite: 'Интернет-магазин',
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-14.png',
-    link: 'anarchi.pro'
+    link: 'anarchi.pro',
+    results: ['res1','res2']
   }
 }
 
@@ -210,22 +230,30 @@ var modal = new tingle.modal({
   cssClass: ['custom-class-1', 'custom-class-2']
 });
 
-const modalWrap = ({title,typeWork,typeSite,target,img,link}) => {
+const modalWrap = ({title,typeWork,typeSite,target,img,link,results}) => {
   return `
     <div class='modal__wrapper'>
-      <div class='modal__grid'>
-        <div class='modal__title'> ${title} </div>
-        <div class='modal__elem'>
-          <div class='modal__subtitle'>Вид работ:</div>
-          <div class='modal__text'>${typeWork}</div>
+      <div class='modal__grid modal__grid_basis'>
+        <div class='modal__wraps'>
+          <div class='modal__title'> ${title} </div>
+          <div class='modal__elem'>
+            <div class='modal__subtitle'>Цель:</div>
+            <div class='modal__text'>${target}</div>
+          </div>
+          <div class='modal__elem'>
+            <div class='modal__subtitle'>Виды работ:</div>
+            <div class='modal__text'>${typeWork}</div>
+          </div>
+          <div class='modal__elem'>
+            <div class='modal__subtitle'>Тип сайта:</div>
+            <div class='modal__text'>${typeSite}</div>
+          </div>
         </div>
-        <div class='modal__elem'>
-          <div class='modal__subtitle'>Тип сайта:</div>
-          <div class='modal__text'>${typeSite}</div>
-        </div>
-        <div class='modal__elem'>
-          <div class='modal__subtitle'>Цель:</div>
-          <div class='modal__text'>${target}</div>
+        <div class='modal__results'>
+          <div class='modal__elem'>
+            <div class='modal__subtitle'>Результаты*:</div>
+            ${results.map(el=> `<div class='modal__text modal__text_plus'>${el}</div>`).join('')}
+          </div>
         </div>
       </div>
       <div class='modal__grid'>
