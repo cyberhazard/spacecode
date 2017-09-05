@@ -31,6 +31,8 @@ const mouse = document.querySelector('.header__mouse');
 const scrollToBlock = document.querySelector('.services');
 if(mouse && scrollToBlock) mouse.onclick = () => anim(scrollToBlock, {speed: 1500})
 
+
+
 filter();
 startGlow();
 calc();
@@ -269,6 +271,7 @@ var servicePopup = function(){
   const closeButton = document.querySelector('.callback__close');
   if(!services) return null;
   services.forEach((el) => el.onclick = function(e){
+      if(el.classList.contains('services__scroll')) return null;
       e.preventDefault();
 
       var service = el.getAttribute('data-service')
@@ -286,6 +289,9 @@ var servicePopup = function(){
   )
 }
 servicePopup();
+const buttonServices = document.querySelector('.services__scroll');
+const scrollToPrices = document.querySelector('.prices');
+if(buttonServices && scrollToPrices) buttonServices.onclick = () => anim(scrollToPrices, {speed: 1500})
 
 
 
