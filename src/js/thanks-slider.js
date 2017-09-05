@@ -5,6 +5,8 @@ export const slider = new Swiper('.reviews-slider', {
   slidesPerView: 3,
   paginationClickable: true,
   spaceBetween: 30,
+  nextButton: '.swiper-button-next',
+  prevButton: '.swiper-button-prev',
   breakpoints: {
     // when window width is <= 320px
     740: {
