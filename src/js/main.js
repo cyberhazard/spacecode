@@ -322,5 +322,14 @@ const scrollToPrices = document.querySelector('.prices');
 if(buttonServices && scrollToPrices) buttonServices.onclick = () => anim(scrollToPrices, {speed: 1500})
 
 
-
-
+const showMoreButton = () => {
+  const button = document.querySelector('.about__show_more');
+  const mainBlock = document.querySelector('.about__height');
+  if(!button || !mainBlock) return null;
+  button.onclick = () => (
+    mainBlock.style.height = mainBlock.scrollHeight + 'px',
+    button.style.opacity = 0
+  )
+  mainBlock.addEventListener('transitionend', () => button.style.display = 'none')
+};
+showMoreButton();

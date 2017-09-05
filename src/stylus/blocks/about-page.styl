@@ -9,10 +9,25 @@
   &__team
     width 100%
     object-fit: cover
+  &__height
+     height: 360px
+     overflow hidden
+     transition: height .5s
+  &__show_more
+    color white
+    font-size: 26px
+    text-align center
+    cursor pointer
+    transition .5s
+
+    &_icon
+      transition .5s
+      transform: rotate(0)
+      animation: downbutton 1s alternate infinite
   &__block
     display flex
     justify-content: space-between
-    align-items: center
+    align-items: flex-start
     flex-wrap: nowrap
     &_pad
       padding-bottom 150px
@@ -55,3 +70,8 @@
     margin-top -170px
 
 
+@keyframes downbutton
+  from
+    transform: translateY(0)
+  to
+    transform: translateY(2px)
