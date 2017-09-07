@@ -48,7 +48,9 @@ const modalStore = {
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-7.png',
     link: 'telohraniteli.pro',
-    results: ['res1','res2']
+    results: ['res1','res2'],
+    warning: '*Точные цифры не можем приводить из-за соглашения конфиденциальности. Заказчик дал согласие на показ только процентных соотношений.'
+
   },
   modal2:{
     title: 'PROGRESS',
@@ -57,7 +59,9 @@ const modalStore = {
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-2.png',
     link: 'progress161.ru',
-    results: ['res1','res2']
+    results: ['res1','res2'],
+    warning: '*Точные цифры не можем приводить из-за соглашения конфиденциальности. Заказчик дал согласие на показ только процентных соотношений.'
+
   },
   modal3:{
     title: 'STROGO MTM',
@@ -66,7 +70,9 @@ const modalStore = {
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-5.png',
     link: 'strogo-mtm.ru',
-    results: ['res1','res2']
+    results: ['res1','res2'],
+    warning: '*Точные цифры не можем приводить из-за соглашения конфиденциальности. Заказчик дал согласие на показ только процентных соотношений.'
+
   },
   modal4:{
     title: 'STREDIAR',
@@ -75,7 +81,9 @@ const modalStore = {
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-11.png',
     link: 'strediar.ru',
-    results: ['res1','res2']
+    results: ['res1','res2'],
+    warning: '*Точные цифры не можем приводить из-за соглашения конфиденциальности. Заказчик дал согласие на показ только процентных соотношений.'
+
   },
   modal5:{
     title: 'DOMANI',
@@ -84,7 +92,9 @@ const modalStore = {
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-12.png',
     link: 'domani-group.ru',
-    results: ['res1','res2']
+    results: ['res1','res2'],
+    warning: '*Точные цифры не можем приводить из-за соглашения конфиденциальности. Заказчик дал согласие на показ только процентных соотношений.'
+
   },
   modal6:{
     title: 'РЕСУРСНЕРУДСБЫТ',
@@ -93,7 +103,9 @@ const modalStore = {
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-3.png',
     link: 'nerud-sbyt.ru',
-    results: ['res1','res2']
+    results: ['res1','res2'],
+    warning: '*Точные цифры не можем приводить из-за соглашения конфиденциальности. Заказчик дал согласие на показ только процентных соотношений.'
+
   },
   moda7:{
     title: 'Авангард',
@@ -102,7 +114,9 @@ const modalStore = {
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-4.png',
     link: 'avangard-denta.ru',
-    results: ['res1','res2']
+    results: ['res1','res2'],
+    warning: '*Точные цифры не можем приводить из-за соглашения конфиденциальности. Заказчик дал согласие на показ только процентных соотношений.'
+
   },
   modal8:{
     title: 'MILITARY UNIFORM',
@@ -111,7 +125,9 @@ const modalStore = {
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-6.png',
     link: 'military-uniform.ru',
-    results: ['res1','res2']
+    results: ['res1','res2'],
+    warning: '*Точные цифры не можем приводить из-за соглашения конфиденциальности. Заказчик дал согласие на показ только процентных соотношений.'
+
   },
   modal9:{
     title: 'ИСТОК',
@@ -120,7 +136,9 @@ const modalStore = {
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-8.png',
     link: 'istok-world.ru',
-    results: ['res1','res2']
+    results: ['res1','res2'],
+    warning: '*Точные цифры не можем приводить из-за соглашения конфиденциальности. Заказчик дал согласие на показ только процентных соотношений.'
+
   },
   modal10:{
     title: 'GARMIN',
@@ -129,7 +147,9 @@ const modalStore = {
     target: 'Посадочная страница',
     img: 'img/pop-9.png',
     link: '',
-    results: ['res1','res2']
+    results: ['res1','res2'],
+    warning: '*Точные цифры не можем приводить из-за соглашения конфиденциальности. Заказчик дал согласие на показ только процентных соотношений.'
+
   },
   modal11:{
     title: 'Aurora Carne',
@@ -138,7 +158,9 @@ const modalStore = {
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-1.png',
     link: 'aurora-carne.ru',
-    results: ['res1','res2']
+    results: ['res1','res2'],
+    warning: '*Точные цифры не можем приводить из-за соглашения конфиденциальности. Заказчик дал согласие на показ только процентных соотношений.'
+
   },
   modal12:{
     title: 'SPINNERX',
@@ -147,7 +169,9 @@ const modalStore = {
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-10.png',
     link: 'spinnerx.ru',
-    results: ['res1','res2']
+    results: ['res1','res2'],
+    warning: '*Точные цифры не можем приводить из-за соглашения конфиденциальности. Заказчик дал согласие на показ только процентных соотношений.'
+
   },
   modal13:{
     title: 'АВТОШКОЛА №1',
@@ -156,7 +180,9 @@ const modalStore = {
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-13.png',
     link: 'avto-school1.ru',
-    results: ['res1','res2']
+    results: ['res1','res2'],
+    warning: '*Точные цифры не можем приводить из-за соглашения конфиденциальности. Заказчик дал согласие на показ только процентных соотношений.'
+
   },
   modal14:{
     title: 'ANARCHI',
@@ -165,7 +191,9 @@ const modalStore = {
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-14.png',
     link: 'anarchi.pro',
-    results: ['res1','res2']
+    results: ['res1','res2'],
+    warning: '*Точные цифры не можем приводить из-за соглашения конфиденциальности. Заказчик дал согласие на показ только процентных соотношений.'
+
   },
   modal15:{
     title: 'ANARCHI',
@@ -174,7 +202,9 @@ const modalStore = {
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-14.png',
     link: 'anarchi.pro',
-    results: ['res1','res2']
+    results: ['res1','res2'],
+    warning: '*Точные цифры не можем приводить из-за соглашения конфиденциальности. Заказчик дал согласие на показ только процентных соотношений.'
+
   },
   modal16:{
     title: 'BREVDE',
@@ -183,7 +213,9 @@ const modalStore = {
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-14.png',
     link: 'anarchi.pro',
-    results: ['res1','res2']
+    results: ['res1','res2'],
+    warning: '*Точные цифры не можем приводить из-за соглашения конфиденциальности. Заказчик дал согласие на показ только процентных соотношений.'
+
   },
   modal17:{
     title: 'IFC',
@@ -192,7 +224,9 @@ const modalStore = {
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-14.png',
     link: 'anarchi.pro',
-    results: ['res1','res2']
+    results: ['res1','res2'],
+    warning: '*Точные цифры не можем приводить из-за соглашения конфиденциальности. Заказчик дал согласие на показ только процентных соотношений.'
+
   },
   modal18:{
     title: 'Кварц.БЕЛ',
@@ -201,7 +235,9 @@ const modalStore = {
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-14.png',
     link: 'anarchi.pro',
-    results: ['res1','res2']
+    results: ['res1','res2'],
+    warning: '*Точные цифры не можем приводить из-за соглашения конфиденциальности. Заказчик дал согласие на показ только процентных соотношений.'
+
   },
   modal19:{
     title: 'ANARCHI',
@@ -210,7 +246,9 @@ const modalStore = {
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-14.png',
     link: 'anarchi.pro',
-    results: ['res1','res2']
+    results: ['res1','res2'],
+    warning: '*Точные цифры не можем приводить из-за соглашения конфиденциальности. Заказчик дал согласие на показ только процентных соотношений.'
+
   },
   modal20:{
     title: 'ANARCHI',
@@ -219,7 +257,9 @@ const modalStore = {
     target: 'Наличие полной информации о компании в сети Интернет',
     img: 'img/pop-14.png',
     link: 'anarchi.pro',
-    results: ['res1','res2']
+    results: ['res1','res2'],
+    warning: '*Точные цифры не можем приводить из-за соглашения конфиденциальности. Заказчик дал согласие на показ только процентных соотношений.'
+
   }
 }
 
@@ -230,7 +270,7 @@ var modal = new tingle.modal({
   cssClass: ['custom-class-1', 'custom-class-2']
 });
 
-const modalWrap = ({title,typeWork,typeSite,target,img,link,results}) => {
+const modalWrap = ({title,typeWork,typeSite,target,img,link,results,warning}) => {
   return `
     <div class='modal__wrapper'>
       <div class='modal__grid modal__grid_basis'>
@@ -254,6 +294,10 @@ const modalWrap = ({title,typeWork,typeSite,target,img,link,results}) => {
             <div class='modal__subtitle'>Результаты*:</div>
             ${results.map(el=> `<div class='modal__text modal__text_plus'>${el}</div>`).join('')}
           </div>
+          <div class='modal__elem'>
+            <div class="modal__warning"> ${warning} </div>
+        </div>
+
         </div>
       </div>
       <div class='modal__grid'>
