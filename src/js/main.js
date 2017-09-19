@@ -304,7 +304,9 @@ var cyrclePopup = function(){
 cyrclePopup();
 
 var servicePopup = function(){
-  const services = Array.prototype.slice.call(document.querySelectorAll('.feedback__submit'))
+  let services = Array.prototype.slice.call(document.querySelectorAll('.feedback__submit:not(.exclude)'))
+  const rocketButton = document.querySelector('.rocket__button');
+  rocketButton && services.push(rocketButton);
   //
   const form = document.querySelector('#callback-form');
   const layout = document.querySelector('.callback');
