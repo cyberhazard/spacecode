@@ -84,7 +84,7 @@ block content
             img.calc__footer-img.calc__footer-img_2(src='/img/calc-f-r.png')
           .calc__phone Звоните по телефону: #[a.calc__phone_bold(href="tel:+74959999999") +7(495) 999-99-99]
   include blocks/_features.pug
-  include blocks/_circle-portfolio.pug
+  //include blocks/_circle-portfolio.pug
   .steps
     .g-wrapper
       .shadow-text(data-text="Этапы работы") Этапы работы
@@ -128,5 +128,6 @@ block content
             img.rocket__fire(src="/img/rocket-fire.png")
           span.rocket__text Полет
           .rocket__lines
+  include blocks/_clients.pug
   include blocks/_thanks.pug
   include blocks/_feedback.pug
