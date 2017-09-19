@@ -87,12 +87,7 @@
       font-size 18px
       &:after
         top 14px
-    &__anonce
-      font-size 24px
-      padding-right 58px
-      & span
-        font-size 22px
-        margin-bottom 0
+
   .about
     &__text
       font-size 18px
@@ -242,7 +237,10 @@
         flex-basis: 50%
   .clients
     &__item
-      flex-basis: 50%
+      flex-basis: 25%
+    &__img
+      width auto
+
   .blog
     &__block
       flex-wrap: wrap
@@ -284,6 +282,7 @@
     &__grid
       padding 0 12px
       margin-bottom 20px
+
   .calc__footer img
     display none
   .analytics__block
@@ -399,6 +398,9 @@
     &__rocket
       &:after
         background: transparent
+  .clients
+    &__item
+      flex-basis: 50%
 
 
 @media (max-width: 700px)
