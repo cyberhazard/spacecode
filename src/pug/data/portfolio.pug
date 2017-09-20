@@ -1,18 +1,18 @@
 -
   var groups = {
     "all": "Все",
-    "fitness": "Фитнес",
-    "med": "Медицина",
+    "fitnesshealth": "Фитнес и здоровье",
+    //- "med": "Медицина",
     "legal": "Юридические услуги",
     //"oil": "Нефть",
-    "school": "Автошколы",
-    "clothes": "Одежда",
-    "building": "Строительство",
+    //- "school": "Автошколы",
+    "clothesshoes": "Одежда и обувь",
+    "buildingdesign": "Дизайн и строительство",
     //"brands": "Продажа люксовых брендов",
     //"retail": "Розничная торговля",
-    "food": "Питание",
-    "health": "Здоровье",
-    "toys": "Игрушки"
+    "other": "Прочее",
+    //- "health": "Здоровье",
+    //- "toys": "Игрушки"
   };
   var portfolio = [
     {
@@ -21,7 +21,7 @@
       text: 'Разработка сайта для Aurora Carne',
       link: '#',
       dark: false,
-      tag: 'clothes',
+      tag: 'clothesshoes',
       id: 'modal1'
     },
     {
@@ -30,7 +30,7 @@
       text: 'Разработка интернет-магазина <br /> спортивного питания PROGRESS',
       link: '#',
       dark: true,
-      tag: 'fitness',
+      tag: 'fitnesshealth',
       id: 'modal2'
     },
     {
@@ -39,7 +39,7 @@
       text: 'Разработка сайта для РесурсНерудСбыт',
       link: '#',
       dark: false,
-      tag: 'building',
+      tag: 'buildingdesign',
       id: 'modal3'
     },
     {
@@ -48,7 +48,7 @@
       text: 'Разработка сайта для стоматологии <br /> им. доктора Горинова АВАНГАРД',
       link: '#',
       dark: false,
-      tag: 'med',
+      tag: 'fitnesshealth',
       id: 'modal4'
     },
     {
@@ -57,7 +57,7 @@
       text: 'Настройка контекстной рекламы и <br /> SEO для сайта STROGO MTM',
       link: '#',
       dark: true,
-      tag: 'clothes',
+      tag: 'clothesshoes',
       id: 'modal5'
     },
     {
@@ -66,7 +66,7 @@
       text: 'Разработка сайта и настройка контекстной <br /> рекламы для Military Uniform',
       link: '#',
       dark: false,
-      tag: 'clothes',
+      tag: 'clothesshoes',
       id: 'modal6'
     },
     {
@@ -75,7 +75,7 @@
       text: 'Разработка дизайна посадочной страницы <br /> «ТЕЛОХРАНИТЕЛИ: ПЕРЕЗАГРУЗКА»',
       link: '#',
       dark: false,
-      tag: 'food',
+      tag: 'fitnesshealth',
       id: 'modal7'
     },
     {
@@ -84,7 +84,7 @@
       text: 'Разработка сайта для студии йоги <br /> и практики «ИСТОК»',
       link: '#',
       dark: true,
-      tag: 'health',
+      tag: 'fitnesshealth',
       id: 'modal8'
     },
     {
@@ -93,7 +93,7 @@
       text: 'Разработка дизайна посадочной страницы <br /> для продажи часов FENIX 3',
       link: '#',
       dark: true,
-      tag: 'fitness',
+      tag: 'fitnesshealth',
       id: 'modal9'
     },
     {
@@ -102,7 +102,7 @@
       text: 'Разработка сайта, SEO и настройка рекламы <br /> для интернет-магазина SpinnerX рекламы',
       link: '#',
       dark: false,
-      tag: 'toys',
+      tag: 'other',
       id: 'modal10'
     },
     {
@@ -111,7 +111,7 @@
       text: 'Разработка дизайна посадочной страницы <br /> для фирмы STREDIAR',
       link: '#',
       dark: false,
-      tag: 'building',
+      tag: 'buildingdesign',
       id: 'modal11'
     },
     {
@@ -129,7 +129,7 @@
       text: 'Разработка сайта, SEO и настройка рекламы <br /> для Автошколы №1 в г. Шахты',
       link: '#',
       dark: true,
-      tag: 'school',
+      tag: 'other',
       id: 'modal13'
     },
     {
@@ -138,7 +138,53 @@
       text: 'Разработка сайта для студии дизайна <br /> и архитектуры AnArchi',
       link: '#',
       dark: false,
-      tag: 'building',
+      tag: 'buildingdesign',
       id: 'modal14'
-    }
+    },
+    {
+      bg: '/img/portf-15.png',
+      header: 'BREVDE',
+      text: 'Разработка сайта и создание рекламы для <br />ведущего трансперсонального психолога',
+      link: '#',
+      dark: false,
+      tag: 'other',
+      id: 'modal15'
+    },
+    {
+      bg: '/img/portf-16.png',
+      header: 'Кварц.БЕЛ',
+      text: 'Разработка дизайна landing page <br />для продажи изделий из кварцевого камня',
+      link: '#',
+      dark: true,
+      tag: 'buildingdesign',
+      id: 'modal16'
+    },
+    {
+      bg: '/img/portf-17.png',
+      header: 'Юнимед32',
+      text: 'Разработка сайта и рекламы<br /> для стоматологии Юнимед',
+      link: '#',
+      dark: true,
+      tag: 'fitnesshealth',
+      id: 'modal17'
+    },
+    {
+      bg: '/img/portf-19.png',
+      header: 'Постулат',
+      text: 'Разработка сайта и рекламы<br /> для юридической компании по земельному праву',
+      link: '#',
+      dark: true,
+      tag: 'legal',
+      id: 'modal19'
+    },
+    {
+      bg: '/img/portf-18.png',
+      header: 'Headway',
+      text: 'Разработка сайта и создание рекламы для <br /> танцевальной студии Headway',
+      link: '#',
+      dark: true,
+      tag: 'fitnesshealth',
+      id: 'modal18'
+    },
+
   ]
