@@ -3,6 +3,7 @@
   background url('/img/header-main-bg.png') center center no-repeat
   background-size cover
   position relative
+  padding-top 28px
   &__mouse
     position: absolute
     left: 20%;
@@ -15,7 +16,13 @@
     display flex
     justify-content: space-between
     align-items: center
-    padding: 28px 100px 0
+    padding: 28px 100px
+    position: fixed
+    top 0
+    left 0
+    width 100%
+    z-index: 3
+    transition: .5s
   &__contacts
     text-align center
   &__button
@@ -63,7 +70,7 @@
       //font-weight: 700;
   &__main
     display flex
-    height calc(100% - 142px)
+    height 100%
     align-items: center
     color: #ffffff;
   &__about
@@ -83,6 +90,11 @@
     width 644px
     & span
       display block
+
+.header__active
+  background-color black
+  & .header__phone
+    display none
 
 @keyframes mouse
   0%

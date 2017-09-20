@@ -166,12 +166,14 @@
 
 @media (max-width:1300px)
   .header__top
-    padding: 28px 8px 0
+    padding: 0 8px
   .shadow-text
     margin-left 32px
 
 
 @media (max-width:1200px)
+  .header__phone
+    display none
   .modal
     &__title
       margin-bottom 20px
@@ -201,7 +203,7 @@
       background-color rgba(41,39,50,1)
   .header
     &__main
-      height: calc(100% - 290px)
+      height: 100%
     &__mouse
       left 10%
     &__top
@@ -211,6 +213,13 @@
       margin 0 10%
     &__title, &__text
       width 100%
+  .header__active
+    flex-wrap: wrap;
+    height: 80px;
+    flex-direction: column;
+    & .menu
+      width auto
+      margin 0
   .services
     &__item
       flex-basis: 50%
@@ -401,7 +410,7 @@
     &__top
       display none
     &__main
-      height: calc(100% - 2px)
+      height: 100%
     &__title
       font-size 54px
       line-height: 60px
