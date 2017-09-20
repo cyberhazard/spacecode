@@ -347,3 +347,12 @@ const showMoreButton = () => {
   mainBlock.addEventListener('transitionend', () => button.style.display = 'none')
 };
 showMoreButton();
+
+const headerTop = document.querySelector('.header__top');
+window.addEventListener('scroll', () => {
+  console.log('1')
+  if (!headerTop) return null;
+  var scrollTop = window.scrollY || document.documentElement.scrollTop;
+  if (scrollTop > headerTop.clientHeight && !headerTop.classList.contains('header__active')) headerTop.classList.add('header__active');
+  else if (scrollTop < headerTop.clientHeight && headerTop.classList.contains('header__active')) headerTop.classList.remove('header__active');
+})
