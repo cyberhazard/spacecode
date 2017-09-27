@@ -4,6 +4,7 @@ export default () => {
   const form = document.querySelector('#callback-form');
   const layout = document.querySelector('.callback');
   const closeButton = document.querySelector('.callback__close');
+  const phone = form.querySelector('input[name="phone"]');
   if(!button || !form || !layout || !closeButton) return null
 
   const layoutClose = () =>
@@ -28,4 +29,15 @@ export default () => {
     document.body.style.overflow = 'hidden';
     setTimeout(()=>layout.style.opacity = 1,0);
   };
+
+  new Inputmask({ mask: '+7 (999) 999-99-99', placeholder: '*' }).mask(phone);
+
+  form.onsubmit = e => {
+    e.preventDefault();
+    const data = new FormData(form);
+    fetch('/mail.php', {
+      method: 'POST',
+      body: data,
+    })
+  }
 }
