@@ -10,9 +10,9 @@
       .feedback__grid
         form.feedback__form
           .feedback__title Заказать бесплатный аудит сайта
-          input.feedback__input(placeholder="Ваше имя...")
-          input.feedback__input(placeholder="Ваше телефон...")
-          input.feedback__input(placeholder="Ваше e-mail...")
-          input.feedback__input(placeholder="Адрес сайта для анализа...")
-          .feedback__submit.feedback__submit_float.exclude <span>Отправить</span>
+          input.feedback__input(required type="text" name="name" placeholder="Ваше имя..." pattern="[a-zA-Zа-яА-я ]{4,}")
+          input.feedback__input(required type="tel" name="phone" placeholder="Ваше телефон...")
+          input.feedback__input(required type="email" name="email" placeholder="Ваше e-mail...")
+          input.feedback__input(required type="text" name="site" placeholder="Адрес сайта для анализа...")
+          button.feedback__submit.feedback__submit_float.exclude <span>Отправить</span>
 
