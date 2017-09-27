@@ -9,6 +9,8 @@ import tingle from 'tingle.js'
 const hamburger = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector('.mobile-menu');
 const mobileMenuClose = document.querySelector('.mobile-menu__close');
+const feedbackPhone = document.querySelector('.feedback__input[name="phone"]');
+feedbackPhone && new Inputmask({ mask: '+7 (999) 999-99-99', placeholder: '*' }).mask(feedbackPhone);
 
 hamburger.onclick = () => mobileMenu.style.transform = 'translateX(0)'
 mobileMenuClose.onclick = () => mobileMenu.style.transform = '';
@@ -318,10 +320,13 @@ var servicePopup = function(){
 
       var service = el.getAttribute('data-service')
       console.log(service);
-      if (service)
+      if (service) {
         document.querySelector('.callback__title').innerHTML = service;
-      else
+        form.querySelector('input[name="subject"]').value = service;
+      } else {
         document.querySelector('.callback__title').innerHTML = 'Отправить заявку';
+        form.querySelector('input[name="subject"]').value = 'Отправить заявку';
+      }
       layout.style.display = 'flex';
       form.reset();
       document.body.style.paddingRight = window.innerWidth - document.body.clientWidth + 'px';
