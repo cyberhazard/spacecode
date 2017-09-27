@@ -359,4 +359,20 @@ window.addEventListener('scroll', () => {
   var scrollTop = window.scrollY || document.documentElement.scrollTop;
   if (scrollTop > headerTop.clientHeight && !headerTop.classList.contains('header__active')) headerTop.classList.add('header__active');
   else if (scrollTop < headerTop.clientHeight && headerTop.classList.contains('header__active')) headerTop.classList.remove('header__active');
-})
+});
+
+const auditCallback = () => {
+  const button = document.querySelector('.feedback__submit.feedback__submit_float.exclude');
+  if(!button) return null;
+  const form = button.form;
+  form.onsubmit = e => {
+    e.preventDefault();
+    if (form.querySelector('input[name="phone"]').value.indexOf('*') !== -1) return null;
+    const body = new FormData(form);
+    fetch('/audit.php', {
+      method: 'POST',
+      body,
+    }).then(_ => form.reset())
+  }
+};
+auditCallback();
