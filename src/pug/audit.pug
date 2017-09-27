@@ -1,0 +1,27 @@
+extends _templates/_main
+
+block vars
+  - var pageTitle = 'SPACECODE - Digital-агенство полного цикла'
+  - var customHeader = false
+  - var home = true
+
+block content
+  .services
+    .feedback
+      img(src="../img/feedback-planet.png").bg__planet_feedback
+      .g-wrapper
+        .shadow-text.shadow-text_light(data-text="Заказать аудит сайта") Получить аудит сайта
+        .feedback__block
+          .feedback__grid
+            .feedback__anonce.feedback__anonce_top Уже есть сайт, но вы недовольны результатами, которые он приносит?
+            .feedback__anonce <span>В течение 24 часов мы проведем детальный аудит вашего сайта</span> совершенно бесплатно и дадим некоторые советы по его улучшению
+            //a.link__more.link__more_pdf(href="") Посмотреть пример аудита
+          .feedback__grid
+            form.feedback__form
+              .feedback__title Получить бесплатный аудит сайта
+              input.feedback__input(placeholder="Ваше имя...")
+              input.feedback__input(placeholder="Ваше телефон...")
+              input.feedback__input(placeholder="Ваше e-mail...")
+              input.feedback__input(placeholder="Адрес сайта для анализа...")
+              .feedback__submit.feedback__submit_float.exclude <span>Отправить</span>
+
