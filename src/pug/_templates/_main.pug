@@ -11,7 +11,6 @@ html(lang="ru")
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
     link(rel="stylesheet", href="/vendor/swiper.css")
     link(rel="stylesheet", href="/vendor/tingle.css")
-    <noindex><script async src="https://stats.lptracker.ru/code/new/43871"></script></noindex>
   body
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107115877-1"></script>
@@ -55,7 +54,7 @@ html(lang="ru")
             nav.menu__item(class=constacts && 'menu__item_active')
               a.menu__link(href="/contacts.html") Контакты
           .header__contacts
-            a.header__phone.header__phone_margin(href="tel:+74951340178") +7 (495) #[span.header__phone_big 134-01-78]
+            a.header__phone.header__phone_margin(href="tel:+74951340178") <span class="lptracker_phone">+7(903)581-89-33</span>
             button.header__button#header-button #[span Заказать звонок]
         .header__main
           if (!customHeader)
@@ -102,3 +101,4 @@ html(lang="ru")
               .footer__contacts.footer__contacts_address г. Москва, Ул.Большая Серпуховская 44, оф 414
     button.hamburger
     script(src="/js/bundle.js")
+    <noindex><script async src="https://stats.lptracker.ru/code/new/43871"></script></noindex>
