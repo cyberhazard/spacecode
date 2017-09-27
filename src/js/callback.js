@@ -12,6 +12,8 @@ export default () => {
     document.body.style.overflow = '',
     layout.removeEventListener('transitionend', layoutClose));
 
+  document.body.onkeyup = e => e.keyCode === 27 && layoutClose();
+
   closeButton.onclick = () => {
     layout.style.opacity = 0;
     layout.addEventListener('transitionend', layoutClose);
