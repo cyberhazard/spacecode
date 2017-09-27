@@ -5,6 +5,7 @@ export default () => {
   const layout = document.querySelector('.callback');
   const closeButton = document.querySelector('.callback__close');
   const phone = form.querySelector('input[name="phone"]');
+  const callbackButton = form.querySelector('button span');
   if(!button || !form || !layout || !closeButton) return null
 
   const layoutClose = () =>
@@ -21,7 +22,7 @@ export default () => {
   };
 
   button.onclick = mobileButton.onclick = () => {
-    console.log('click')
+    form.querySelector('input[name="subject"]').value = 'Заказать обратный звонок'
     document.querySelector('.callback__title').textContent = 'Заказать обратный звонок';
     layout.style.display = 'flex';
     form.reset();
@@ -34,10 +35,15 @@ export default () => {
 
   form.onsubmit = e => {
     e.preventDefault();
+    if (phone.value.indexOf('*') !== -1) return null
+    callbackButton.textContent = 'Отправка...'
     const data = new FormData(form);
     fetch('/mail.php', {
       method: 'POST',
       body: data,
-    })
+    }).then(_=>{
+      callbackButton.textContent = 'ЗАЯВКА ОТПРАВЛЕНА';
+      setTimeout(() => layoutClose(),1500)
+    });
   }
 }
