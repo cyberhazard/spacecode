@@ -2,6 +2,7 @@
   button.callback__close: img(src="/img/cancel.png")
   form.callback__content#callback-form
     h3.callback__title Заказать обратный звонок
-    input.callback__input(placeholder="Ваше имя...")
-    input.callback__input(placeholder="Ваш телефон...")
+    input.callback__input(type="name" name="name" placeholder="Ваше имя..." required pattern="[a-zA-Zа-яА-Я ]{6,}")
+    input.callback__input(type="tel" name="phone" placeholder="Ваш телефон..." required)
+    input(type="hidden" name="subject")
     button.header__button#callback-button #[span Заказать звонок]
