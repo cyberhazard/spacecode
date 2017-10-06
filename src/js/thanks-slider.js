@@ -48,7 +48,7 @@ export const lightBox = (s=0.5) => {
     align-items: center;
     background-color: rgba(0,0,0,0.87);
     transition: ${s}s;
-    z-index: 10;`;
+    z-index: 10000;`;
   img.style.cssText = 'wax-width: 84%; max-height: 84%';
   lb.appendChild(img)
   images.forEach(image=>{
