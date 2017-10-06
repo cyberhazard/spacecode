@@ -60,15 +60,20 @@ export const lightBox = (s=0.5) => {
       document.body.style.overflow = 'hidden';
     }
   });
+
+  const end = () => {
+    lb.remove();
+    img.src = '';
+    document.body.style.paddingRight = '';
+    document.body.style.overflow = '';
+    lb.removeEventListener('transitionend', end)
+  }
+
   lb.onclick = () => {
     lb.style.opacity = '0';
-    lb.addEventListener('transitionend', function end(){
-      lb.remove();
-      img.src = '';
-      document.body.style.paddingRight = '';
-      document.body.style.overflow = '';
-      lb.removeEventListener('transitionend', end)
-    })
+    lb.addEventListener('transitionend', end)
   }
+
+  document.body.addEventListener('keyup', (e) => e.keyCode === 27 && (lb.style.opacity = '0', end()))
 }
 

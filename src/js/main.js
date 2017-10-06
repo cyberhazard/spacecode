@@ -39,7 +39,7 @@ filter();
 startGlow();
 calc();
 callback()
-lightBox(.3);
+lightBox(.5);
 
 // modal windows for portfolio
 const modalStore = {
