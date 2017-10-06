@@ -28,6 +28,7 @@ export const slider = new Swiper('.reviews-slider', {
 
 export const lightBox = (s=0.5) => {
   const images = [...document.querySelectorAll('.slider__loop')];
+  const sources = [...document.querySelectorAll('.slider__wrap img')].map(i => i.src);
   if(images.length === 0) return null
   const lb = document.createElement('div');
   const close = document.createElement('i');
@@ -35,7 +36,25 @@ export const lightBox = (s=0.5) => {
   close.setAttribute('aria-hidden', true)
   close.style.cssText = 'position: absolute; top: 12px; right: 24px; color: white; font-size: 32px; cursor: pointer;';
   lb.appendChild(close)
-  const img = new Image();
+  // const img = new Image();
+  const lbSlider = `
+    <div class="lightbox-slider" style="max-height: 94vh; max-width: 94vw; position: relative; margin: 0 auto;">
+      <div class="swiper-wrapper">
+        ${sources.map(img => (`
+          <div class="swiper-slide">
+            <img
+              src="${img}"
+              style="max-height: 94vh; transform: translateY(3vh); max-width: 94vw; ${window.innerWidth < 500 && 'transform: translateY(12vh)'}"
+            />
+          </div>
+        `)).join('')}
+      </div>
+      <div class="swiper-button-next" style="top: 50% !important;"></div>
+      <div class="swiper-button-prev" style="top: 50% !important;"></div>
+    </div>
+  `;
+  console.log(lbSlider)
+  lb.insertAdjacentHTML('beforeend', lbSlider)
   lb.style.cssText = `
     position: fixed;
     top: 0;
@@ -43,19 +62,22 @@ export const lightBox = (s=0.5) => {
     width: 100%;
     height: 100%;
     opacity:0;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     background-color: rgba(0,0,0,0.87);
     transition: ${s}s;
     z-index: 10000;`;
-  img.style.cssText = 'wax-width: 84%; max-height: 84%';
-  lb.appendChild(img)
-  images.forEach(image=>{
+  // img.style.cssText = 'wax-width: 84%; max-height: 84%';
+  // lb.appendChild(img)
+  images.forEach((image, index)=>{
     image.onclick = (e) => {
       document.body.appendChild(lb);
+      new Swiper('.lightbox-slider', { initialSlide: index,nextButton: '.swiper-button-next', prevButton: '.swiper-button-prev', });
+      [...document.querySelectorAll('.lightbox-slider .swiper-button-next, .lightbox-slider .swiper-button-prev')].forEach(button =>
+        button.addEventListener('click', (e) => e.stopPropagation()))
       setTimeout(()=>lb.style.opacity = 1,0)
-      img.src = e.target.closest('.slider__wrap').querySelector('img').src
+      // img.src = e.target.closest('.slider__wrap').querySelector('img').src
       document.body.style.paddingRight = window.innerWidth - document.body.clientWidth + 'px';
       document.body.style.overflow = 'hidden';
     }
@@ -63,7 +85,7 @@ export const lightBox = (s=0.5) => {
 
   const end = () => {
     lb.remove();
-    img.src = '';
+    // img.src = '';
     document.body.style.paddingRight = '';
     document.body.style.overflow = '';
     lb.removeEventListener('transitionend', end)
