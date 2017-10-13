@@ -41,7 +41,7 @@ lightBox(.5);
 
 // modal windows for portfolio
 
-fetch('/db.json').then(r => r.json()).then(portf => {
+const makeModals = () => fetch('/db.json').then(r => r.json()).then(portf => {
   window.modal = new tingle.modal({
     stickyFooter: false,
     closeMethods: ['overlay', 'button', 'escape'],
@@ -182,3 +182,6 @@ const auditCallback = () => {
   }
 };
 auditCallback();
+
+// generate portfolion blocks
+
