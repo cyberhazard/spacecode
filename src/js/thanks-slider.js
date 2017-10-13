@@ -53,7 +53,7 @@ export const lightBox = (s=0.5) => {
       <div class="swiper-button-prev" style="top: 50% !important;"></div>
     </div>
   `;
-  console.log(lbSlider)
+
   lb.insertAdjacentHTML('beforeend', lbSlider)
   lb.style.cssText = `
     position: fixed;
