@@ -29,7 +29,7 @@
   },
   "babel": {
     "presets": [
-      "env"
+      "node8"
     ]
   },
   "now": {
@@ -38,6 +38,7 @@
   },
   "dependencies": {
     "babel-preset-es2015": "^6.24.1",
+    "babel-preset-node8": "^1.2.0",
     "tingle.js": "^0.11.0"
   }
 }

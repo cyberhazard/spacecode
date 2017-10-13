@@ -33,7 +33,6 @@ const mouse = document.querySelector('.header__mouse');
 const scrollToBlock = document.querySelector('.services');
 if(mouse && scrollToBlock) mouse.onclick = () => anim(scrollToBlock, {speed: 1500})
 
-filter();
 startGlow();
 calc();
 callback()
@@ -185,3 +184,34 @@ auditCallback();
 
 // generate portfolion blocks
 
+const generateBlock = (p,groups) => (`
+  <div class="portfolio__block" data-tag="${p.tag}" data-id="${p.id}">
+    <div class="portfolio__float">${groups[p.tag]}</div>
+    <div class="portfolio__image" style="background-image: url('${p.bg}')"></div>
+    <div class="portfolio__content">
+      <div class="portfolio__header_min ${p.dark? 'portfolio__header_dark' : ''}">${p.header}</div>
+      <div class="portfolio__text ${p.dark? 'portfolio__text_dark' : ''}">${p.text}</div>
+      <div class="portfolio__link">
+        <a href="#" class="link__more ${p.dark? 'link__more_dark' : ''}">Подробнее</a>
+      </div>
+    </div>
+  </div>
+`)
+
+const generatePortfolioBlocks = () => {
+  const buttons = document.querySelector('.portfolio__buttons');
+  const select = document.querySelector('select.portfolio__select');
+  const blocks = document.querySelector('.portfolio__blocks');
+  if(!blocks) return null;
+  const groups = fetch('/groups.json').then(r => r.json()).then(groups => {
+    fetch('/db.json').then(r => r.json()).then(portf => {
+      blocks.insertAdjacentHTML('afterbegin', portf.map(el=> generateBlock(el, groups)).join(''));
+      buttons.insertAdjacentHTML('afterbegin', Object.keys(groups).map((el, i) =>
+        `<button class="portfolio__button ${i==0? 'portfolio__button_selected': ''}" data-tag="${el}">${groups[el]}</button>`).join(''));
+      select.insertAdjacentHTML('beforeend', Object.keys(groups).map(el => `<option value="${el}">${groups[el]}</option>`).join(''))
+      filter();
+      makeModals();
+    })
+  })
+}
+generatePortfolioBlocks()
