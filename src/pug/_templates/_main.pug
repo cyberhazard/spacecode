@@ -29,7 +29,7 @@ html(lang="ru")
       include ../blocks/_mobile-menu.pug
       //- header.header(style=headerHeight && 'height:'+headerHeight+'px')
       header.header(style=`${headerHeight? `height:${headerHeight}px;`:''} ${customBg? `background-image:url('${customBg}');` :''}`)
-        video.header__video(src="/img/video-bg.mp4" autoplay loop style=`display: ${home? 'block' : 'none'}`)
+        video.header__video(src="/img/video-bg.mp4" autoplay loop style=``)
         img.header__mouse(src="/img/mouse.png" style=`display: ${home? 'block': 'none'};`)
         .header__top
           a(href='/')
