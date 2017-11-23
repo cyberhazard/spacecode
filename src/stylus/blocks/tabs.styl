@@ -1,0 +1,112 @@
+.tabs
+  padding 170px 0 140px 0
+  &__text
+    width 70%
+    color: #17171d;
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 46px;
+    margin-bottom 70px
+  &__shadow-text
+    margin-bottom 44px
+  &__buttons
+    display flex
+    align-items: center
+    justify-content: flex-start
+    margin-bottom 80px
+  &__button
+    width: 100%
+    text-align: center
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    padding 17px 42px
+    white-space:  nowrap
+    border: 3px solid #f0143a;
+    cursor pointer
+    &:nth-child(2)
+      border-right none
+      border-left none
+    &_active
+      background-color #f0143a;
+      color white
+  &__item
+    display flex
+    justify-content: space-between
+    align-items: flex-start
+    display none
+    &_active
+      display flex
+  &__left
+    flex-basis 58%
+  &__right
+    flex-basis 28%
+    &_el
+      margin-bottom 68px
+  &__info
+    display flex
+    justify-content: space-between
+    align-items: flex-start
+    margin-bottom 64px
+    &_title
+      color: #17171d;
+      font-family: Lato;
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom 26px
+    &_el
+      color: #17171d;
+      font-family: Lato
+      font-size: 18px;
+      font-weight: 600;
+      position relative
+      padding-left 34px
+      margin-bottom 30px
+      &:last-child
+        margin-bottom 0
+      &:before
+        content ''
+        position absolute
+        top 0
+        left 0
+        width 20px
+        height 20px
+        background url('../img/pagination.png')
+        background-size cover
+  &__detail
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    padding 12px 0 12px 30px
+    width 70%
+    position relative
+    &:before
+      content ''
+      width 10px
+      height: 100%
+      background #f0143a;
+      position: absolute
+      left 0
+      top 0
+  &__about
+    &_title
+      padding-bottom 34px
+      position relative
+      &:after
+        content ''
+        width 40px
+        height 3px
+        background #f0143a;
+        position: absolute
+        left 0
+        bottom 0
+    &_text
+      color: #17171d;
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px
+
+
