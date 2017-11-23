@@ -215,3 +215,19 @@ const generatePortfolioBlocks = () => {
   })
 }
 generatePortfolioBlocks()
+
+// Табы на странице complex-digital
+const tabChange = () => {
+  if(!document.querySelector('.tabs__block')) return null
+  const tabs = [...document.querySelectorAll('.tabs__button')]
+  const contents = [...document.querySelectorAll('.tabs__item')]
+  tabs.forEach((tab,ind) => {
+    tab.onclick = ({target}) => {
+      tabs.forEach(tab=>tab.classList.remove('tabs__button_active'))
+      target.classList.add('tabs__button_active');
+      contents.forEach(el=>el.classList.remove('tabs__item_active'));
+      contents[tabs.findIndex(el=>el===target)].classList.add('tabs__item_active')
+    }
+  })
+}
+tabChange();
