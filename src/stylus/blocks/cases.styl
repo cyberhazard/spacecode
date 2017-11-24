@@ -1,0 +1,48 @@
+.cases
+  margin-bottom 80px
+  &__content
+    display flex
+    justify-content: space-between
+    align-items: flex-start
+    flex-wrap wrap
+  &__img
+    margin-bottom 24px
+  &__item
+    flex-basis 30%
+    margin-bottom 30px
+    transition 0.35s
+    cursor pointer
+    &:hover
+      box-shadow: 0 12px 26px rgba(0, 0, 0, 0.14);
+  &__title
+    color: #17171d;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center
+    text-transform: uppercase;
+    margin-bottom 16px
+  &__descript
+    color: #353947;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center
+    margin-bottom 22px
+    padding 0 40px
+  &__more
+    display: inline-block
+    color #17171d
+    border-bottom 1px dotted #17171d
+    margin-left 38%
+    margin-bottom 50px
+  &__submit
+    color black
+    display block
+    margin 0 auto
+
+.cases__item:hover .cases__more
+  color red
+  border-bottom 1px dotted red
