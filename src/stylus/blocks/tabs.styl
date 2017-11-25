@@ -19,7 +19,7 @@
     width: 100%
     text-align: center
     font-family: Lato;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
     padding 17px 42px
     white-space:  nowrap
@@ -82,6 +82,8 @@
     padding 12px 0 12px 30px
     width 70%
     position relative
+    &_phone
+      display none
     &:before
       content ''
       width 10px
@@ -111,6 +113,7 @@
   &__title
     display none
     &_phone
+      display none
       font-size 18px
       color secondColor
       line-height 30px
@@ -119,6 +122,16 @@
       margin-bottom 30px
       align-self center
 
+@media (max-width: 1200px)
+  .tabs
+    &__button
+      font-size 20px
+
+@media (max-width:991px)
+  .tabs
+    &__button
+      font-size 16px
+      padding: 17px 24px;
 
 @media (max-width: 700px)
   .tabs
