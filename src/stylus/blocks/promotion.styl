@@ -44,3 +44,43 @@
       color secondColor
       padding-right 4px
       margin-right 16px
+
+@media (max-width:1450px)
+  .promotion
+    &__title
+      &_land
+        margin-bottom 20px
+        font-size 37px
+    &__descript
+      font-size 22px
+    &__block
+      &_services
+        margin: 20px 0 10px 0;
+    &__item
+      &_full
+        margin-bottom 20px
+@media (max-width:991px)
+  .g-wrapper
+    &_services
+      padding 0 20px
+  .promotion
+    &__item
+      &_full
+        padding-left 0 !important
+    &__title
+      &_land
+        line-height 46px
+
+@media (max-width: 700px)
+  .promotion
+    &__item
+      &_full
+        font-size 14px
+    &__title
+      &_land
+        font-size 24px !important
+    &__descript
+      display none
+  .g-wrapper
+    &_services
+      padding 0 20px !important
