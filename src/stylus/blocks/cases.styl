@@ -33,10 +33,11 @@
     margin-bottom 22px
     padding 0 40px
   &__more
-    display: inline-block
+    display: block
+    width 126px
     color #17171d
     border-bottom 1px dotted #17171d
-    margin-left 38%
+    margin 0 auto
     margin-bottom 50px
   &__submit
     color black
@@ -46,3 +47,25 @@
 .cases__item:hover .cases__more
   color red
   border-bottom 1px dotted red
+@media (max-width:1450px)
+  .cases
+    &__more
+      width: 96px;
+@media (max-width:700px)
+  .cases
+    &__content
+      justify-content: center
+    &__item
+      flex-basis 88%
+      box-shadow: 0 12px 26px rgba(0, 0, 0, 0.14);
+    &__img
+      width 100%
+      margin-bottom 16px
+    &__title
+      font-size 18px
+      margin-bottom 8px
+    &__descript
+      font-size 14px
+      margin-bottom 14px
+    &__more
+      width: 78px;
