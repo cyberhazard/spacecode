@@ -1,0 +1,46 @@
+.operating
+  padding 120px 0
+  &__content
+    display flex
+    align-items: flex-start
+    justify-content: space-between
+    flex-wrap wrap
+  &__item
+    &:nth-child(odd)
+      flex-basis 30%
+    &:nth-child(even)
+      flex-basis 48%
+  &__number
+    &:after
+      background: linear-gradient(to bottom, transparent, #fff 70%);
+    &_content
+      text-align: start
+  &__title
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    position relative
+    padding-bottom 28px
+    margin-bottom 22px
+    &:after
+      content ''
+      position: absolute
+      left 0
+      bottom 0
+      width 40px
+      height: 3px
+      background-color: secondColor
+  &__text
+    color: #17171d;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom 20px
+    &:nth-child(4)
+      width 40%
+  &__offer
+    justify-content: flex-start
+  &__inner
+    transform: translateY(-50px);
+
