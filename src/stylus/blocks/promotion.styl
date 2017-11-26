@@ -14,12 +14,27 @@
       font-size 46px
       line-height 54px
       margin-bottom 38px
+    &_line
+      position relative
+      padding-bottom 24px
+      margin-bottom 44px !important
+      &:after
+        content ''
+        left 0
+        bottom 0
+        width 100px
+        height 4px
+        position: absolute
+        background-color: secondColor
+
   &__descript
     font-size 24px
     text-align left
     font-weight 600
     line-height 34px
     font-family: 'Lato';
+    &_marg
+      margin-bottom 20px
   &__block
     display flex
     flex-wrap: wrap
