@@ -44,3 +44,30 @@
   &__inner
     transform: translateY(-50px);
 
+@media (max-width:1200px)
+  .operating
+    &__item
+      &:nth-child(odd)
+        flex-basis 48%
+      &:nth-child(even)
+        flex-basis 48%
+@media (max-width:700px)
+  .operating
+    padding 70px 0
+    &__item
+      &:nth-child(odd)
+        flex-basis 100%
+      &:nth-child(even)
+        flex-basis 100%
+    &__title
+      font-size: 18px;
+      padding-bottom 18px
+      margin-bottom 14px
+    &__text
+      font-size: 14px;
+      line-height: 22px;
+    &__offer
+      font-size: 16px;
+
+
+
