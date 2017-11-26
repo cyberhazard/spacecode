@@ -39,10 +39,46 @@
     border-bottom 1px dotted #17171d
     margin 0 auto
     margin-bottom 50px
+  &__footer
+    display flex
+    flex-direction column
+    justify-content center
   &__submit
     color black
-    display block
     margin 0 auto
+    position relative
+    font-family: Lato;
+    font-size: 20px;
+    padding: 14px 60px 14px 40px;
+    border: 2px solid secondColor;
+    display: inline-block
+    background-color transparent
+    overflow hidden
+    cursor: pointer
+    &:after
+      position absolute
+      content "\f105"
+      right: 40px;
+      top: 17px;
+      font-size 24px
+      font-family: FontAwesome
+    &:before
+      content: '';
+      z-index: 0;
+      position: absolute;
+      top: -30px;
+      left: -40px;
+      width: 30px;
+      height: 118px;
+      background-color: #f0143a;
+      border-radius: 50%;
+      -webkit-transition: 0.8s;
+      transition: 0.8s;
+    & span
+      position relative
+      z-index 1
+    &:hover:before
+      width 450px
 
 .cases__item:hover .cases__more
   color red
@@ -73,3 +109,6 @@
       margin-bottom 14px
     &__more
       width: 78px;
+    &__submit
+      font-size 18px
+      padding 18px 54px 18px 30px
