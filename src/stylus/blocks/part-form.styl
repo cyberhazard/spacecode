@@ -67,3 +67,21 @@
   left: 16px;
   color: #ffffff;
   font-size: 14px;
+
+@media (max-width:700px)
+  .part
+    &__input
+      width 300px
+      font-size 14px
+      padding 14px 14px
+    &__text
+      width 100%
+      font-size 14px
+      line-height: 22px;
+    &__label
+      font-size 12px
+    &__confirm
+      margin-right 10px
+  .part__input:focus + .part__label, .part__input:valid + .part__label
+    left: 14px;
+
