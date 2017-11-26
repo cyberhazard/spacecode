@@ -11,7 +11,10 @@
           input.part__input(type="tel" name="tel" required)
           label.part__label Ваш телефон*
         .part__item
-          checkbox.part__checkbox
+          label.part__confirm(for="check1")
+            input.part__checkbox(type="checkbox" id="check1")
+            span
+          .part__text Согласен на <span>обработку персональных данных</span>
         .part__item
           button.feedback__submit.feedback__submit_float.exclude <span>Отправить заявку</span>
   img(src="./img/request-particle-1.png").request__particle.request__particle_1
