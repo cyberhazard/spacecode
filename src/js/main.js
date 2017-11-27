@@ -182,6 +182,28 @@ const auditCallback = () => {
 };
 auditCallback();
 
+// partners form send
+const partSend = () => {
+  const button = document.querySelector('.part__submit')
+  const checkbox = document.querySelector('.part__checkbox')
+  if(!button) return null
+  const form = button.form
+  form.onsubmit = e => {
+    e.preventDefault();
+    if(form.querySelector('input[name="phone"]').value.indexOf('*') !== -1) return null;
+    if(!checkbox.checked){
+      alertify.error("Вы не приняли соглашение об обработке персональных данных");
+    } else {
+      const body = new FormData(form);
+      fetch('/mail.php',{
+        method:'POST',
+        body,
+      }).then(_ => alertify.success("Ваша заявка отправленна"),form.reset())
+    }
+  }
+}
+partSend();
+
 // generate portfolion blocks
 
 const generateBlock = (p,groups) => (`
