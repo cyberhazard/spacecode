@@ -263,22 +263,43 @@ window.modalWindow = new tingle.modal({
   closeLabel: "Close",
   cssClass: ['tingle__bg'],
   onOpen: function() {
-
+    const modalSend = () => {
+      const button = document.querySelector('.dig__submit')
+      const checkbox = document.querySelector('.dig__checkbox')
+      if(!button) return null
+      const form = button.form
+      form.onsubmit = e => {
+        e.preventDefault();
+        if(form.querySelector('input[name="phone"]').value.indexOf('*') !== -1) return null;
+        if(!checkbox.checked){
+          alertify.error("Вы не приняли соглашение об обработке персональных данных");
+        } else {
+          const data = new FormData(form);
+          const body = {};
+          for(let i of data.keys()) {
+            body[i] = data.getAll(i)
+          }
+          fetch('/form-audit.php',{
+            method:'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(body),
+          }).then(_ => alertify.success("Ваша заявка отправленна"),form.reset(),modalWindow.close())
+        }
+      }
+    }
+    modalSend()
   },
 });
 
-window.digitalModal = () => {
-  return `
-    <div> hello </div>
-  `
-}
 window.openDigital = function(item){
   const submit = document.querySelector('.request__submit')
   if(!submit) return null;
   submit.onclick = function(e){
     e.preventDefault()
     modalWindow.setContent(`
-      <div class="dig__wrapper">
+      <form class="dig__wrapper">
         <div class="dig__header">
           <div class="dig__title"> Узнать чем </div>
           <img src="../img/logo.png" class="dig__img"/>
@@ -296,11 +317,11 @@ window.openDigital = function(item){
               <div class="dig__bonus_element"><label><input type="checkbox" name="bonus" value="Презентацию компании SpaceCode"/> <span/> </label> Презентацию компании SpaceCode</div>
             </div>
           </div>
-          <form class="dig__contact">
+          <div class="dig__contact">
             <div class="dig__content_title">Контактная информация:</div>
             <div class="dig__contact_header">
               <div class="dig__contact_element">
-                <input type="text" name="adres" class="dig__input" required/>
+                <input type="text" name="address" class="dig__input" required/>
                 <label class="dig__label">Адрес вашего сайта*</label>
               </div>
               <div class="dig__contact_element">
@@ -323,17 +344,17 @@ window.openDigital = function(item){
               </div>
             </div>
             <div class="dig__offer">
-              <label><input type="checkbox"/> <span/> </label> Согласен на <p>обработку персональных данных</p>
+              <label><input type="checkbox" class="dig__checkbox"/> <span/> </label> Согласен на <p>обработку персональных данных</p>
             </div>
             <div class="dig__center">
               <button class="feedback__submit dig__submit"> <span>Отправить заявку</span> </button>
             </div>
           </div>
         </div>
-      </div>
+      </form>
     `);
     modalWindow.open();
   }
 }
 // <div class="dig__content">
-window.openDigital(digitalModal);
+window.openDigital();
