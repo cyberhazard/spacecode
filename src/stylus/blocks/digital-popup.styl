@@ -59,6 +59,7 @@
       display flex
       flex-direction: column
       position: relative
+      margin-bottom 40px
   &__input
     background: transparent
     border none
@@ -69,7 +70,6 @@
     font-size: 18px;
     font-weight: 700;
     cursor pointer
-    margin-bottom 40px
   &__label
     position: absolute;
     top: 14px;
@@ -103,7 +103,6 @@
     & input
       display none
       margin-right 14px
-
   &__center
     display flex
     justify-content: center
@@ -146,8 +145,10 @@
         flex-basis 100%
 @media (max-width:780px)
   .dig
+    &__wrapper
+      padding-bottom 150px
     &__header
-      padding 50px 0
+      padding 50px 10px
     &__title
       font-size 24px
     &__content
@@ -167,7 +168,24 @@
       font-size 12px
     &__offer
       font-size 14px
-@media (max-width:780px)
-  .dig
-    &__wrapper
-      padding-bottom 150px
+// @media (max-width:780px)
+//   .dig
+//     &__label
+//       position inherit
+//       order 1
+//       top: 0px;
+//       left: 0px;
+//       color #17171d;
+//       font-size 14px
+//     &__input
+//       order 2
+//     &__contact
+//       &_element
+//         position inherit
+//   .dig__input:focus + .dig__label, .dig__input:valid + .dig__label
+//     top 0px
+//     left: 0px;
+//     color: #17171d;
+//     font-size: 14px;
+//     position: inherit
+
