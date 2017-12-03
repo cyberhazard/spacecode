@@ -204,7 +204,7 @@ const partSend = () => {
 partSend();
 
 const partnersPhone = document.querySelector('.part__input[name="phone"]');
-partnersPhone && new Inputmask({ mask: '+7 (999) 999-99-99', placeholder: '*' }).mask(partnersPhone);
+partnersPhone && new Inputmask({ mask: '+7 (999) 999-99-99', placeholder: '*', showMaskOnHover: false,}).mask(partnersPhone)
 
 // generate portfolion blocks
 
