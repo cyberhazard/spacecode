@@ -95,6 +95,8 @@ const makeModals = () => fetch('/db.json').then(r => r.json()).then(portf => {
   }
   popup();
 
+
+
   window.cyrclePopup = function(){
     const cyrclePortfolio = Array.prototype.slice.call(document.querySelectorAll('.made__item'))
     if(!cyrclePortfolio) return null;
@@ -356,5 +358,18 @@ window.openDigital = function(item){
     modalWindow.open();
   }
 }
-// <div class="dig__content">
 window.openDigital();
+
+//popups cases
+window.cases = function(){
+  const portfolio = Array.prototype.slice.call(document.querySelectorAll('.cases__item .cases__more'))
+  if(!portfolio) return null;
+  portfolio.forEach((el) => el.onclick = function(e){
+      e.preventDefault();
+      let id = e.currentTarget.closest('.cases__item').dataset.id;
+      window.modal.setContent(modalWrap(portf.find(el => el.id === id)));
+      window.modal.open()
+    }
+  )
+}
+cases();
