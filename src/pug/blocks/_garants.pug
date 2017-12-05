@@ -9,7 +9,7 @@
         .garants__content
           .garants__title Реклама за наш счет
           .garants__text Если мы не выполнили свой прогноз по трафику, то мы компенсируем это контекстной рекламой за наш счет
-          a(href="#").garants__offer
+          a(href="#" data-offer="first").garants__offer
             img(src="./img/contract.png").garants__img
             .garants__offer_text Пункт договора
           .garants__ps *если заказчик выбрал политику<br> «оплата за трафик»
@@ -20,7 +20,7 @@
         .garants__content
           .garants__title Плата только за результат
           .garants__text Если мы не выполнили наш прогноз по выведению запросов в ТОП,  то все работы по продвижению – за наш счет
-          a(href="#").garants__offer
+          a(href="#" data-offer="second").garants__offer
             img(src="./img/contract.png").garants__img
             .garants__offer_text Пункт договора
           .garants__ps *если заказчик выбрал политику <br>«оплата за запросы в ТОП»
@@ -31,8 +31,12 @@
         .garants__content
           .garants__title Защита от фильтров
           .garants__text Если мы не выполнили наш прогноз по выведению запросов в ТОП,  то все работы по продвижению – за наш счет
-          a(href="#").garants__offer
+          a(href="#" data-offer="third").garants__offer
             img(src="./img/contract.png").garants__img
             .garants__offer_text Пункт договора
-
+.offer-popup
+  .offer-popup__content
+    .offer-popup__close
+    .offer-popup__header Пункт договора
+    .offer-popup__text текст
 
