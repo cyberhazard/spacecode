@@ -359,7 +359,7 @@ window.openDigital = function(item){
               </div>
             </div>
             <div class="dig__offer">
-              <label><input type="checkbox" class="dig__checkbox"/> <span/> </label> Согласен на <p>обработку персональных данных</p>
+              <label><input type="checkbox" class="dig__checkbox"/> <span/> </label> Согласен на&nbsp; <p>обработку персональных данных</p>
             </div>
             <div class="dig__center">
               <button class="feedback__submit dig__submit"> <span>Отправить заявку</span> </button>
