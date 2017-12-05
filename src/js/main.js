@@ -374,3 +374,43 @@ window.openDigital = function(item){
 window.openDigital();
 
 
+// offer modals
+
+const offerModal = function(){
+  const popup = document.querySelector('.offer-popup');
+  const contentBox = document.querySelector('.offer-popup__content');
+  const closeButton = document.querySelector('.offer-popup__close');
+  const buttons = [...document.querySelectorAll('.garants__offer')];
+  if(!buttons) return null
+  const offers = {
+    first: '3.2. В случае невыполнения прогноза трафика, представленного Исполнителем, Исполнитель, компенсирует недополученный трафик посредством подключения таких рекламных каналов, как Яндекс.Директ и/или Google.AdWords, без увеличения бюджета при условии своевременного согласования Заказчиком рекомендаций Исполнителя или предоставления необходимой информации для работы по договору в срок, не превышающий 3 (три) рабочих дня.',
+    second: 'В случае невыполнения прогноза по продвижению запросов, представленного Исполнителем, Исполнитель компенсирует все расходы, понесенные Заказчиком в связи с исполнением обязательств по данному Договору.',
+    third: 'При попадании Сайта под фильтр «Минусинск» или поведенческий фильтр абонентская плата, указанная в Приложении №1, снижается до 0 (нуля) рублей, НДС не облагается (п. 2., ст. 346.11 НК РФ) до момента выведения ресурса из-под фильтра. При этом Исполнитель обязуется вывести сайт из-под фильтра в течение 2 (двух) месяцев с момента его попадания под фильтр «Минусинск» или поведенческий фильтр.'
+  }
+  buttons.forEach(button => button.onclick = (e) => {
+    e.preventDefault()
+    const offer = e.currentTarget.getAttribute('data-offer');
+    const content = offers[offer];
+    contentBox.querySelector('.offer-popup__text').textContent = content;
+    popup.style.display = 'flex';
+    setTimeout(() => popup.style.opacity = 1,0)
+    popup.addEventListener('transitionend', function end() {
+      contentBox.classList.add('offer-popup__content_show')
+      popup.removeEventListener('transitionend', end)
+    })
+  })
+
+  closeButton.onclick = () => {
+    contentBox.classList.remove('offer-popup__content_show');
+    const transition = parseFloat(getComputedStyle(contentBox).transitionDuration) * 1000;
+    setTimeout(() => {
+      popup.style.opacity = '';
+      popup.addEventListener('transitionend', function end() {
+        popup.removeEventListener('transitionend', end);
+        popup.style.display = '';
+      })
+    },transition)
+  }
+
+}
+offerModal()
