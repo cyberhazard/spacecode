@@ -96,7 +96,6 @@ const makeModals = () => fetch('/db.json').then(r => r.json()).then(portf => {
   popup();
 
 
-
   window.cyrclePopup = function(){
     const cyrclePortfolio = Array.prototype.slice.call(document.querySelectorAll('.made__item'))
     if(!cyrclePortfolio) return null;
@@ -109,9 +108,23 @@ const makeModals = () => fetch('/db.json').then(r => r.json()).then(portf => {
     )
   }
   cyrclePopup();
+    //popups cases
+  window.cases = function(){
+    const portfolio = Array.prototype.slice.call(document.querySelectorAll('.cases__item .cases__more'))
+    if(!portfolio) return null;
+    portfolio.forEach((el) => el.onclick = function(e){
+        e.preventDefault();
+        let id = e.currentTarget.closest('.cases__item').dataset.id;
+        modal.setContent(modalWrap(portf.find(el => el.id === id)));
+        modal.open()
+      }
+    )
+  }
+  cases();
+
 
 }).catch(e => e)
-
+makeModals();
 var servicePopup = function(){
   let services = Array.prototype.slice.call(document.querySelectorAll('.feedback__submit:not(.exclude)'))
   const rocketButton = document.querySelector('.rocket__button');
@@ -360,16 +373,4 @@ window.openDigital = function(item){
 }
 window.openDigital();
 
-//popups cases
-window.cases = function(){
-  const portfolio = Array.prototype.slice.call(document.querySelectorAll('.cases__item .cases__more'))
-  if(!portfolio) return null;
-  portfolio.forEach((el) => el.onclick = function(e){
-      e.preventDefault();
-      let id = e.currentTarget.closest('.cases__item').dataset.id;
-      window.modal.setContent(modalWrap(portf.find(el => el.id === id)));
-      window.modal.open()
-    }
-  )
-}
-cases();
+
