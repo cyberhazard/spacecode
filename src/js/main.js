@@ -277,7 +277,21 @@ window.modalWindow = new tingle.modal({
   closeMethods: ['overlay', 'button', 'escape'],
   closeLabel: "Close",
   cssClass: ['tingle__bg'],
+  onClose: function() {
+    var body = document.querySelector('body');
+    var html = document.querySelector('html');
+    body.style.overflow = ''
+    body.style.height = ''
+    html.style.overflow = ''
+    html.style.height = ''
+  },
   onOpen: function() {
+    var body = document.querySelector('body');
+    var html = document.querySelector('html');
+    body.style.overflow = 'auto'
+    body.style.height = '100%'
+    html.style.overflow = 'auto'
+    html.style.height = '100%'
     const modalSend = () => {
       const button = document.querySelector('.dig__submit')
       const checkbox = document.querySelector('.dig__checkbox')
