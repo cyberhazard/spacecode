@@ -395,7 +395,7 @@ const offerModal = function(){
   const contentBox = document.querySelector('.offer-popup__content');
   const closeButton = document.querySelector('.offer-popup__close');
   const buttons = [...document.querySelectorAll('.garants__offer')];
-  if(!buttons) return null
+  if(buttons.length === 0 && !closeButton) return null
   const offers = {
     first: '3.2. В случае невыполнения прогноза трафика, представленного Исполнителем, Исполнитель, компенсирует недополученный трафик посредством подключения таких рекламных каналов, как Яндекс.Директ и/или Google.AdWords, без увеличения бюджета при условии своевременного согласования Заказчиком рекомендаций Исполнителя или предоставления необходимой информации для работы по договору в срок, не превышающий 3 (три) рабочих дня.',
     second: 'В случае невыполнения прогноза по продвижению запросов, представленного Исполнителем, Исполнитель компенсирует все расходы, понесенные Заказчиком в связи с исполнением обязательств по данному Договору.',
@@ -428,3 +428,15 @@ const offerModal = function(){
 
 }
 offerModal()
+
+// Браузерные фиксы
+
+const changeBackgroundOnOld = function(){
+  if(is.ios() || is.ie()){
+    const videoBg = document.querySelector('.header__video');
+    const header = document.querySelector('.header');
+    videoBg.style.display = 'none';
+    header.classList.add('header__ios')
+  }
+}
+changeBackgroundOnOld()
