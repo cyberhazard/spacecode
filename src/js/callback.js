@@ -39,6 +39,6 @@ export default () => {
     fetch('/mail.php', {
       method: 'POST',
       body: data,
-    }).then(_=>layoutClose());
+    }).then(_=> alertify.success("Ваша заявка отправленна"),layoutClose());
   }
 }

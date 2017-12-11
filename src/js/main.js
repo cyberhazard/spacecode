@@ -146,6 +146,7 @@ var servicePopup = function(){
         document.querySelector('.callback__title').innerHTML = 'Отправить заявку';
         form.querySelector('input[name="subject"]').value = 'Отправить заявку';
       }
+
       layout.style.display = 'flex';
       form.reset();
       document.body.style.paddingRight = window.innerWidth - document.body.clientWidth + 'px';
@@ -191,7 +192,7 @@ const auditCallback = () => {
     fetch('/audit.php', {
       method: 'POST',
       body,
-    }).then(_ => form.reset())
+    }).then(_ => alertify.success("Ваша заявка отправленна"),form.reset())
   }
 };
 auditCallback();
