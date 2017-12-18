@@ -6,7 +6,97 @@ html(lang="ru")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    block preloaderstyle
+    style.
+      .preloader {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        z-index: 100000000;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #191A22;
+        background-image: radial-gradient(#2c2e3c 0%, #2c2e3c 30%, #191A22 100%);
+        animation: showbg 1s forwards;
+        will-change: background-image;
+      }
+
+      .hide-bg {
+        animation: hidebg 1s forwards;
+        will-change: opacity;
+      }
+
+      .preloader__wrapper {
+        overflow: hidden;
+      }
+      .preloader__text {
+        font-size: 10vh;
+        transform: translateY(100%);
+        color: white;
+        text-transform: uppercase;
+        transition: .5s;
+        animation: showtext 1s 1s forwards;
+      }
+
+      .preloader__text svg {
+        width: 20vw
+      }
+      @media (max-width:700px) {
+        .preloader__text svg {
+        width: 50vw
+      }
+      }
+      .hide-text {
+        animation: hidetext 1s forwards;
+      }
+
+      .preloader__light {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        background-color: rgba(255,255,255,.04);
+        animation: blink 3s 2s infinite;
+        will-change: top, height;
+      }
+
+      @keyframes showtext {
+        from { transform: translateY(100%); }
+        to { transform: translateY(0); }
+      }
+
+      @keyframes hidetext {
+        from { transform: translateY(0); }
+        to { transform: translateY(100%); }
+      }
+
+      @keyframes showbg {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+      @keyframes hidebg {
+        from { opacity: 1; }
+        to { opacity: 0; }
+      }
+
+      @keyframes blink {
+        0% {
+          top: 100%;
+          height: 0%;
+        }
+        50% {
+          top: 0;
+          height: 100%;
+        }
+        100% {
+          top: 0;
+          height: 0%;
+        }
+      }
     link(rel='shortcut icon', href='/img/favicon.png', type='image/x-icon')
     link(rel="stylesheet", href="/css/style.css")
     link(href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet")
@@ -31,9 +121,39 @@ html(lang="ru")
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter46089240 = new Ya.Metrika({ id:46089240, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/46089240" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
   body
-    block preloader
-    block preloaderscript
-    .wrapper
+    .preloader
+      .preloader__light
+      .preloader__wrapper
+        .preloader__text
+          include ../../images/logo.svg
+    script.
+      (function () {
+        var preloader = document.querySelector('.preloader');
+        var text = document.querySelector('.preloader__text');
+        var light = document.querySelector('.preloader__light');
+
+        setTimeout(function () {
+          var images = Array.prototype.slice.call(document.querySelectorAll('img'));
+          Promise.all(images.map(function (image) {
+            return new Promise(function (res, rej) {
+              var img = new Image();
+              img.setAttribute('src', image.getAttribute('src'));
+              img.onload = img.onerror = res;
+            });
+          })).then(function (_) {
+            light.style.animation = 'none';
+            text.classList.add('hide-text');
+            setTimeout(function () {
+              preloader.classList.add('hide-bg');
+              document.querySelector('.wrapper').style.display = '';
+            }, 1000);
+            setTimeout(function () {
+              preloader.style.display = 'none';
+            }, 2100);
+          });
+        }, 4500);
+      })();
+    .wrapper(style="display: none;")
       include ../blocks/_callback.pug
       include ../blocks/_mobile-menu.pug
       //- header.header(style=headerHeight && 'height:'+headerHeight+'px')
