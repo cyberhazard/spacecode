@@ -34,6 +34,10 @@ html(lang="ru")
     block preloader
     block preloaderscript
     .wrapper
+      script.
+        if (window.location.pathname == '/') {
+          document.querySelector('.wrapper').style.opacity = 0;
+        }
       include ../blocks/_callback.pug
       include ../blocks/_mobile-menu.pug
       //- header.header(style=headerHeight && 'height:'+headerHeight+'px')
@@ -114,6 +118,6 @@ html(lang="ru")
               a.footer__contacts.footer__contacts_phone(href="tel:+74951349434") +7(495)134-94-34
               a.footer__contacts.footer__contacts_mail(href="mailto:info@spacecode.ru") info@spacecode.ru
               .footer__contacts.footer__contacts_address г. Москва, ул. Большая Серпуховская, д. 44, офис 414
-    button.hamburger
+      button.hamburger
     script(src="/js/bundle.js")
     <noindex><script async src="https://stats.lptracker.ru/code/new/43871"></script></noindex>

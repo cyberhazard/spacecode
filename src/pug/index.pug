@@ -128,8 +128,8 @@ block preloaderscript
           });
         })).then(function (_) {
           light.style.animation = 'none';
-
           text.classList.add('hide-text');
+          document.querySelector('.wrapper').style.opacity = '';
           setTimeout(function () {
             return preloader.classList.add('hide-bg');
           }, 1000);
