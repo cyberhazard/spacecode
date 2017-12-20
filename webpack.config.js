@@ -4,6 +4,7 @@ module.exports = {
     path: `${__dirname}/dest/js`,
     filename: 'bundle.js'
   },
+  devtool: 'source-map',
   module: {
     rules: [
       {
