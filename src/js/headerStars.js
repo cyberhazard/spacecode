@@ -6,7 +6,7 @@ header.style.position = 'relative';
 export const startGlow = () => {
   if(!header) return null;
   if(is.ie()) return null;
-  for(let i = 0; i<50; i++){
+  for(let i = 0; i<20; i++){
     let star = new Image();
     star.src = starImage;
     star.classList.add('star')

@@ -81,7 +81,9 @@ block preloaderscript
         })).then(function (_) {
           document.querySelector('.wrapper').style.opacity = '';
           preloader.style.opacity = 0;
-          setTimeout(() => preloader.remove() ,550)
+          setTimeout(function() {
+            preloader.parentElement.removeChild(preloader)
+          } ,550)
         });
     })();
 
