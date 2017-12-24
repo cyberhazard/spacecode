@@ -10,116 +10,68 @@ block header
 
 block preloader
   .preloader
+    .preloader__logo
+      svg(viewbox='0 0 1457 216', xmlns='http://www.w3.org/2000/svg')
+        g(fill='none', fill-rule='evenodd')
+          path(d='M116 102.6c0 9.6-1.867 16.067-5.6 19.4-3.733 3.333-10.467 5-20.2 5H26.4c-10.533 0-17.467-1.867-20.8-5.6-3.333-3.733-5-10.933-5-21.6l21.2-4.4v12.2h73V84H30.4c-9.733 0-16.433-1.667-20.1-5-3.667-3.333-5.5-9.8-5.5-19.4V48.2c0-9.6 1.833-16.067 5.5-19.4 3.667-3.333 10.367-5 20.1-5H89c9.867 0 16.6 1.7 20.2 5.1 3.6 3.4 5.4 9.967 5.4 19.7l-21.2 5V41.8H25.8V64h64.4c9.733 0 16.467 1.667 20.2 5 3.733 3.333 5.6 9.8 5.6 19.4v14.2zm165.7-35.8c0 13.333-7.733 20-23.2 20h-64.8V127h-23.6V23.8h88.4c15.467 0 23.2 6.667 23.2 20v23zm-23.2-6v-11c0-3.467-1-5.733-3-6.8-1.467-.933-4.067-1.4-7.8-1.4h-54V69h54c3.733 0 6.333-.467 7.8-1.4 2-1.067 3-3.333 3-6.8zM444.3 127h-27l-12.4-22.6h-65.4l-12 22.6h-24l58.4-103.2h23.2L444.3 127zm-49.4-41.2l-22.2-42-23 42h45.2zm198 16.8c0 9.6-1.833 16.067-5.5 19.4-3.667 3.333-10.367 5-20.1 5h-61.6c-9.733 0-16.433-1.667-20.1-5-3.667-3.333-5.5-9.8-5.5-19.4V48.2c0-9.6 1.833-16.067 5.5-19.4 3.667-3.333 10.367-5 20.1-5h61.6c12.267 0 19.867 2.867 22.8 8.6 1.867 3.333 2.8 11.867 2.8 25.6l-24 3.8V42.2h-64.8v65.4h64.8V85.4l24 5v12.2zM753.5 127H646.9V23.8h105.6v17.6h-81.6v23h47.6V82h-47.6v25.6h82.6zm159.4-24.4c0 9.6-1.833 16.067-5.5 19.4-3.667 3.333-10.367 5-20.1 5h-61.6c-9.733 0-16.433-1.667-20.1-5-3.667-3.333-5.5-9.8-5.5-19.4V48.2c0-9.6 1.833-16.067 5.5-19.4 3.667-3.333 10.367-5 20.1-5h61.6c12.267 0 19.867 2.867 22.8 8.6 1.867 3.333 2.8 11.867 2.8 25.6l-24 3.8V42.2h-64.8v65.4h64.8V85.4l24 5v12.2z', fill='#FFF', fill-rule='nonzero')
+          g(transform='rotate(-54 616.457 -799.597)')
+            rect(fill='#FFF', fill-rule='nonzero', x='79', width='100', height='20', rx='10')
+            rect(fill='#FFF', fill-rule='nonzero', x='38', y='32', width='85', height='20', rx='10')
+            rect(fill='#FFF', fill-rule='nonzero', y='65', width='110', height='20', rx='10')
+            rect(fill='#FFF', fill-rule='nonzero', x='38', y='98', width='85', height='20', rx='10')
+            rect(fill='#FFF', fill-rule='nonzero', x='79', y='130', width='100', height='20', rx='10')
+            circle(stroke='#FFF', stroke-width='20', cx='170', cy='75', r='65')
+            circle(fill='#FFF', fill-rule='nonzero', cx='152.504', cy='101.085', r='15')
+            circle(fill='#FFF', fill-rule='nonzero', cx='192.228', cy='48.759', r='10')
+            circle(fill='#FFF', fill-rule='nonzero', cx='193.171', cy='102.225', r='7')
+          path(d='M1301.6 74.8c0 20-7.6 34.733-22.8 44.2-8.667 5.333-22.8 8-42.4 8h-60.2V23.8h66.4c17.867 0 31.867 4 42 12 11.333 8.8 17 21.8 17 39zm-24.8-.4c0-21.467-11.333-32.2-34-32.2h-42.6v65.4h31c14.667 0 25.333-1.867 32-5.6 9.067-5.067 13.6-14.267 13.6-27.6zm179.7 52.6h-106.6V23.8h105.6v17.6h-81.6v23h47.6V82h-47.6v25.6h82.6z', fill='#FFF', fill-rule='nonzero')
     .preloader__light
-    .preloader__wrapper
-      .preloader__text
-        include ../images/logo.svg
+
 
 block preloaderstyle
   style.
-    .header__active {
-      display:top;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
     .preloader {
       position: fixed;
-      height: 100vh;
-      width: 100%;
-      z-index: 100000000;
-      top: 0;
-      left: 0;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-image: radial-gradient(#2c2e3c 0%, #2c2e3c 30%, #191A22 100%);
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #191A22;
-      background-image: radial-gradient(#2c2e3c 0%, #2c2e3c 30%, #191A22 100%);
-      animation: showbg 1s forwards;
-      will-change: background-image;
-    }
-
-    .hide-bg {
-      animation: hidebg 1s forwards;
       will-change: opacity;
-    }
-
-    .preloader__wrapper {
-      overflow: hidden;
-    }
-    .preloader__text {
-      font-size: 10vh;
-      transform: translateY(100%);
-      color: white;
-      text-transform: uppercase;
       transition: .5s;
-      animation: showtext 1s 1s forwards;
+      z-index: 100000;
     }
-
-    .preloader__text svg {
-      width: 20vw
-    }
-    @media (max-width:700px) {
-      .preloader__text svg {
-      width: 50vw
-    }
-    }
-    .hide-text {
-      animation: hidetext 1s forwards;
+    .preloader__logo {
+      width: 400px;
     }
 
     .preloader__light {
+      height: 100vh;
+      width: 100%;
       position: absolute;
       top: 100%;
       left: 0;
-      width: 100%;
-      height: 0%;
-      background-color: rgba(255,255,255,.04);
-      animation: blink 3s 2s infinite;
-      will-change: top, height;
-    }
-
-    @keyframes showtext {
-      from { transform: translateY(100%); }
-      to { transform: translateY(0); }
-    }
-
-    @keyframes hidetext {
-      from { transform: translateY(0); }
-      to { transform: translateY(100%); }
-    }
-
-    @keyframes showbg {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @keyframes hidebg {
-      from { opacity: 1; }
-      to { opacity: 0; }
+      background-color: rgba(255,255,255,.1);
+      animation: blink 2s infinite;
     }
 
     @keyframes blink {
-      0% {
-        top: 100%;
-        height: 0%;
-      }
-      50% {
-        top: 0;
-        height: 100%;
-      }
-      100% {
-        top: 0;
-        height: 0%;
-      }
+      0% { transform: translateY(0) }
+      50% { transform: translateY(-100%) }
+      100% { transform: translateY(-200%) }
     }
 
 block preloaderscript
   script.
     (function () {
       var preloader = document.querySelector('.preloader');
-      var text = document.querySelector('.preloader__text');
-      var light = document.querySelector('.preloader__light');
 
-      setTimeout(function () {
-        var images = Array.prototype.slice.call(document.querySelectorAll('img'));
+      var images = Array.prototype.slice.call(document.querySelectorAll('img'));
         Promise.all(images.map(function (image) {
           return new Promise(function (res, rej) {
             var img = new Image();
@@ -127,17 +79,10 @@ block preloaderscript
             img.onload = img.onerror = res;
           });
         })).then(function (_) {
-          light.style.animation = 'none';
-          text.classList.add('hide-text');
           document.querySelector('.wrapper').style.opacity = '';
-          setTimeout(function () {
-            return preloader.classList.add('hide-bg');
-          }, 1000);
-          setTimeout(function () {
-            return preloader.style.display = 'none';
-          }, 2100);
+          preloader.style.opacity = 0;
+          setTimeout(() => preloader.remove() ,550)
         });
-      }, 4500);
     })();
 
 block content
