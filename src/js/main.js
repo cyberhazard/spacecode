@@ -440,4 +440,14 @@ const changeBackgroundOnOld = function(){
     header.classList.add('header__ios')
   }
 }
-changeBackgroundOnOld()
+changeBackgroundOnOld();
+
+[...document.querySelectorAll('a')].forEach(link => {
+  if (link.getAttribute('href') && link.getAttribute('href')[0] == '/') {
+    link.onclick = e => {
+      e.preventDefault();
+      document.querySelector('.wrapper').style.opacity = 0;
+      setTimeout(() => window.location.href = link.getAttribute('href') ,320)
+    }
+  }
+})
