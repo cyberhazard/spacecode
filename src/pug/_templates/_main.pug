@@ -170,24 +170,35 @@ html(lang="ru")
               a.footer__contacts.footer__contacts_mail(href="mailto:info@spacecode.ru") info@spacecode.ru
               .footer__contacts.footer__contacts_address г. Москва, ул. Большая Серпуховская, д. 44, офис 414
       button.hamburger
+      img(src="/img/header-main-bg.png" style="display: none;")
     script.
       (function () {
         var preloader = document.querySelector('.preloader');
 
         var images = Array.prototype.slice.call(document.querySelectorAll('img'));
-          Promise.all(images.map(function (image) {
-            return new Promise(function (res, rej) {
-              var img = new Image();
-              img.setAttribute('src', image.getAttribute('src'));
-              img.onload = img.onerror = res;
-            });
-          })).then(function (_) {
-            document.querySelector('.wrapper').style.opacity = '';
-            preloader.style.opacity = 0;
-            setTimeout(function() {
-              preloader.parentElement.removeChild(preloader)
-            } ,550)
+        var promises = images.map(function (image) {
+          return new Promise(function (res, rej) {
+            var img = new Image();
+            img.setAttribute('src', image.getAttribute('src'));
+            img.onload = img.onerror = res;
           });
+        });
+        if (is.not.safari()) {
+          promises.push(new Promise((res, rej) => {
+            var video = document.createElement('video');
+            video.setAttribute('src', '/img/video-bg.mp4');
+            //- video.setAttribute('preload', true)
+            video.oncanplay = video.onerror = res
+          }));
+        }
+        window.p = promises;
+        Promise.all(promises).then(function (_) {
+          document.querySelector('.wrapper').style.opacity = '';
+          preloader.style.opacity = 0;
+          setTimeout(function() {
+            preloader.parentElement.removeChild(preloader)
+          } ,550)
+        });
       })();
     script(src="/js/bundle.js")
     <noindex><script async src="https://stats.lptracker.ru/code/new/43871"></script></noindex>

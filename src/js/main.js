@@ -428,7 +428,7 @@ const offerModal = function(){
   }
 
 }
-offerModal()
+offerModal();
 
 // Браузерные фиксы
 
