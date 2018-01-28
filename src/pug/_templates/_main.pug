@@ -185,7 +185,11 @@ html(lang="ru")
           setTimeout(function() {
             preloader.parentElement.removeChild(preloader)
           } ,1350)
-        });
+        }).catch(console.log);
       })();
+      setTimeout(function() {
+        var preloader = document.querySelector('.preloader');
+        if (preloader) preloader.parentElement.removeChild(preloader)
+      }, 5000)
     script(src="/js/bundle.js")
     <noindex><script async src="https://stats.lptracker.ru/code/new/43871"></script></noindex>
