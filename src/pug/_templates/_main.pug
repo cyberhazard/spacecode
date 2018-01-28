@@ -189,7 +189,10 @@ html(lang="ru")
       })();
       setTimeout(function() {
         var preloader = document.querySelector('.preloader');
-        if (preloader) preloader.parentElement.removeChild(preloader)
+        if (preloader) {
+          preloader.parentElement.removeChild(preloader)
+          document.querySelector('.wrapper').style.opacity = '';
+        }
       }, 5000)
     script(src="/js/bundle.js")
     <noindex><script async src="https://stats.lptracker.ru/code/new/43871"></script></noindex>
