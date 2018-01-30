@@ -30,7 +30,7 @@ export default () => {
     setTimeout(()=>layout.style.opacity = 1,0);
   };
 
-  new Inputmask({ mask: '+7 (999) 999-99-99', placeholder: '*' }).mask(phone);
+  new Inputmask({ mask: '+7 (999) 999-99-99', placeholder: '_' }).mask(phone);
 
   form.onsubmit = e => {
     e.preventDefault();
