@@ -22,7 +22,7 @@ const hamburger = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector('.mobile-menu');
 const mobileMenuClose = document.querySelector('.mobile-menu__close');
 const feedbackPhone = document.querySelector('.feedback__input[name="phone"]');
-feedbackPhone && new Inputmask({ mask: '+7 (999) 999-99-99', placeholder: '*' }).mask(feedbackPhone);
+feedbackPhone && new Inputmask({ mask: '+7 (999) 999-99-99', placeholder: '_' }).mask(feedbackPhone);
 hamburger.onclick = () => mobileMenu.style.transform = 'translateX(0)'
 mobileMenuClose.onclick = () => mobileMenu.style.transform = '';
 
@@ -232,7 +232,7 @@ const partSend = () => {
 partSend();
 
 const partnersPhone = document.querySelector('.part__input[name="phone"]');
-partnersPhone && new Inputmask({ mask: '+7 (999) 999-99-99', placeholder: '*', showMaskOnHover: false,}).mask(partnersPhone)
+partnersPhone && new Inputmask({ mask: '+7 (999) 999-99-99', placeholder: '_', showMaskOnHover: false,}).mask(partnersPhone)
 
 // generate portfolion blocks
 
