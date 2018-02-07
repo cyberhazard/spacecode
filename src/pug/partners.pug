@@ -1,16 +1,19 @@
 extends _templates/_main
 
 block vars
-  - var pageTitle = 'Партнерская программа SPACECODE'
+  - var pageTitle = 'Партнерская программа от SPACECODE | Digital-агентство SPACECODE'
   - var customHeader = true
   - var service = true
+  - var metaDescript = "Digital-агентство SPACECODE предлагает взаимовыгодные условия партнерства, которые принесут дополнительный доход без вложений. Вы рекомендуете нас, как надежного партнера в сфере Digital своим клиентам и получаете за это процент от заказов, сделанных благодаря Вам."
+  - var metaKeywords = "партнерская программа студия, партнерская программа агентства, веб студия сотрудничество"
   //- - var customBg = '/img/services-bg.png'
+
 
 block header
   .g-wrapper.g-wrapper_services
     .promotion
       .promotion__title.promotion__title_land.promotion__title_line Партнерская программа от SPACECODE
-      .promotion__descript.promotion__descript_marg.promotion__descript_vis Интернет-агентство SpaceCode предлагает взаимовыгодные условия партнерства, которые принесут дополнительный доход без вложений.
+      .promotion__descript.promotion__descript_marg.promotion__descript_vis Digital-агентство SPACECODE предлагает взаимовыгодные условия партнерства, которые принесут дополнительный доход без вложений.
       .promotion__descript.promotion__descript_marg.promotion__descript_vis Вы рекомендуете нас, как надежного партнера в сфере Digital своим клиентам и получаете за это процент от заказов, сделанных благодаря Вам.
 block content
   include blocks/_bonuses.pug
