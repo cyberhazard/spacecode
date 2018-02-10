@@ -13,6 +13,7 @@ block header
     .promotion
       .promotion__title Контакты
 block content
+ div(itemscope itemtype="http://schema.org/Organization")
   .feedback
     img(src='../img/contacts-planet.png').bg__planet_contacts
     .g-wrapper
@@ -20,7 +21,7 @@ block content
         .feedback__grid.contacts__grid
           .feedback__item
             .feedback__name Наш адрес:
-            .feedback__text <span itemprop="streetAddress">г. Москва, ул. Большая Серпуховская, д. 44, офис 414</span>
+            .feedback__text <span itemprop="addressLocality">г. Москва</span>,  <span itemprop="streetAddress">ул. Большая Серпуховская, д. 44, офис 414</span>
           .feedback__item
             .feedback__name Наш телефон:
             .feedback__text
