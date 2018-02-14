@@ -1,6 +1,6 @@
 .callback
   button.callback__close
-  form.callback__content#callback-form
+  form.callback__content#callback-form(data-metrika="callback_direct")
     h3.callback__title Заказать обратный звонок
     input.callback__input(type="name" name="name" placeholder="Ваше имя..." required pattern="[a-zA-Zа-яА-Я ]{4,}")
     input.callback__input(type="tel" name="phone" placeholder="Ваш телефон..." required)
