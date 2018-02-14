@@ -21,7 +21,7 @@ block header
         .promotion__item Дизайн интерфейсов
         .promotion__item Оформление презентаций
         .promotion__item Создание видео
-      a.feedback__submit.services__scroll: span Выбрать решение
+      a(data-metrika="forms_design_direct").feedback__submit.services__scroll: span Выбрать решение
 
 block content
   include blocks/_calc.pug
@@ -58,7 +58,7 @@ block content
     .g-wrapper
       .features__content
         .features__callback Закажите обратный звонок и задайте уточняющие вопросы!
-        a.feedback__submit(href="#") <span>Подробнее</span>
+        a.feedback__submit(href="#" data-metrika="callback_direct" ) <span>Подробнее</span>
   //include blocks/_circle-portfolio.pug
   //- .steps
   //-   .g-wrapper
