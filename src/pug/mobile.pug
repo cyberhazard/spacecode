@@ -35,7 +35,7 @@ block content
             p Разработка приложений любой сложности с устойчивой архитектурой, высокой нагружаемостью и возможностью масштабирования
           .analytics__footer
             .analytics__cost от 140 000 руб / от 45 дней
-            a.feedback__submit.feedback__submit_black(href="#" data-service="Заказать разработку под iOS") <span>Подробнее</span>
+            a.feedback__submit.feedback__submit_black(href="#" data-metrika="forms_mobile_direct" data-service="Заказать разработку под iOS") <span>Подробнее</span>
         .analytics__item
           .analytics__title
             img(src="../img/mobile-android.svg").analytics__img
@@ -44,7 +44,7 @@ block content
             p Разработка приложений любой сложности с устойчивой архитектурой, высокой нагружаемостью и возможностью масштабирования
           .analytics__footer
             .analytics__cost от 120 000 руб / от 45 дней
-            a.feedback__submit.feedback__submit_black(href="#" data-service="Заказать разработку под Android") <span>Подробнее</span>
+            a.feedback__submit.feedback__submit_black(href="#" data-metrika="forms_mobile_direct" data-service="Заказать разработку под Android") <span>Подробнее</span>
         .analytics__item
           .analytics__title
             img(src="../img/mobile-integr.svg").analytics__img
@@ -53,7 +53,7 @@ block content
             p Разработка API или бесшовная интеграция Вашего мобильного приложения с различными веб-сервисами и интернет ресурсами
           .analytics__footer
             .analytics__cost от 150 000 руб / от 60 дней
-            a.feedback__submit.feedback__submit_black(href="#" data-service="Заказать интеграцию приложений") <span>Подробнее</span>
+            a.feedback__submit.feedback__submit_black(href="#" data-metrika="forms_mobile_direct" data-service="Заказать интеграцию приложений") <span>Подробнее</span>
       .calc__footer
         .calc__footer-header Не нашли нужную услугу?
           img.calc__footer-img.calc__footer-img_1(src='/img/calc-f-l.png')
@@ -92,7 +92,7 @@ block content
     .g-wrapper
       .features__content
         .features__callback Закажите обратный звонок и задайте уточняющие вопросы!
-        a.feedback__submit(href="#") <span>Подробнее</span>
+        a.feedback__submit(href="#" data-metrika="callback_direct") <span>Подробнее</span>
   //include blocks/_circle-portfolio.pug
   .steps
     .g-wrapper
@@ -130,7 +130,7 @@ block content
             .steps__header Поддержка
             .steps__text Оказываем услуги по рекламе и продвижению приложения по всем рекламным каналам.
       .rocket
-        button.rocket__button
+        button.rocket__button(data-metrika="callback_direct")
           span.rocket__text Начать
           span.rocket__block
             img.rocket__body(src="/img/rocket-body.png")
