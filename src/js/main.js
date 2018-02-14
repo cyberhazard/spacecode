@@ -201,6 +201,7 @@ const auditCallback = () => {
   form.onsubmit = e => {
     e.preventDefault();
     if (form.querySelector('input[name="phone"]').value.indexOf('*') !== -1) return null;
+    yaCounter46089240.reachGoal(form.getAttribute('data-metrika'));
     const body = new FormData(form);
     fetch('/audit.php', {
       method: 'POST',
