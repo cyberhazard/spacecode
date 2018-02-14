@@ -35,6 +35,7 @@ export default () => {
   form.onsubmit = e => {
     e.preventDefault();
     if (phone.value.indexOf('*') !== -1) return null
+    yaCounter46089240.reachGoal(form.getAttribute('data-metrika'));
     const data = new FormData(form);
     fetch('/mail.php', {
       method: 'POST',

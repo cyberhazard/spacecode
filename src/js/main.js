@@ -149,16 +149,17 @@ var servicePopup = function(){
   services.forEach((el) => el.onclick = function(e){
       if(el.classList.contains('services__scroll')) return null;
       e.preventDefault();
-
       var service = el.getAttribute('data-service')
+      var metrika = el.getAttribute('data-metrika')
       if (service) {
         document.querySelector('.callback__title').innerHTML = service;
         form.querySelector('input[name="subject"]').value = service;
+        form.setAttribute('data-metrika',metrika)
       } else {
         document.querySelector('.callback__title').innerHTML = 'Отправить заявку';
         form.querySelector('input[name="subject"]').value = 'Отправить заявку';
+        form.setAttribute('data-metrika',metrika)
       }
-
       layout.style.display = 'flex';
       form.reset();
       document.body.style.paddingRight = window.innerWidth - document.body.clientWidth + 'px';
