@@ -234,6 +234,23 @@ partSend();
 const partnersPhone = document.querySelector('.part__input[name="phone"]');
 partnersPhone && new Inputmask({ mask: '+7 (999) 999-99-99', placeholder: '_', showMaskOnHover: false,}).mask(partnersPhone)
 
+// partners form send
+const contactsForm = () => {
+  if(!document.querySelector('#contacts-form')) return null
+  const form = document.querySelector('#contacts-form')
+  form.onsubmit = e => {
+    e.preventDefault();
+    yaCounter46089240.reachGoal('forms_contacts_direct');
+    const body = new FormData(form);
+    fetch('/contacts-mail.php',{
+      method:'POST',
+      body,
+    }).then(_ => alertify.success("Ваша вопрос отправлен"),form.reset())
+  }
+}
+contactsForm();
+
+
 // generate portfolion blocks
 
 const generateBlock = (p,groups) => (`
