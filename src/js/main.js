@@ -345,7 +345,7 @@ window.modalWindow = new tingle.modal({
               'Content-Type': 'application/json'
             },
             body: JSON.stringify(body),
-          }).then(_ => alertify.success("Ваша заявка отправленна"),form.reset(),modalWindow.close())
+          }).then(_ => alertify.success("Ваша заявка отправленна"),form.reset(),modalWindow.close(),yaCounter46089240.reachGoal(form.getAttribute('data-metrika')))
         }
       }
     }
@@ -359,7 +359,7 @@ window.openDigital = function(item){
   submit.onclick = function(e){
     e.preventDefault()
     modalWindow.setContent(`
-      <form class="dig__wrapper">
+      <form class="dig__wrapper" data-metrika="forms_complex_direct">
         <div class="dig__header">
           <div class="dig__title"> Узнать чем </div>
           <img src="../img/logo.png" class="dig__img"/>
