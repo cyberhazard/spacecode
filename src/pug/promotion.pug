@@ -39,7 +39,7 @@ block content
             p Повышаем рентабильность инвестиций благодаря снижению стоимости конверсии
           .prices__footer
             .prices__cost от 10 000 руб.
-            a.feedback__submit.feedback__submit_black(href="#" data-service="Заказать контекстную рекламу") <span>Подробнее</span>
+            a.feedback__submit.feedback__submit_black(href="#" data-metrika="forms_reklama_direct" data-service="Заказать контекстную рекламу") <span>Подробнее</span>
         .prices__item
           .prices__title
             img(src="../img/seo-3.svg").prices__img
@@ -52,7 +52,7 @@ block content
             p Непрерывная работа по улучшению. Ежемесячные отчеты
           .prices__footer
             .prices__cost от 15 000 руб.
-            a.feedback__submit.feedback__submit_black(href="#" data-service="Заказать SEO-продвижение") <span>Подробнее</span>
+            a.feedback__submit.feedback__submit_black(href="#" data-metrika="forms_reklama_direct" data-service="Заказать SEO-продвижение") <span>Подробнее</span>
         .software__separator
             img(src="../img/mini-planet.png").software__separator_img
         .prices__item
@@ -65,7 +65,7 @@ block content
             p Показываем реальное количество продаж по каждому рекламному источнику и стоимость одного привлеченного клиента
           .prices__footer
             .prices__cost от 20 000 руб.
-            a.feedback__submit.feedback__submit_black(href="#" data-service="Заказать сквозную аналитику") <span>Подробнее</span>
+            a.feedback__submit.feedback__submit_black(href="#" data-metrika="forms_reklama_direct" data-service="Заказать сквозную аналитику") <span>Подробнее</span>
         .prices__item
           .prices__title
             img(src="../img/seo-2.svg").prices__img
@@ -77,7 +77,7 @@ block content
             p Основываемся на Google Analytics
           .prices__footer
             .prices__cost
-            a.feedback__submit.feedback__submit_black(href="#" data-service="Заказать партнерские отношения") <span>Подробнее</span>
+            a.feedback__submit.feedback__submit_black(href="#" data-metrika="forms_reklama_direct" data-service="Заказать партнерские отношения") <span>Подробнее</span>
 
       .calc__footer
           .calc__footer-header Не нашли нужную услугу?
@@ -122,7 +122,7 @@ block content
             .steps__header Запуск
             .steps__text Настраивается Яндекс Метрика и Google Analytics, подключаются все необходимые сервисы. Запускается и оптимизируется сайт.
       .rocket
-        button.rocket__button
+        button.rocket__button(data-metrika="callback_direct")
           span.rocket__text Начать
           span.rocket__block
             img.rocket__body(src="/img/rocket-body.png")
