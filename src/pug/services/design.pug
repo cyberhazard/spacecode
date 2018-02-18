@@ -1,4 +1,4 @@
-extends _templates/_main
+extends ../_templates/_main
 
 block vars
   - var pageTitle = 'Веб-дизайн, фирменный стиль, айдентика | Digital-агентство SPACECODE'
@@ -24,7 +24,7 @@ block header
       a.feedback__submit.services__scroll: span Выбрать решение
 
 block content
-  include blocks/_calc.pug
+  include ../blocks/_calc.pug
   .features
     .features__block
       .features__grid
@@ -97,6 +97,6 @@ block content
   //-           img.rocket__fire(src="/img/rocket-fire.png")
   //-         span.rocket__text Полет
   //-         .rocket__lines
-  include blocks/_cases.pug
-  include blocks/_clients.pug
-  include blocks/_thanks.pug
+  include ../blocks/_cases.pug
+  include ../blocks/_clients.pug
+  include ../blocks/_thanks.pug

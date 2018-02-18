@@ -1,4 +1,4 @@
-extends _templates/_main
+extends ../_templates/_main
 
 block vars
   - var pageTitle = 'Разработка и интеграция ПО | Digital-агентство полного цикла SPACECODE'
@@ -158,9 +158,9 @@ block content
       .features__content
         .features__callback Закажите обратный звонок и задайте уточняющие вопросы!
         a.feedback__submit(href="#" data-metrika="callback_direct") <span>Подробнее</span>
-  //include blocks/_circle-portfolio.pug
-  include blocks/_cases.pug
-  include blocks/_clients.pug
-  include blocks/_thanks.pug
-  //include blocks/_feedback.pug
+  //include ../blocks/_circle-portfolio.pug
+  include ../blocks/_cases.pug
+  include ../blocks/_clients.pug
+  include ../blocks/_thanks.pug
+  //include ../blocks/_feedback.pug
 

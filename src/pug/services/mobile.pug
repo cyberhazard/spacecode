@@ -1,4 +1,4 @@
-extends _templates/_main
+extends ../_templates/_main
 
 block vars
   - var pageTitle = 'Разработка мобильных приложений на заказ | Digital-агентство SPACECODE'
@@ -137,7 +137,7 @@ block content
             img.rocket__fire(src="/img/rocket-fire.png")
           span.rocket__text Полет
           .rocket__lines
-  include blocks/_cases.pug
-  include blocks/_clients.pug
-  include blocks/_thanks.pug
+  include ../blocks/_cases.pug
+  include ../blocks/_clients.pug
+  include ../blocks/_thanks.pug
 

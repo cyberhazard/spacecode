@@ -1,4 +1,4 @@
-extends _templates/_main
+extends ../_templates/_main
 
 block vars
   - var pageTitle = 'Разработка и продвижение сайтов | Digital-агентство SPACECODE'
@@ -20,9 +20,9 @@ block header
         .promotion__item.promotion__item_full Повышение узнаваемости бренда
         .promotion__item.promotion__item_full И еще более 10 услуг для продвижения Вашего бизнеса в сети
 block content
-  include blocks/_tabs.pug
-  include blocks/_garants.pug
-  include blocks/_request.pug
-  include blocks/_plan.pug
-  include blocks/_cases.pug
+  include ../blocks/_tabs.pug
+  include ../blocks/_garants.pug
+  include ../blocks/_request.pug
+  include ../blocks/_plan.pug
+  include ../blocks/_cases.pug
 
