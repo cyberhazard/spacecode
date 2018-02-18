@@ -1,0 +1,22 @@
+extends _templates/_main
+
+block vars
+  - var pageTitle = 'SPACECODE - Digital-агентство полного цикла в Москве | Сайты, интернет-реклама, SEO, мобильные приложения и ПО.'
+  - var customHeader = true
+  - var metaDescript = "Digital-агентство SPACECODE в Москве. Мы разрабатываем по-настоящему крутые продукты в сфере Digital: сайты, интернет-рекламу, SEO, мобильные приложения и ПО. Нам по силам проекты любой сложности. Наша команда - коллектив молодых амбициозных выпускников из МГУ и МФТИ. "
+  - var metaKeywords = "Веб-студия, Digital-агентство, интернет-агентство, spacecode, space code, спейскод, диджитал-агентство, вебстудия, веб студия в Москве"
+  - var customBg = "/img/404-bg.jpg"
+
+block header
+  .p404
+    .g-wrapper
+      h1.p404__header Упс, заблудились?
+      h3.p404__subHeader Не переживайте!
+      p.p404__text Вероятно, страница, которую Вы искали находится лишь в чертогах Вашего разума. Начните с главной!
+      a(href="/").feedback__submit: span На главную
+      img.p404__image(src="/img/404.png")
+
+block content
+
+
+

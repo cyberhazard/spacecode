@@ -176,3 +176,44 @@
   display:inline-block;
   width: auto;
   margin-bottom: 0;
+
+.p404
+  z-index: 1;
+  position: relative;
+  width 100%
+  &__header
+    color: #ffffff;
+    font-family: "Gotham Pro";
+    font-size: 74px;
+    font-weight: 700;
+    position relative
+    padding-bottom 38px
+    margin-bottom 40px
+    &:after
+      content: ""
+      position absolute
+      top 100%
+      left 0
+      width: 60px;
+      height: 4px;
+      background-color: #f0143a;
+  &__subHeader
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom 20px
+  &__text
+    max-width: 474px;
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom 60px
+  &__image
+    position absolute
+    top 50%
+    right 0
+    transform: translateY(-50%)
+    z-index -1
