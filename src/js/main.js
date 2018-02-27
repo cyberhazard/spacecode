@@ -276,7 +276,7 @@ const generatePortfolioBlocks = () => {
   if(!blocks) return null;
   const groups = fetch('/groups.json').then(r => r.json()).then(groups => {
     fetch('/db.json').then(r => r.json()).then(portf => {
-      blocks.insertAdjacentHTML('afterbegin', portf.sort((a, b) => Number(a.number) - Number(b.number)).map(el=> generateBlock(el, groups)).join(''));
+      blocks.insertAdjacentHTML('afterbegin', portf.sort((a, b) => Number(a.number) - Number(b.number)).filter(({number}) => number != 0).map(el=> generateBlock(el, groups)).join(''));
       buttons.insertAdjacentHTML('afterbegin', Object.keys(groups).map((el, i) =>
         `<button class="portfolio__button ${i==0? 'portfolio__button_selected': ''}" data-tag="${el}">${groups[el]}</button>`).join(''));
       select.insertAdjacentHTML('beforeend', Object.keys(groups).map(el => `<option value="${el}">${groups[el]}</option>`).join(''))
