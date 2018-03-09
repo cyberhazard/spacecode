@@ -89,7 +89,7 @@ const makeModals = () => fetch('/db.json').then(r => r.json()).then(portf => {
           <div class="modal__imgwrap">
             <img src="${img}" class="modal__img"/>
           </div>
-          ${ link && `<div class="modal__site">Сайт: <a class="modal__link" href="http://${link}"> ${link}</a></div>`}
+          ${ link && `<div class="modal__site">Сайт: <a class="modal__link" target="_blank" href="http://${link}"> ${link}</a></div>`}
         </a>
       </div>
     `
